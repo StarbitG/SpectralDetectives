@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/story/Day 2.rpy", line 327: end of line expected.
+    "Usar a ventilação" if "chave" not in inventory_items::
+                                                          ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Wed Nov 22 23:29:42 2023
