@@ -226,10 +226,12 @@ label delegaciaday3:
     hide camilla
     hide nate
     menu:
-        "Falar com o pai":
+        "Falar com a vivian":
+            Nathan "Talvez a Camilla tenha razão, vou tentar falar com ela."
+            jump delegaciavivian   
+        "Falar com seu pai":
+            Nathan "Talvez o John tenha razão dessa vez, vou tentar falar com ele."
             jump delegaciapai
-        "Falar com a Vivian":
-            jump delegaciavivian
 
 
 label delegaciavivian:
@@ -237,7 +239,7 @@ label delegaciavivian:
     "Entrando no prédio me deparo com a Vivian na recepção e nenhum sinal de David"
     show bg delegacia dentro with dissolve
     scene bg delegacia dentro
-#se a erika pega a aliança tem que cair direto no else e não ter esse dialogo de baixo, pq se n n faz sentido narrativo, deveria ser:
+    #se a erika pega a aliança tem que cair direto no else e não ter esse dialogo de baixo, pq se n n faz sentido narrativo, deveria ser:
     show nate f at left
     Nathan "Com licença, você é a Vivian, certo?"
     show vivian f at right
@@ -321,7 +323,6 @@ label delegaciapai:
     "Não estava afim de continuar a discussão com o meu pai então decido ir para casa e saio da delegacia"
     show vivian n at left
     Vivian "Se me permite senhor, acho que você ter sido um pouco duro demais, ele é um bom garoto, entendo sua preocupação mas você podia ter pego um pouco mais leve com ele."
-    #mostrar a vivian na esquerda
     Pai "Se eu não agir dessa forma ele nunca vai aprender."
     hide pai 
     hide vivian
@@ -354,14 +355,102 @@ label delegaciapai:
     show joseph d at center with vpunch
     Nathan "Desculp—"
     show joseph n at center with dissolve
-    show joseph n at right with move
+    show joseph n at offscreenright with move
     show nate s2 at left
+    Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa"
+    John "Você tá bem cara? Foi uma batida meio feia.."
+    John "Sim sim eu to bem, valeu por perguntar."
+    Camilla "Que bom! Ah, parece que o joseph derrubou algo quando bateu em você agora."
+    Nathan "Sério?"
+    "Olho para a calçada para ver se realmente tem algo por ali"
+    Nathan "O que é isso?"
+    "Me abaixo e pego o objeto estranho"
+    Nathan "Parece ser um jogo de chaves"
+    $ inventory_items.append("chave")
+    $ renpy.notify("Você pegou as chaves do Joseph")
+    Nathan "Ei! você derrubou suas chaves!"
+    "Ele saiu correndo e não me escutou."
+    Camilla "Acho bom você nem pensar em devolver isso, afinal, ele é o único suspeito até agora."
+    John "Ela tem razão, isso pode nos dar uma chance maior de descobrir se ele realmente roubou algo."
+    Nathan "Tudo bem, entçao vamospra casa por hoje, temos mais um dia longo amanhã."
     #MUDAR O DIALOGO NO BRANCH DE IR DIRETO NO ESCRITORIO DO PAI
     pause
     show black with dissolve
-    jump demoend
+    jump falamaecasa
 
+label falamaecasa:
+    show bg casa fora noite with dissolve
+    scene bg casa fora noite
+    Mãe "Nathan! O que você faz fora de casa tão tarde? Até seu pai chegou antes de você."
+    Nathan "Oi mãe. Eu só estava resolvendo alguns asuntos com a Erika, nada de mais, desculpa te preocupar."
+    Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei parguntar sobre, preferi esperar aqui fora."
+    Nathan "Desculpa mãe, eu não vi o tempo passar dessa vez."
+    Mãe "Você devia pelo menos comer algo e depois ir para o seu quarto, beleza?"
+    Nathan "udo be mãe, desculpa mais uma vez"
+    show black with dissolve
+    scene black 
+    "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que algúem tinha colocado uma montanha nas minhas costas"
+    jump quartodia4
 
+label quartodia4:
+    show bg quarto com pistas noite with dissolve
+    scene bg quarto com pistas noite 
+    John "Mano, do que você acha que Joseph tava correndo mais cedo? Se ele é o culpado ele não devia estar correndo, talvez ele estivesse aprontando alguma coisa."
+    Nathan "Honestamente, eu não faço ideia mais, eu só quero dormir por agora gente."
+    
+    
+    
+#Rua - Noite
+#Ao olhar para cima, Nathan percebe que acabou esbarrando no bibliotecario que parecia bastante estressado e com pressa, Nathan congela e o homem vai embora.
+#John aparece e pergunta como Nathan está. Nathan responde que está bem e camilla fala que o biblbiotecario parece ter derrubado alguma coisa
+#Ao verificar, Nathan percebe que se trata de um jogo de chaves, ele as pega e vai para casa.
+#Antes de entrar em casa a mãe de Nathan estava esperando por ele na entrada da casa por estar preocupada dele ter voltado sozinho para casa tão tarde, eles conversam brevemente e entram
+# (contexto do porque o bibliotecario estava com pressa, ele viu o David sair de uma janela quebrada de uma casa e tirando a mascara que escondia seu rosto, após isso o David notou que o Joseph viu e foi atrás dele o nocauteando perto da delegacia)
+#Fim do dia 4
+
+#Dia 5
+#(Dia)
+#Nathan acorda e recebe uma ligação de Erika falando que o mercadinho foi reaberto e pede para que você vá até o mercado para ver seus amigos
+#Antes de você sair os fantasmas perguntam sobre o que você pretende fazer com relação as chaves que você encontrou
+#Você diz que que precisa pensar bem sobre isso e que talvez a Erika possa te ajudar a decidir isso melhor
+#No mercado
+#David está do lado de fora do mercado e te comprimenta da maneira estranha normal dele de sempre
+#Entrando no mercado Nathan é recebido por seus amigos, o Lucas parece um pouco mais animado devido a reabertura do mercado
+#Lucas explica que o mercado reabriu rapidamente devido ao fato de seu pai conhecer bastante gente na cidade e conseguiu resolver o problema do vidro rapidamente
+#Você pergunta brevemente sobre o David e o Sebastian responde que a policia decidiu deixar uma ronda na frente da loja por questão de segurança e designaram o David pra isso
+#O sebastian também menciona que o David é bem folgado e fica pegando salgadinhos sem pagar, mas o Lucas não se importa muito já que ele está "defendendo" a loja
+#Você chama a Erika de canto e menciona das chaves que você encontrou, vocês conversam um pouco sobre o assunto e chegam em algumas opções
+#Falar com a Vivian sobre o assunto (caso vc tenha feito a quest de mostrar o anel ( ͡° ͜ʖ ͡°)) entregar a chave para o David (péssima ideia, adiciona moral para o final ruim) e investigar por conta própria com a Erika (leva pro final neutro)
+#menu de escolha aparece a historia se divide em rotas apartir daqui
+
+#(Tarde)
+#(BRANCH DO FINAL BOM) Pedir ajuda da Vivian
+#Caso você peça ajuda da Vivian, vocês se encontra com ela na recepção da delegacia
+#Você mostra o jogo de chaves pra ela e fala o que aconteceu na noite anterior, por ela estar desconfiada devido as pistas que você tinha apresentado anteriormente, e pelo fato da casa dela ter sido invadida na noite anterior ela decide ajudar
+#vocês dois vão até a biblioteca e começam a investigar
+#fazer um menu igual o da sala do pai dele kkkkkkjjj se fodeu
+#após procurar em todos os cantos da bilbioteca eles não acham nada, até que camilla sugerem que o tapete parece suspeito
+#você levanta o tapete e encontra um cofre escondido, mas vocês não tem a combinação para abri-lo
+#Voce tem duas opções para gerar a cena exclusiva, tentar chutar a senha do cofre, ou seguir o conselho do john de ir atrás da combinação na sala do seu pai e isso levanta varias duvidas na cabeça de Nathan que já estava de mal humor com seu pai
+#se tentar chutar a combinação vc erra 3 vezes até o camilla sugerir 1,2, 3 e 4, se você chutar essa combinação você corta a cena de ir até a delegacia  
+#A Vivian então desacreditada que o Joseph podia ter feito tal coisa decide verificar nas câmeras, e percebe que ele sai antes da hora do crime do dia anterior
+#A Vivian diz que precisa ir atrás de Joseph para conseguir respostas e te passa o contato dela e caso voce tente ir atrás de tentar descobrir a combinação do cofre antes vc vai até a delegacia
+
+#voce pode tentar acertar a combinação do cofre ou não (bagulho q a gente falou com o saulo e a gi)
+
+#(Noite)
+#A noite você se prepara para outra invasão na delegacia mas a segurança lá parece ter sido reforçada
+#Ainda sim você consegue entrar e ir até a sala do seu pai pegar o papel com as combinações
+#eles ficam inacreditados da senha ser extremamente simples e que o ladrão não poderia ser burro o suficiente para deixar uma senha assim no cofre
+#ninguem fala nada nessa hora
+#Por estar muito tarde, john e camilla recomendam que você vá para casa descansar e avise Vivian no dia seguinte
+#voce volta pra casa e fim do dia 5
+
+#Dia 6, dia decisivo para a conclusão
+#dividir em ifs
+#No dia seguinte voce liga para vivian logo cedo e ela fala que encontrou o joseph e pede para que você vá direto para a biblioteca para explicar a situação
+#Chegando lá o joseph explica a situação e esclaresse os mal-entendidos e o corte em sua perna, que não tinha nada a ver com os crimes cometidos
+#
 label demoend:
     "Obrigado por jogar a demo! Não esqueça de preencher o formulário. Se possível, também chame mais alguém para testar nosso jogo, por favor!"
     pause

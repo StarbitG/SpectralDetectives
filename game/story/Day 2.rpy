@@ -405,23 +405,27 @@ label saladopaiprocura:
         "Mesa":
             show john n at right
             John "Não parece ter nada aqui..."
+            "Há um papel com uma cmbinação de alguns números, mas acho que não seria útil agora."
+            $ procuramesapai += 1
             hide john
             jump saladopaiprocura
-        "Escrivaninha":
+        "Escrivaninha" if procuramesapai >= 1:
             show nate n at left
             Nathan "Aqui está cheio de arquivos, mas nenhum que a gente precise."
+            $ procuraescrivaninhapai += 1
             hide nate
             jump saladopaiprocura
-        "Armário":
+        "Gavetas" if procuraescrivaninhapai >= 1:
+            $ procuragavetaspai += 1
+            "Eu faço força para tentar abrir as gavetas."
+            Nathan "Estão emperradas. Não vamos achar nada aqui."
+            jump saladopaiprocura
+        "Armário" if procuragavetaspai >= 1:
             $ inventory_items.append("arquivos")
             John "Nathan, por acaso o que você está procurando é isso aqui? Não tem nenhum nome escrito nele."
             Nathan "Estranho... Mas eu acho que é sim. Vamos levar e sair daqui antes que alguém nos veja."
             $ renpy.notify("Você pegou os arquivos!")
             jump quartodia21
-        "Gavetas":
-            "Eu faço força para tentar abrir as gavetas."
-            Nathan "Estão emperradas. Não vamos achar nada aqui."
-            jump saladopaiprocura
 
 label quartodia21:
     "Saímos pelo mesmo caminho que entramos, com sorte não vimos ninguém na rua."

@@ -157,7 +157,7 @@ style say_dialogue: # Posição da fala
     properties gui.text_properties("dialogue")
 
     xpos 370
-    xsize 1100
+    xsize 1200
     ypos 117
 
     adjust_spacing False

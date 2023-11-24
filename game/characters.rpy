@@ -26,7 +26,7 @@ image david ch = At('images/Personagens/David/David - 5.png', sprite_highlight('
 image david s  = At('images/Personagens/David/David - 6.png', sprite_highlight('david'))
 image david ex = At('images/Personagens/David/David - 7.png', sprite_highlight('david'))
 
-define Erika = Character("Erika", color="#96c7ca", window_background="images/textboxes/conhecidos/Textbox - Erika.png" , cb_name='erika' , callback=group_cbs(name_callback)) # Fantasma boa
+define Erika = Character("Erika", color="#96c7ca", window_background="images/textboxes/conhecidos/Textbox - Erika.png" , cb_name='erika' , callback=group_cbs(name_callback)) 
 image erika n = At('images/Personagens/Erika/Erika - 1.png', sprite_highlight('erika'))
 image erika n2 = At('images/Personagens/Erika/Erika - 2.png', sprite_highlight('erika'))
 image erika t = At('images/Personagens/Erika/Erika - 3.png', sprite_highlight('erika'))
@@ -35,7 +35,7 @@ image erika s = At('images/Personagens/Erika/Erika - 5.png', sprite_highlight('e
 image erika s2 = At('images/Personagens/Erika/Erika - 6.png', sprite_highlight('erika'))
 image erika b = At('images/Personagens/Erika/Erika - 7.png', sprite_highlight('erika'))
 
-define John = Character("John", color="#cba24f", window_background="images/textboxes/conhecidos/Textbox - John.png" , cb_name='john' , callback=group_cbs(name_callback)) # Fantasma boa
+define John = Character("John", color="#cba24f", window_background="images/textboxes/conhecidos/Textbox - John.png" , cb_name='john' , callback=group_cbs(name_callback)) 
 image john n = At('images/Personagens/John/John - 1.png', sprite_highlight('john'))
 image john f = At('images/Personagens/John/John - 2.png', sprite_highlight('john'))
 image john n2 = At('images/Personagens/John/John - 3.png', sprite_highlight('john'))
@@ -44,7 +44,7 @@ image john b2 = At('images/Personagens/John/John - 5.png', sprite_highlight('joh
 image john ch = At('images/Personagens/John/John - 6.png', sprite_highlight('john'))
 image john ex = At('images/Personagens/John/John - 7.png', sprite_highlight('john'))
 
-define Joseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/conhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) # Fantasma boa
+define Joseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/conhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) 
 image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 1.png', sprite_highlight('joseph'))
 image joseph b = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 2.png', sprite_highlight('joseph'))
 image joseph b2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 3.png', sprite_highlight('joseph'))
@@ -53,7 +53,7 @@ image joseph s2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 
 image joseph f = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 6.png', sprite_highlight('joseph'))
 image joseph d = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario_completo_silhueta.png', sprite_highlight('joseph'))
 
-define Lucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/conhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) # Fantasma boa
+define Lucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/conhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) 
 image lucas n = At('images/Personagens/Lucas/Lucas - 1.png', sprite_highlight('lucas'))
 image lucas f = At('images/Personagens/Lucas/Lucas - 2.png', sprite_highlight('lucas'))
 image lucas s = At('images/Personagens/Lucas/Lucas - 3.png', sprite_highlight('lucas'))
@@ -63,7 +63,7 @@ image lucas b = At('images/Personagens/Lucas/Lucas - 6.png', sprite_highlight('l
 image lucas b2 = At('images/Personagens/Lucas/Lucas - 7.png', sprite_highlight('lucas'))
 image lucas ex = At('images/Personagens/Lucas/Lucas - 8.png', sprite_highlight('lucas'))
 
-define Mãe = Character("mae", color="#7c8761", window_background="images/textboxes/conhecidos/Textbox - Mãe do protagonista.png" , cb_name='mae' , callback=group_cbs(name_callback)) # Fantasma boa
+define Mãe = Character("mae", color="#7c8761", window_background="images/textboxes/conhecidos/Textbox - Mãe do protagonista.png" , cb_name='mae' , callback=group_cbs(name_callback)) 
 image mae n = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 1.png', sprite_highlight('mae'))
 image mae f = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 2.png', sprite_highlight('mae'))
 image mae b = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 3.png', sprite_highlight('mae'))
@@ -131,7 +131,7 @@ image david ch = At('images/Personagens/David/David - 5.png', sprite_highlight('
 image david s  = At('images/Personagens/David/David - 6.png', sprite_highlight('david'))
 image david ex = At('images/Personagens/David/David - 7.png', sprite_highlight('david'))
 
-define dErika = Character("Erika", color="#96c7ca", window_background="images/textboxes/desconhecidos/Textbox - Erika.png" , cb_name='erika' , callback=group_cbs(name_callback)) # Fantasma boa
+define dErika = Character("Erika", color="#96c7ca", window_background="images/textboxes/desconhecidos/Textbox - Erika.png" , cb_name='erika' , callback=group_cbs(name_callback)) 
 image erika n = At('images/Personagens/Erika/Erika - 1.png', sprite_highlight('erika'))
 image erika n2 = At('images/Personagens/Erika/Erika - 2.png', sprite_highlight('erika'))
 image erika t = At('images/Personagens/Erika/Erika - 3.png', sprite_highlight('erika'))
@@ -140,7 +140,7 @@ image erika s = At('images/Personagens/Erika/Erika - 5.png', sprite_highlight('e
 image erika s2 = At('images/Personagens/Erika/Erika - 6.png', sprite_highlight('erika'))
 image erika b = At('images/Personagens/Erika/Erika - 7.png', sprite_highlight('erika'))
 
-define dJohn = Character("John", color="#cba24f", window_background="images/textboxes/desconhecidos/Textbox - John.png" , cb_name='john' , callback=group_cbs(name_callback)) # Fantasma boa
+define dJohn = Character("John", color="#cba24f", window_background="images/textboxes/desconhecidos/Textbox - John.png" , cb_name='john' , callback=group_cbs(name_callback)) 
 image john n = At('images/Personagens/John/John - 1.png', sprite_highlight('john'))
 image john f = At('images/Personagens/John/John - 2.png', sprite_highlight('john'))
 image john n2 = At('images/Personagens/John/John - 3.png', sprite_highlight('john'))
@@ -149,7 +149,7 @@ image john b2 = At('images/Personagens/John/John - 5.png', sprite_highlight('joh
 image john ch = At('images/Personagens/John/John - 6.png', sprite_highlight('john'))
 image john ex = At('images/Personagens/John/John - 7.png', sprite_highlight('john'))
 
-define dJoseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/desconhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) # Fantasma boa
+define dJoseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/desconhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) 
 image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 1.png', sprite_highlight('joseph'))
 image joseph b = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 2.png', sprite_highlight('joseph'))
 image joseph b2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 3.png', sprite_highlight('joseph'))
@@ -157,7 +157,7 @@ image joseph s = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 4
 image joseph s2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 5.png', sprite_highlight('joseph'))
 image joseph f = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 6.png', sprite_highlight('joseph'))
 
-define dLucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/desconhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) # Fantasma boa
+define dLucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/desconhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) 
 image lucas n = At('images/Personagens/Lucas/Lucas - 1.png', sprite_highlight('lucas'))
 image lucas f = At('images/Personagens/Lucas/Lucas - 2.png', sprite_highlight('lucas'))
 image lucas s = At('images/Personagens/Lucas/Lucas - 3.png', sprite_highlight('lucas'))
@@ -167,7 +167,7 @@ image lucas b = At('images/Personagens/Lucas/Lucas - 6.png', sprite_highlight('l
 image lucas b2 = At('images/Personagens/Lucas/Lucas - 7.png', sprite_highlight('lucas'))
 image lucas ex = At('images/Personagens/Lucas/Lucas - 8.png', sprite_highlight('lucas'))
 
-define dmae = Character("mae", color="#7c8761", window_background="images/textboxes/desconhecidos/Textbox - Mãe do protagonista.png" , cb_name='mae' , callback=group_cbs(name_callback)) # Fantasma boa
+define dmae = Character("mae", color="#7c8761", window_background="images/textboxes/desconhecidos/Textbox - Mãe do protagonista.png" , cb_name='mae' , callback=group_cbs(name_callback)) 
 image mae n = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 1.png', sprite_highlight('mae'))
 image mae f = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 2.png', sprite_highlight('mae'))
 image mae b = At('images/Personagens/Mãe do protagonista/Mãe do protagonista - 3.png', sprite_highlight('mae'))
