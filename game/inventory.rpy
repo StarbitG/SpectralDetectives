@@ -10,6 +10,7 @@ default item_descriptions = {
     "caderno fechado": "o caderno de anotações da vivian",
     "caderno aberto": "o caderno de anotações da vivian",
     "arquivos": "arquivos suspeitos",
+    "cópia arquivos": "arquivos suspeitos",
     "luvas": "está escrito donovan em uma delas...",
     "Lista de compras": "Uma tarefa que sua mãe lhe deu"
 }
@@ -24,6 +25,7 @@ default item_images = {
     "caderno fechado": "images/caderno anotação fechado.png",
     "caderno aberto": "images/caderno anotação aberto.png",
     "arquivos": "images/arquivos.png",
+    "cópia arquivos": "images/arquivos.png",
     "luvas": "images/luvas.png",
     "Lista de compras": "images/Lista de compras.png"
 } # imagens devem ser pequenas para caber no inventário

@@ -1,6 +1,6 @@
 label startday3:
-    show bg quarto dia with dissolve
-    scene bg quarto dia
+    show bg quarto com pistas dia with dissolve
+    scene bg quarto com pistas dia
     show halfblack
     "Quando o dia amanheceu, a primeira coisa que fiz foi ligar para Erika, eu precisava da ajuda dela afinal."
     "{i}trim trim{/i}"
@@ -43,8 +43,8 @@ label startday3:
     jump lojaday3
 
 label startday3alt:
-    show bg quarto dia with dissolve
-    scene bg quarto dia
+    show bg quarto com pistas dia with dissolve
+    scene bg quarto com pistas dia
     show halfblack
     if "aliança" in inventory_items:
         "{i}trim trim{/i}"
@@ -213,11 +213,18 @@ label delegaciaday3:
     show bg delegacia frente dia tarde with dissolve
     scene bg delegacia frente dia tarde
     "Antes de entrar na delegacia, john e camilla me abordam"
+    show john n at right
     John "Cara, eu acho que você devia falar direto com seu pai, será que ele conseguiria entender o que você ta fazendo? Ele se desculpou afinal."
+    show nate n at left
+    hide john 
     Nathan "Não sei, não parece uma boa ideia..."
+    show camilla n at right
     Camilla "Não confio tanto no seu pai não, você lembra daquela moça de verde? Achei ela legal, talvez seja melhor falar com ela."
     Nathan "A vivian?"
-    Camilla "É, isso mesmo."
+    show camilla f
+    Camilla "É, ela mesmo."
+    hide camilla
+    hide nate
     menu:
         "Falar com o pai":
             jump delegaciapai
@@ -226,32 +233,133 @@ label delegaciaday3:
 
 
 label delegaciavivian:
-    Nathan "{i}Espero que aquele David não esteja por aqui, assim poderia falar com a Vivian com tranquilidade.{/i}"
-    "Entrando no prédio me deparo com a Vivian na recepção"
+    Nathan "{i}(Espero que aquele David não esteja por aqui, assim poderia falar com a Vivian com tranquilidade.){/i}"
+    "Entrando no prédio me deparo com a Vivian na recepção e nenhum sinal de David"
+    show bg delegacia dentro with dissolve
+    scene bg delegacia dentro
+#se a erika pega a aliança tem que cair direto no else e não ter esse dialogo de baixo, pq se n n faz sentido narrativo, deveria ser:
+    show nate f at left
     Nathan "Com licença, você é a Vivian, certo?"
-    Vivian "Oii, você pe aquele garoto daquele dia né? Precisa de alguma coisa?"
+    show vivian f at right
+    Vivian "Oii, você é o garoto daquele dia né? Precisa de alguma coisa?"
+    show nate ns
     Nathan "Na verdade, eu acho que tenho algumas informações importantes para o caso."
-    Vivian "Sério? Que bom! Desembuxa."
-    Nathan "Acho que sei quem está cometendo os crimes recentes"
-    Nathan "Encontrei uma das alianças na entrada da biblioteca e o bibliotecario de lá estava com a perna mancando por conta de um corte"
-    Vivian "O Joseph?? impossivel, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
-    Nathan "Eu estou com uma das alianças aqui, veja"
-    Vivian "hmm, isso é estranho, te garanto que ele não faria nada assim, deve ter sido um engano"
+    show vivian f2
+    Vivian "Sério? Que bom! Desembuxa ai."
+    
     if pegaranel >= 1:
+        show nate n
+        Nathan "Acho que sei quem está cometendo os crimes recentes."
+        Nathan "Encontrei uma das alianças na entrada da biblioteca e o bibliotecario de lá estava com a perna mancando por conta de um corte que parece ter sido feito com vidro."
+        Nathan "O nome dele é Joseph"
+        show vivian s2
+        Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
+        Nathan "Eu estou com uma das alianças aqui, veja"
+        show vivian n
+        Vivian "hmm, isso é estranho, te garanto que ele não faria nada assim, deve ter sido um engano"
         if mostraranel >= 1:
             "Procuro a aliança no meu bolso, mas esqueci que já tinha entregado ela pro Sebastian"
             Nathan "Na verdade, eu tinha a alianças comigo, só que eu ja devolvi ela pro respectivo dono"
+            show vivian b
             Vivian "Então você vem no meu trabalho, acusa alguém, e não me mostra prova nenhuma?"
+            show nate s
             Nathan "Eu juro pra você que eu tinha a aliança comigo"
             Vivian "Olha garoto, somos policiais, não trabalhamos na base do ''eu acho''"
-            "Antes que pudessemos concluir a conversa meu pai aparece na recepção"
+            
         else:
-            Vivian ":)"
+            "Pego a aliança no meu bolso e entrego para Vivian"
+            $ inventory_items.remove("aliança")
+            $ renpy.notify("Você entregou a aliança para a Vivian")
+            show nate f
+            Nathan "Veja, a aliança que encontrei na entrada da biblioteca."
+            show vivian n
+            Vivian "Tem certeza de que achou isso lá?"
+            show nate ns
+            Nathan "Sim, eu juro!"
+            show vivian f
+            Vivian "Vou ficar com ela então, quero questiona-lo pessoalmente"
+            Nathan "Okay"
+            
             $ moralfinalbom += 1
     else:
-        Vivian ":/"
+        show nate n
+        Nathan "Acredito que o culpado possa ser o bibliotecário, ele tem agido de forma estranha e estava mancando por um corte de vidro em sua perna"
+        show vivian b
+        Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
+        Vivian "Olha, isso não serve como evidência, não posso fazer nada sem provas concretas, não trabalhamos com achismos e suspeitas infudamentadas"
+        show nate s
+        Nathan "Mas—" 
+    "Antes que pudessemos concluir a conversa meu pai aparece na recepção" 
 
+    
+    
 label delegaciapai:
+    show bg sala do pai clara with dissolve 
+    scene bg sala do pai clara
+    show pai s at right
+    Pai "Nathan?"
+    show nate s at left
+    Nathan "Pai?"
+    Pai "O que está fazendo aqui?"
+    hide pai 
+    show vivian s at right
+    Vivian "''Filho?'' Você é filho do delegado Fábio? por que não me contou antes?"
+    show nate n
+    Nathan "Desculpe, não achei que fosse necessario falar sobre isso"
+    show vivian n
+    Vivian "Ele estava me passando informações sobre o caso dos assaltos recentes"
+    hide vivian 
+    show pai b at right
+    Pai "Eu já não falei para você não se meter nos assuntos da polícia?"
+    show nate s
+    Nathan "Mas eu posso ajudar!"
+    Pai "Não, você não pode! você só vai atrapalhar mais ainda a investigação!"
+    Nathan "Mas—"
+    show nate b
+    Nathan "Ah quer saber, não tô com paciência pra discutir com você hoje, vou pra casa a pé mesmo"
+    hide nate
+    "Não estava afim de continuar a discussão com o meu pai então decido ir para casa e saio da delegacia"
+    show vivian n at left
+    Vivian "Se me permite senhor, acho que você ter sido um pouco duro demais, ele é um bom garoto, entendo sua preocupação mas você podia ter pego um pouco mais leve com ele."
+    #mostrar a vivian na esquerda
+    Pai "Se eu não agir dessa forma ele nunca vai aprender."
+    hide pai 
+    hide vivian
+    show bg delegacia frente dia tarde with dissolve
+    scene bg delegacia frente dia tarde
+    "Do lado de fora da delegacia John e Camilla tentam me acalmar"
+    #cena de fora da delegacia de tarde
+    show nate b at left
+    Nathan "Não entendo porque ele sempre faz isso. Estou de saco cheio dele ser sempre assim!"
+    show camilla t at right
+    Camilla "Nate... Tenta não levar isso pro coração, você sabe que no fundo ele te ama e só está preocupado com você, ele só não sabe como expressar isso"
+    Nathan "Não, ele só acha que eu sou incapaz de fazer qualquer coisa sozinho, só isso!"
+    hide camilla
+    show john b at right
+    John "Pô cara, acho que se ta viajando porque ta com raiva, tenta esfriar a cabeça um pouco"
+    hide john 
+    show camilla t at right
+    Camilla "Ter que ouvir e concordar com o John é dificil, mas ele ta certo."
+    Nathan "..."
+    show nate n
+    Nathan "Não quero mais falar sobre isso, só quero ir pra casa"
+    show camilla n
+    Camilla "Certo, qualquer coisa chama a gente, vamos estar aqui, ok?"
+    hide camilla 
+    hide nate 
+    show bg rua tarde with dissolve
+    show bg rua noite with dissolve 
+    scene bg rua noite
+    #cena da rua de tarde com dissolve pra noite noite
+    "Caminhando para casa vejo o dia escurecendo e por não prestar atenção esbarro em alguma pessoa"
+    show joseph d at center with vpunch
+    Nathan "Desculp—"
+    show joseph n at center with dissolve
+    show joseph n at right with move
+    show nate s2 at left
+    #tela treme e o sprite preto do bibliotecario aparece no meio da tela com fade para o bibliotecario normal
+    #depois disso eles se posicionam para os lugares padrão, Nathan na esquerda e bibliotecario na direita
+    
     pause
     show black with dissolve
     jump demoend
@@ -262,4 +370,3 @@ label demoend:
     pause
 
 "O biblioteca tenta vir atrás da gente mas não consegue acompanhar nosso ritmo, ao olhar para trás percebo que ele está com uma perna machucada e mancando"
-

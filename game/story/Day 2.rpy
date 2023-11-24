@@ -171,7 +171,7 @@ label delegaciaday2:
     Nathan "Entendo, muito obrigado, David. Sebastian, Lucas, eu preciso ir, mas espero encontrar vocês por aí, okay? Se cuidem!"
     Nathan "Antes que eu me esqueça, minha mãe pediu pra entregar essa torta pra vocês como agradecimento pelas compras"
     hide david
-    show Lucas n at right
+    show lucas n at right
     Lucas "Obrigado Nathan, agradeça sua mãe pela gente também"
     "Após dizer adeus a meus amigos, fui diretamente para casa. Precisava pensar no que fazer."
 
@@ -566,7 +566,11 @@ label biblioteca:
     Nathan "... ..."
     Nathan "... ... ..."
     Nathan "Não parece que isso vai dar em algum lugar..."
-    Nathan "Acho que eu devia..."
+    Nathan "Acho que eu devia tirar uma cópia dos arquivos, só por precaução."
+    "Me aproximo da antiga impressora da biblioteca, ela estava meio empoeirada mas ainda funcionava bem, então tirei uma cópia de todos os arquivos."
+    $ inventory_items.append("cópia arquivos")
+    $ renpy.notify("Você agora tem uma cópia dos arquivos")
+    Nathan "Agora eu deveria..."
     menu:
         "Continuar procurando sozinho":
             show nate n
@@ -590,7 +594,8 @@ label biblioteca:
             show erika n2 at right
             Erika "Oi, Nathan. Encontrou alguma coisa?" 
             Nathan "Oi,não na verdade, você acha que consegue me encontrar do lado de fora da biblioteca para conversarmos sobre isso? Não sei muito pra onde ir a partir daqui"
-            Erika "Está bom, já já estou chegando aí. Me dá uns 5 minutinhos, não estou muito longe."
+            Erika "Está bom, já já estou chegando aí. Me dá uns 15 minutinhos, não estou muito longe."
+            "Antes de sair percebo que o bibliotecário estava observando de longe os arquivos cima da mesa, mas não dou muita atenção e vou me encontrar com Erika"
             hide nate
             hide erika 
             jump conversaerikadia2
@@ -617,6 +622,7 @@ label conversaerikadia2:
             Nathan "AS ALIANÇAS??"
             $ inventory_items.append("aliança")
             $ renpy.notify("Você recuperou as alianças!")
+            $ pegaranel += 1
             Nathan "Eu não acredito que achei isso aqui, mas por que aqui?"
             show bg biblioteca fora tarde with hpunch
             show halfblack
@@ -708,10 +714,13 @@ label casadia2:
     Mãe "Tente pegar leve com seu pai esses dias até ele relaxar sobre esse problema."
     show nate ns
     Nathan "Vou tentar manter a calma com ele, prometo."
-show bg quarto noite with dissolve
-scene bg quarto noite
-show halfblack
-if "aliança" in inventory_items:
+    show bg quarto noite with dissolve
+    scene bg quarto noite
+    Nathan "Vou só fazer uma coisa, acho que investigar assim pode ajudar"
+    show bg quarto com pistas noite with dissolve
+    scene bg quarto com pistas noite
+    show halfblack
+    if "aliança" in inventory_items:
         show camilla n at right
         Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"
         hide camilla
@@ -740,7 +749,7 @@ if "aliança" in inventory_items:
         Nathan "Vocês dois têm um bom ponto. Vou tentar ver isso amanhã mesmo. Muito obrigado por estarem me ajudando."
         show black with dissolve
         jump startday3
-if "aliança" not in inventory_items:
+    if "aliança" not in inventory_items:
         show nate s at left
         Nathan "Acho que isso não vai levar a nada. Esses arquivos, tem muitas coisas que foram perdidas. Provavelmente, as mais importantes foram perdidas."
         show camilla t at right 
@@ -761,13 +770,14 @@ if "aliança" not in inventory_items:
 
 
 label casadia2alt:
+    "Me despedi da Erika e fui para casa. Ao entrar, vi seu pai sentado, um pouco abalado."
     show bg quarto noite with dissolve
     scene bg quarto noite
     show halfblack
-    "Me despedi da Erika e fui para casa. Ao entrar, vi seu pai sentado, um pouco abalado."
     show pai b at right
     Pai "Você que fez isso, né? Você roubou os meus arquivos. Eu vi nas câmeras você invadindo a minha sala e pegando os arquivos ontem."
     show  nate b at left
+    # Criar
     Nathan "Você está doido? Eu não ia roubar os seus arquivos. Ontem eu iria devolver se você não tivesse pego. Não vem tentar me culpar de nada."
     hide pai 
     show mae b at right
@@ -778,6 +788,9 @@ label casadia2alt:
     Mãe "Talvez seja melhor conversarmos sobre isso mais tarde, quando as coisas estiverem mais calmas."
     hide nate
     hide mae
+    Nathan "Vou aproveitar que peguei uma cópia de tudo, e colocar eles ali, vai me ajudar bastante."
+    show bg quarto com pistas noite with dissolve
+    scene bg quarto com pistas noite
     if "aliança" in inventory_items:
         show camilla n at right
         Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"

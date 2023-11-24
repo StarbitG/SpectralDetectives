@@ -51,6 +51,7 @@ image joseph b2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 
 image joseph s = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 4.png', sprite_highlight('joseph'))
 image joseph s2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 5.png', sprite_highlight('joseph'))
 image joseph f = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 6.png', sprite_highlight('joseph'))
+image joseph d = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario_completo_silhueta', sprite_highlight('joseph'))
 
 define Lucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/conhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) # Fantasma boa
 image lucas n = At('images/Personagens/Lucas/Lucas - 1.png', sprite_highlight('lucas'))
