@@ -45,13 +45,13 @@ image john ch = At('images/Personagens/John/John - 6.png', sprite_highlight('joh
 image john ex = At('images/Personagens/John/John - 7.png', sprite_highlight('john'))
 
 define Joseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/conhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) # Fantasma boa
-image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario- 1.png', sprite_highlight('joseph'))
+image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 1.png', sprite_highlight('joseph'))
 image joseph b = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 2.png', sprite_highlight('joseph'))
 image joseph b2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 3.png', sprite_highlight('joseph'))
 image joseph s = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 4.png', sprite_highlight('joseph'))
 image joseph s2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 5.png', sprite_highlight('joseph'))
 image joseph f = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 6.png', sprite_highlight('joseph'))
-image joseph d = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario_completo_silhueta', sprite_highlight('joseph'))
+image joseph d = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario_completo_silhueta.png', sprite_highlight('joseph'))
 
 define Lucas = Character("Lucas", color="#e3c8d6", window_background="images/textboxes/conhecidos/Textbox - Lucas.png" , cb_name='lucas' , callback=group_cbs(name_callback)) # Fantasma boa
 image lucas n = At('images/Personagens/Lucas/Lucas - 1.png', sprite_highlight('lucas'))
@@ -150,7 +150,7 @@ image john ch = At('images/Personagens/John/John - 6.png', sprite_highlight('joh
 image john ex = At('images/Personagens/John/John - 7.png', sprite_highlight('john'))
 
 define dJoseph = Character("Joseph", color="#9f886f", window_background="images/textboxes/desconhecidos/Textbox - Joseph.png" , cb_name='joseph' , callback=group_cbs(name_callback)) # Fantasma boa
-image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario- 1.png', sprite_highlight('joseph'))
+image joseph n = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 1.png', sprite_highlight('joseph'))
 image joseph b = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 2.png', sprite_highlight('joseph'))
 image joseph b2 = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 3.png', sprite_highlight('joseph'))
 image joseph s = At('images/Personagens/Joseph - Bibliotecario/Bibliotecario - 4.png', sprite_highlight('joseph'))

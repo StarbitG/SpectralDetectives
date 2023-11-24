@@ -1,27 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/Personagens/Joseph/Bibliotecario - 6.png') at 0x0000000004a363d0>:
-  File "game/story/Day 2.rpy", line 469, in script
-    dJoseph "Bom dia! Posso te ajudar em algo, jovem?"
-OSError: Couldn't find file 'images/Personagens/Joseph/Bibliotecario - 6.png'.
+While loading <renpy.display.im.Image object ('images/Personagens/Joseph - Bibliotecario/Bibliotecario- 1.png') at 0x0000000006a516d0>:
+  File "game/story/Day 3.rpy", line 357, in script
+    show joseph n at center with dissolve
+OSError: Couldn't find file 'images/Personagens/Joseph - Bibliotecario/Bibliotecario- 1.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/Day 2.rpy", line 469, in script
-    dJoseph "Bom dia! Posso te ajudar em algo, jovem?"
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/story/Day 3.rpy", line 357, in script
+    show joseph n at center with dissolve
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\core.py", line 2975, in do_with
+    return self.interact(trans_pause=True,
   File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
@@ -32,6 +26,10 @@ Full traceback:
   File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
     surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\transition.py", line 379, in render
+    top = render(self.new_widget, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
@@ -68,9 +66,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/Personagens/Joseph/Bibliotecario - 6.png'.
+OSError: Couldn't find file 'images/Personagens/Joseph - Bibliotecario/Bibliotecario- 1.png'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
-Spectral Detectives 1.6
-Wed Nov 22 23:07:05 2023
+Spectral Detectives 0.10.2
+Thu Nov 23 23:59:42 2023

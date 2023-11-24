@@ -326,9 +326,10 @@ label delegaciapai:
     hide pai 
     hide vivian
     show bg delegacia frente dia tarde with dissolve
-    scene bg delegacia frente dia tarde
-    "Do lado de fora da delegacia John e Camilla tentam me acalmar"
-    #cena de fora da delegacia de tarde
+    pause
+    show bg delegacia frente dia noite with dissolve
+    scene bg delegacia frente dia noite
+    "Do lado de fora da delegacia John e Camilla tentam me acalmar"   
     show nate b at left
     Nathan "Não entendo porque ele sempre faz isso. Estou de saco cheio dele ser sempre assim!"
     show camilla t at right
@@ -347,19 +348,15 @@ label delegaciapai:
     Camilla "Certo, qualquer coisa chama a gente, vamos estar aqui, ok?"
     hide camilla 
     hide nate 
-    show bg rua tarde with dissolve
     show bg rua noite with dissolve 
     scene bg rua noite
-    #cena da rua de tarde com dissolve pra noite noite
-    "Caminhando para casa vejo o dia escurecendo e por não prestar atenção esbarro em alguma pessoa"
+    "Caminhando por não prestar atenção esbarro em alguma pessoa"
     show joseph d at center with vpunch
     Nathan "Desculp—"
     show joseph n at center with dissolve
     show joseph n at right with move
     show nate s2 at left
-    #tela treme e o sprite preto do bibliotecario aparece no meio da tela com fade para o bibliotecario normal
-    #depois disso eles se posicionam para os lugares padrão, Nathan na esquerda e bibliotecario na direita
-    
+    #MUDAR O DIALOGO NO BRANCH DE IR DIRETO NO ESCRITORIO DO PAI
     pause
     show black with dissolve
     jump demoend
