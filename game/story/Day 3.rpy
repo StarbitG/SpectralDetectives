@@ -212,6 +212,7 @@ label bibliotecaday3:
 label delegaciaday3:
     show bg delegacia frente dia tarde with dissolve
     scene bg delegacia frente dia tarde
+    show halfblack
     "Antes de entrar na delegacia, john e camilla me abordam"
     show john n at right
     John "Cara, eu acho que você devia falar direto com seu pai, será que ele conseguiria entender o que você ta fazendo? Ele se desculpou afinal."
@@ -239,6 +240,7 @@ label delegaciavivian:
     "Entrando no prédio me deparo com a Vivian na recepção e nenhum sinal de David"
     show bg delegacia dentro with dissolve
     scene bg delegacia dentro
+    show halfblack
     #se a erika pega a aliança tem que cair direto no else e não ter esse dialogo de baixo, pq se n n faz sentido narrativo, deveria ser:
     show nate f at left
     Nathan "Com licença, você é a Vivian, certo?"
@@ -281,7 +283,7 @@ label delegaciavivian:
             show vivian f
             Vivian "Vou ficar com ela então, quero questiona-lo pessoalmente"
             Nathan "Okay"
-            
+            $ vivianescolha += 1
             $ moralfinalbom += 1
     else:
         show nate n
@@ -298,6 +300,7 @@ label delegaciavivian:
 label delegaciapai:
     show bg sala do pai clara with dissolve 
     scene bg sala do pai clara
+    show halfblack
     show pai s at right
     Pai "Nathan?"
     show nate s at left
@@ -359,7 +362,7 @@ label delegaciapai:
     show nate s2 at left
     Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa"
     John "Você tá bem cara? Foi uma batida meio feia.."
-    John "Sim sim eu to bem, valeu por perguntar."
+    Nathan "Sim sim eu to bem, valeu por perguntar."
     Camilla "Que bom! Ah, parece que o joseph derrubou algo quando bateu em você agora."
     Nathan "Sério?"
     "Olho para a calçada para ver se realmente tem algo por ali"
@@ -381,6 +384,7 @@ label delegaciapai:
 label falamaecasa:
     show bg casa fora noite with dissolve
     scene bg casa fora noite
+    show halfblack
     Mãe "Nathan! O que você faz fora de casa tão tarde? Até seu pai chegou antes de você."
     Nathan "Oi mãe. Eu só estava resolvendo alguns asuntos com a Erika, nada de mais, desculpa te preocupar."
     Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei parguntar sobre, preferi esperar aqui fora."
@@ -395,8 +399,12 @@ label falamaecasa:
 label quartodia4:
     show bg quarto com pistas noite with dissolve
     scene bg quarto com pistas noite 
+    show halfblack
     John "Mano, do que você acha que Joseph tava correndo mais cedo? Se ele é o culpado ele não devia estar correndo, talvez ele estivesse aprontando alguma coisa."
-    Nathan "Honestamente, eu não faço ideia mais, eu só quero dormir por agora gente."
+    Nathan "John, você consegue guardar esse pensamento pra amanhã? Eu tô muito cansado pra pensar, só quero dormir por agora"
+    Camilla "Ele tem um ótimo ponto na verdade, mas você quem sabe Nathan, vamos te deixar em paz essa noite, boa noite."
+    "Assim um dos meus últimos dias nessa correria se encerram, se eu tenho algo não resolvido, é bom resolver agora e rápido.."
+    jump startday5
     
     
     
