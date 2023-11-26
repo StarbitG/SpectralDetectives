@@ -364,7 +364,7 @@ label delegaciapai:
     show joseph n at offscreenright with move
     show nate s2 at left
     Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa"
-    John "Você tá bem cara? Foi uma batida meio feia.."
+    John "Você tá bem cara? Foi uma batida meio feia..."
     Nathan "Sim sim eu to bem, valeu por perguntar."
     Camilla "Que bom! Ah, parece que o joseph derrubou algo quando bateu em você agora."
     Nathan "Sério?"
@@ -405,7 +405,7 @@ label quartodia4:
     John "Mano, do que você acha que Joseph tava correndo mais cedo? Se ele é o culpado ele não devia estar correndo, talvez ele estivesse aprontando alguma coisa."
     Nathan "John, você consegue guardar esse pensamento pra amanhã? Eu tô muito cansado pra pensar, só quero dormir por agora"
     Camilla "Ele tem um ótimo ponto na verdade, mas você quem sabe Nathan, vamos te deixar em paz essa noite, boa noite."
-    "Assim um dos meus últimos dias nessa correria se encerram, se eu tenho algo não resolvido, é bom resolver agora e rápido.."
+    "Assim um dos meus últimos dias nessa correria se encerram, se eu tenho algo não resolvido, é bom resolver agora e rápido..."
     jump startday5
     
     

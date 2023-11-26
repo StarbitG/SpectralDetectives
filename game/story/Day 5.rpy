@@ -38,7 +38,8 @@ label lojadia5:
     show bg shop with dissolve
     Lucas "Nathan! Erika! Que bom ter vocês aqui de novo! Ficamos muito felizes com a reabertura do mercado!"
     if mantevetorta == 0:
-        Lucas "Antes que eu me esqueça, agradeça sua mão pela torta daquele dia, estava muito boa, por mais que só pudemos comer metade já que o David comeu quase tudo sozinho."
+        Lucas "Antes que eu me esqueça, agradeça sua mão pela torta daquele dia, estava muito boa!"
+        Sebastian "Por mais que só pudemos comer metade já que o David comeu quase tudo sozinho."
     Nathan "Só uma pergunta, como vocês reabriram a loja tão rápido? achei que vocês iam demorar um pouco mais para poder reabri-la" 
     Sebastian "Acontece que o pai do Lucas é um cara bem influente pelo que parece, ele conseguiu um pessoal que consertou tudo rapidinho."
     Nathan "Outra coisa, Por que o David tá ali do lado de fora?"
@@ -76,7 +77,7 @@ label lojadia5:
             Erika "Justo, na frente da bilbioteca hoje a noite então?"
             Nathan "isso, a gente se vê por lá"
             pause
-        "Entregar as chaves para o David":
+        "Entregar as chaves para o David" if moralfinalruim >= 1:
             "O David entra na loja pra roubar mais um salgadinho, eu abordo ele antes que ele pegue"
             Nathan "David!"
             David "Oi!? eu ia pagar!" 

@@ -127,7 +127,7 @@ label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando L
     show halfblack
     "Eu entro na delegacia, logo após David. Alguns minutos se passam enquanto observo a sala, ela parece menor que antes... E então o casal aparece."
     show lucas ch at right
-    Lucas "N-Nathan...{i}sniff{/i} O que você..{i}sniff{/i} faz por aqui?"
+    Lucas "N-Nathan...{i}sniff{/i} O que você...{i}sniff{/i} faz por aqui?"
     "É muito difícil entender o que o Lucas tem a dizer, ele parece muito abalado."
     show nate n at left
     Nathan "Ah, eu vim ver como vocês estavam. É algo muito difícil de se lidar, sabe..."
@@ -374,6 +374,7 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
             Nathan "Se eu não me engano, é nessa porta aqui..."
             jump saladopai
         "Usar a ventilação" if "chave" not in inventory_items:
+            $ foisus += 1
             "Eu me aproximo da ventilação, estando lá, percebo que a tampa da ventilação estava meio solta, com pouca força ela se solta"
             show nate s
             Nathan "Isso soltou muito mais fácil do que deveria"
@@ -615,8 +616,11 @@ label biblioteca:
     show nate n
     Nathan "Estou lendo alguns dos arquivos sobre o roubo recente. Queria tentar resolver isso."
     show erika s
-    Erika "Você não acha que é meio impossível resolver um caso da polícia inteiro sozinho? Não é um ladrão amador, até onde eu sei."
-    Nathan "Conhecendo como meu pai trabalha, vocês nunca mais vão ver suas coisas."
+    Nathan "Por que você não me contou que assaltaram sua casa?"
+    show erika t
+    Erika "Desculpa, não queria te preocupar com isso, sei que já tem muita coisa passando na sua cabeça, principalmente com relação ao seu relacionamento com seu pai."
+    Erika "Você não acha que ta se arriscando demais se metendo nisso? Acho meio impossível resolver um caso da polícia inteiro sozinho."
+    Nathan "Não consigo confiar que meu pai vai conseguir fazer alguma coisa a respeito. Se esperar por ele talvez você e os meninos nunca vejam suas coisas outra vez!"
     show erika s2
     Erika "... acho que entendi. Bom, se conseguir alguma coisa, pode me procurar, viu?"
     show nate f
@@ -775,7 +779,7 @@ label ruadavid:
     show nate n at left
     Nathan "..."
     show nate f at left
-    Nathan "David!.. Oi!"
+    Nathan "David!... Oi!"
     show david n
     David "Precisa de ajuda com alguma coisa, Senhor?"
     show nate ns
@@ -819,11 +823,11 @@ label ruadavid:
             David "Até mais ver, senhor!"
             hide nate
             hide david 
-
-    if saiucomerika >=1:
-        jump casadia2alt
-    else:
-        jump casadia2
+    jump casadia2
+    # if saiucomerika >=1:
+    #     jump casadia2alt
+    # else:
+    #     jump casadia2
             
 
 label casadia2:
@@ -837,7 +841,7 @@ label casadia2:
     Nathan "Ah, fala ai, que mal isso poderia causar?"
     Pai "...Certo, acho que posso falar sobre isso."
     Pai "Parece que alguém roubou os arquivos do caso dos assaltos que tem ocorrido recentemente, sem eles eu não consigo progredir muito na investigação."
-    Pai "Desse jeito, mais gente pode acabar se prejudicando"
+    Pai "Isso tem cara de coisa do David, ele só faz besteira, desse jeito, mais gente pode acabar se prejudicando..."
     if "arquivos" in inventory_items:
         menu:
             "Admitir que pegou os arquivos":
@@ -919,101 +923,100 @@ label casadia2:
         jump startday3
 
 
-label casadia2alt:
-    hide nate
-    hide david
-    "Me despedi da Erika e fui para casa. Ao entrar, vi meu pai sentado, um pouco abalado."
-    show bg quarto noite with dissolve
-    scene bg quarto noite
-    show halfblack
-    show pai b at right
-    Pai "Você que fez isso, né? Você roubou os meus arquivos. Eu vi nas câmeras você invadindo a minha sala e pegando os arquivos ontem."
-    hide pai 
-    show mae b at right
-    Mãe "Pare com isso Fábio, não tem como ter sido o Nathan se eles estavam na delegacia."
-    Mãe "Se os seus arquivos sumiram provavelmente foi porque você não os guardou direito. Não tente culpar o Nathan por causa disso."
-    hide mae
-    menu:
-            "Admitir que pegou os arquivos":
-                show nate s at left
-                Nathan "Pai... Na verdade preciso te contar algo..."
-                show pai n2 at right
-                Pai "O que?"
-                show nate s2
-                Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
-                show pai b
-                Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
-                show nate ch
-                Nathan "..."
-                hide pai 
-                show mae b at right
-                Mãe "Calma Fábio, Ele não fez isso de má intenção."
-                Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
-                show nate ch
-                Nathan "Foi mal... Vou para o meu quarto..."
-            "Mentir sobre os arquivos e mante-los com você":
-                show nate b at left
-                Nathan "Você tá doido? Como eu ia roubar os seus arquivos? Não vem tentar me culpar sem motivos!"
-                show pai s at right
-                Pai "Você tem razão... Desculpe, acho que ando muito estressado."
-                show nate n 
-                "Essa foi por pouco.."
+# label casadia2alt:
+#     hide nate
+#     hide david
+#     show bg quarto noite with dissolve
+#     scene bg quarto noite
+#     show halfblack
+#     show pai b at right
+#     Pai "Você que fez isso, né? Você roubou os meus arquivos. Eu vi nas câmeras você invadindo a minha sala e pegando os arquivos ontem."
+#     hide pai 
+#     show mae b at right
+#     Mãe "Pare com isso Fábio, não tem como ter sido o Nathan se eles estavam na delegacia."
+#     Mãe "Se os seus arquivos sumiram provavelmente foi porque você não os guardou direito. Não tente culpar o Nathan por causa disso."
+#     hide mae
+#     menu:
+#             "Admitir que pegou os arquivos":
+#                 show nate s at left
+#                 Nathan "Pai... Na verdade preciso te contar algo..."
+#                 show pai n2 at right
+#                 Pai "O que?"
+#                 show nate s2
+#                 Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
+#                 show pai b
+#                 Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
+#                 show nate ch
+#                 Nathan "..."
+#                 hide pai 
+#                 show mae b at right
+#                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
+#                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
+#                 show nate ch
+#                 Nathan "Foi mal... Vou para o meu quarto..."
+#             "Mentir sobre os arquivos e mante-los com você":
+#                 show nate b at left
+#                 Nathan "Você tá doido? Como eu ia roubar os seus arquivos? Não vem tentar me culpar sem motivos!"
+#                 show pai s at right
+#                 Pai "Você tem razão... Desculpe, acho que ando muito estressado."
+#                 show nate n 
+#                 "Essa foi por pouco.."
                 
-    "Eu subo em silêncio para o meu quarto."
+#     "Eu subo em silêncio para o meu quarto."
 
-    show mae n at right
-    "Minha mãe então me puxou de canto para conversar."
-    Mãe "Nathan, eu sei que seu pai está chateado agora, mas você precisa entender que ele está preocupado com a segurança dos arquivos."
-    Mãe "Talvez seja melhor conversarmos sobre isso mais tarde, quando as coisas estiverem mais calmas."
-    hide nate
-    hide mae
-    Nathan "Vou aproveitar que peguei uma cópia de tudo, e colocar eles ali, vai me ajudar bastante."
-    show bg quarto com pistas noite with dissolve
-    scene bg quarto com pistas noite
-    if "aliança" in inventory_items:
-        show camilla n at right
-        Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"
-        hide camilla
-        show john n at right 
-        John "Não reparei muito no homem em si, estava focado em pensar nos arquivos."
-        hide john
-        show camilla b at right
-        Camilla "Claro que não prestou, você nunca presta atenção."
-        hide camilla 
-        show john b at right
-        John "Olha só sua-"
-        show nate b at left
-        Nathan "Não é hora de discutir, vamos manter o foco. Realmente, aquele homem ficou um pouco receoso com as coisas, mas pode ser apenas uma coincidência. Pode ser que o verdadeiro culpado tenha feito isso para tirar a sua suspeita."
-        show john ex at right
-        John "O Nathan tem razão nisso. De tudo que vimos sobre esse ladrão, ele parece ser muito inteligente. Tem uma chance alta de ter planejado isso."
-        show nate n at left
-        Nathan "Não tem como decretarmos nada ainda. Tem muitas pessoas por aqui, qualquer um pode ser culpado. É muita coisa pra lidar sozinho."
-        show nate ns
-        Nathan "O que vocês acham de eu tentar chamar a Erika pra me ajudar?"
-        hide john 
-        show camilla f at right
-        Camilla "Eu acho que pode ser uma boa ideia. Ela pode ser meio estabanada, mas ela sempre te ajudou quando precisava."
-        hide camilla 
-        show john n2 at right
-        John "Pode ser paranoia minha, mas ele parecia estar te rondando enquanto você estava lendo o livro. Não sei se isso é normal. Talvez valha a pena pedir pra ele um álibi do dia do crime, sabe?"
-        Nathan "Vocês dois têm um bom ponto. Vou tentar ver isso amanhã mesmo. Muito obrigado por estarem me ajudando."
-        show black with dissolve
-        jump startday3alt
-    if "aliança" not in inventory_items:
-        show nate s at left
-        Nathan "Acho que isso não vai levar a nada. Esses arquivos, tem muitas coisas que foram perdidas. Provavelmente, as mais importantes foram perdidas."
-        show camilla t at right 
-        Camilla "Sabemos que você quer ajudar, mas você precisa manter a calma. Não se joga tão de cabeça assim."
-        show john n at right
-        hide camilla
-        John "Você gosta de ajudar seus amigos, mas você precisa pensar em você. Pode correr vários riscos se investigar de forma imprudente." 
-        show nate ns
-        Nathan "Vocês têm razão. Estou realmente correndo alguns riscos. Vou tentar pensar um pouco mais antes de sair tomando decisões."
-        Nathan "Melhor eu ir descansar. Amanhã eu vou tentar descobrir mais sobre as coisas. Tentar falar com alguém sobre esses casos."
-        hide john 
-        show camilla t at right
-        Camilla "Já pensou em falar com a Erika sobre? Ela pode te ajudar. Você pode tentar falar com ela durante a manhã."
-        John "Queria tentar manter esse caso mais baixo, mas eu penso que a Camilla tem razão. Você pode tentar falar com ela mesmo."
-        Nathan "Entendi. De qualquer forma, obrigado por estarem me ajudando com o que vocês podem."
-        show black with dissolve
-        jump startday3alt
+#     show mae n at right
+#     "Minha mãe então me puxou de canto para conversar."
+#     Mãe "Nathan, eu sei que seu pai está chateado agora, mas você precisa entender que ele está preocupado com a segurança dos arquivos."
+#     Mãe "Talvez seja melhor conversarmos sobre isso mais tarde, quando as coisas estiverem mais calmas."
+#     hide nate
+#     hide mae
+#     Nathan "Vou aproveitar que peguei uma cópia de tudo, e colocar eles ali, vai me ajudar bastante."
+#     show bg quarto com pistas noite with dissolve
+#     scene bg quarto com pistas noite
+#     if "aliança" in inventory_items:
+#         show camilla n at right
+#         Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"
+#         hide camilla
+#         show john n at right 
+#         John "Não reparei muito no homem em si, estava focado em pensar nos arquivos."
+#         hide john
+#         show camilla b at right
+#         Camilla "Claro que não prestou, você nunca presta atenção."
+#         hide camilla 
+#         show john b at right
+#         John "Olha só sua-"
+#         show nate b at left
+#         Nathan "Não é hora de discutir, vamos manter o foco. Realmente, aquele homem ficou um pouco receoso com as coisas, mas pode ser apenas uma coincidência. Pode ser que o verdadeiro culpado tenha feito isso para tirar a sua suspeita."
+#         show john ex at right
+#         John "O Nathan tem razão nisso. De tudo que vimos sobre esse ladrão, ele parece ser muito inteligente. Tem uma chance alta de ter planejado isso."
+#         show nate n at left
+#         Nathan "Não tem como decretarmos nada ainda. Tem muitas pessoas por aqui, qualquer um pode ser culpado. É muita coisa pra lidar sozinho."
+#         show nate ns
+#         Nathan "O que vocês acham de eu tentar chamar a Erika pra me ajudar?"
+#         hide john 
+#         show camilla f at right
+#         Camilla "Eu acho que pode ser uma boa ideia. Ela pode ser meio estabanada, mas ela sempre te ajudou quando precisava."
+#         hide camilla 
+#         show john n2 at right
+#         John "Pode ser paranoia minha, mas ele parecia estar te rondando enquanto você estava lendo o livro. Não sei se isso é normal. Talvez valha a pena pedir pra ele um álibi do dia do crime, sabe?"
+#         Nathan "Vocês dois têm um bom ponto. Vou tentar ver isso amanhã mesmo. Muito obrigado por estarem me ajudando."
+#         show black with dissolve
+#         jump startday3alt
+#     if "aliança" not in inventory_items:
+#         show nate s at left
+#         Nathan "Acho que isso não vai levar a nada. Esses arquivos, tem muitas coisas que foram perdidas. Provavelmente, as mais importantes foram perdidas."
+#         show camilla t at right 
+#         Camilla "Sabemos que você quer ajudar, mas você precisa manter a calma. Não se joga tão de cabeça assim."
+#         show john n at right
+#         hide camilla
+#         John "Você gosta de ajudar seus amigos, mas você precisa pensar em você. Pode correr vários riscos se investigar de forma imprudente." 
+#         show nate ns
+#         Nathan "Vocês têm razão. Estou realmente correndo alguns riscos. Vou tentar pensar um pouco mais antes de sair tomando decisões."
+#         Nathan "Melhor eu ir descansar. Amanhã eu vou tentar descobrir mais sobre as coisas. Tentar falar com alguém sobre esses casos."
+#         hide john 
+#         show camilla t at right
+#         Camilla "Já pensou em falar com a Erika sobre? Ela pode te ajudar. Você pode tentar falar com ela durante a manhã."
+#         John "Queria tentar manter esse caso mais baixo, mas eu penso que a Camilla tem razão. Você pode tentar falar com ela mesmo."
+#         Nathan "Entendi. De qualquer forma, obrigado por estarem me ajudando com o que vocês podem."
+#         show black with dissolve
+#         jump startday3alt
