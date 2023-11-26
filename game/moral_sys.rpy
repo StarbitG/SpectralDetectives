@@ -1,8 +1,11 @@
 default moralfinalbom = 0
+define moralfinalruim = 0
 default pegaranel = 0
+define arrombaranel = 0
 define procuramesapai = 0
 define procuraescrivaninhapai = 0
 define procuragavetaspai = 0
+define saiucomerika = 0
 
 # Cenas exclusivas
 define vivianescolha = 0
