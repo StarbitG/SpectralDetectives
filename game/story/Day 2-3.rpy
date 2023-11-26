@@ -535,19 +535,28 @@ label actualday2:
     "{i}Toc toc toc{/i}"
     show pai f at right
     Pai "Nathan? Você está já está de pé?"
+    #expressões
     show nate s at left
     if brigacompai >= 1:
         menu:
             "Continuar a discussão do outro dia ":
+                #FALTAM AS EXPRESSOES
+                show nate n
                 Nathan "Tô... eu acho. Acho que não dormi bem."
+                show pai n
                 Pai "Desculpa por anteontem. Eu sei que tava estressado e ando sendo fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por um momento estressante e acabei descontando em você. Sinto muito."
+                
                 Nathan "O problema não é esse, é que você não me respeita nunca, sempre me diminuindo e me tratando mal sem nenhum motivo"
                 Nathan "Queria que você tentasse me entender um pouco mais antes de julgar em tudo que eu faço!"
+                
                 Pai "..."
                 Pai "Desculpe Nathan, acho que deviamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
                 Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsavel com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
+                
                 Mãe "Vocês dois estão discutindo de novo?"
+                
                 Nathan "Dessa vez não mãe, acho que finalmente estamos tentando entender um ao outro na verdade."
+                
                 Mãe "Que bom! ainda bem que estão se entendendo melhor, fico muito feliz com isso"
                 "Eu e meu pai continuamos a conversar por um tempo até que ele sai para trabalhar"
             "Não continuar a discussão do outro dia":
@@ -635,6 +644,7 @@ label biblioteca:
             hide nate
             jump conversabibliotecario
         "Ligar para Erika pedindo ajuda":
+            $ saiucomerika +=1
             show nate s
             Nathan "Sei que ela acabou de sair, mas eu estou precisando de ajuda de verdade."
             "{i}Trim trim{/i}"
@@ -750,7 +760,7 @@ label rachadura1:
             show black with dissolve
             jump casadia2
 
-#AQUI É PRA DEVOLVER OS ARQUIVOS OU NÃO
+#expressões
 label ruadavid:
     show bg rua tarde with dissolve
     scene bg rua tarde
@@ -768,13 +778,28 @@ label ruadavid:
         "Espera! (Devolver os arquivos)":
             Nathan "Espera!"
             David "O que precisa, Senhor?"
-            Nathan ""
+            Nathan "Você poderia deixar esses arquivos no armário da sala do meu pai? Mas ele não pode saber de jeito nenhum!"
+            David "Hmm, um pouco suspeito senhor! Mas posso sim."
+            Nathan "Perfeito! Aqui estão os arquivos."
             $ inventory_items.remove("arquivos")
             $ renpy.notify("Você devolveu os arquivos")
+            $ moralfinalruim += 1
+            pause 0.5
+            David "Posso perguntar o motivo de você ter esses arquivos, senhor?"
+            Nathan "Não."
+            David "Senhor, sim, senhor!"
         "Não confio nele, prefiro manter os arquivos comigo por agora.":
-            pass
+            Nathan "Nos vemos outra hora então, David."
+            David "Até mais ver, senhor!"
+
+    if saiucomerika >=1:
+        jump casadia2alt
+    else:
+        jump casadia2
+            
 
 
+#expressões
 label casadia2:
     show black with dissolve
     "Chegando em casa, vi meu pai abalado por algo."
@@ -782,12 +807,25 @@ label casadia2:
     Nathan "Oi, pai, você está bem?"
     show pai n at right
     Pai "São só coisas do trabalho. Você não precisa se preocupar com isso."
-    hide pai
-    show mae n at right
-    Mãe "Filho, seu pai não vai te contar o que aconteceu, mas eu conto. Alguns arquivos da delegacia sumiram, arquivos muito importantes sobre o assalto que aconteceu na loja dos seus amigos."
-    Mãe "Tente pegar leve com seu pai esses dias até ele relaxar sobre esse problema."
-    show nate ns
-    Nathan "Vou tentar manter a calma com ele, prometo."
+    Nathan "Ah, fala ai, que mal isso poderia causar?"
+    Pai "...Certo, acho que posso falar sobre isso."
+    Pai "Parece que alguém roubou os arquivos do caso dos assaltos que tem ocorrido recentemente, sem eles eu não consigo progredir muito na investigação."
+    Pai "Desse jeito, mais gente pode acabar se prejudicando"
+    if "arquivos" in inventory_items:
+        menu:
+            "Admitir que pegou os arquivos":
+                Nathan "Pai... Na verdade preciso te contar algo..."
+                Pai "O que?"
+                Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
+                Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
+                Nathan "..."
+                Mãe "Calma Fábio, Ele não fez isso de má intenção."
+                Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
+                Nathan "Foi mal... Vou para o meu quarto..."
+
+            "Não falar nada sobre os arquivos e mante-los com você":
+                Nathan "Entendo... Espero que consiga pegar esse cara logo"
+    "Eu subo em silêncio para o meu quarto."
     show bg quarto noite with dissolve
     scene bg quarto noite
     show nate n at left
@@ -845,20 +883,34 @@ label casadia2:
         show black with dissolve
         jump startday3
 
-
+#expressões
 label casadia2alt:
-    "Me despedi da Erika e fui para casa. Ao entrar, vi seu pai sentado, um pouco abalado."
+    "Me despedi da Erika e fui para casa. Ao entrar, vi meu pai sentado, um pouco abalado."
     show bg quarto noite with dissolve
     scene bg quarto noite
     show halfblack
     show pai b at right
     Pai "Você que fez isso, né? Você roubou os meus arquivos. Eu vi nas câmeras você invadindo a minha sala e pegando os arquivos ontem."
-    show  nate b at left
-    # Criar
-    Nathan "Você está doido? Eu não ia roubar os seus arquivos. Ontem eu iria devolver se você não tivesse pego. Não vem tentar me culpar de nada."
     hide pai 
     show mae b at right
-    Mãe "Parem vocês dois. Se os seus arquivos sumiram foi porque você não os guardou de forma correta. Não tenta culpar o Nathan por causa disso."
+    Mãe "Pare com isso Fábio, não tem como ter sido o Nathan se eles estavam na delegacia."
+    Mãe "Se os seus arquivos sumiram provavelmente foi porque você não os guardou direito. Não tente culpar o Nathan por causa disso."
+    menu:
+            "Admitir que pegou os arquivos":
+                Nathan "Pai... Na verdade preciso te contar algo..."
+                Pai "O que?"
+                Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
+                Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
+                Nathan "..."
+                Mãe "Calma Fábio, Ele não fez isso de má intenção."
+                Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
+                Nathan "Foi mal... Vou para o meu quarto..."
+            "Mentir sobre os arquivos e mante-los com você":
+                Nathan "Você tá doido? Como eu ia roubar os seus arquivos? Não vem tentar me culpar sem motivos!"
+                Pai "Você tem razão... Desculpe, acho que ando muito estressado."
+                
+    "Eu subo em silêncio para o meu quarto."
+
     show mae n 
     "Minha mãe então me puxou de canto para conversar."
     Mãe "Nathan, eu sei que seu pai está chateado agora, mas você precisa entender que ele está preocupado com a segurança dos arquivos."
