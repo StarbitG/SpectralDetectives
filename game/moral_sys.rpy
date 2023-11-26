@@ -2,10 +2,17 @@ default moralfinalbom = 0
 define moralfinalruim = 0
 default pegaranel = 0
 define arrombaranel = 0
+define saiucomerika = 0
+
+#Procura na biblioteca
+define procuraprateleira = 0
+define procurabancada = 0
+define procuraestante = 0
+
+#Procura na sala do pai
 define procuramesapai = 0
 define procuraescrivaninhapai = 0
 define procuragavetaspai = 0
-define saiucomerika = 0
 
 # Cenas exclusivas
 define vivianescolha = 0

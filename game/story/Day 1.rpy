@@ -1,15 +1,11 @@
 label start:
     window hide
     show black with fade
-    "UM AVISO RÁPIDO:"
-    "Se você jogou nosso último playtest, pedimos que você desconsidere a antiga história, tivemos problemas no desenvolvimento dela e mudamos o tema do jogo, esperamos que se divirtam"
-    "Alguns personagens não foram implementados completamente ainda, após o playtest, você poderá ver todos os sprites nas suas respectivas pastas se tiver interesse."
-    pause
     #call screen botaoCasal with fade
     jump intro
 # screens (User interface)
 
-label intro:
+label intro: #Intro no quarto - Dia 1
     "{i}trim, trim{/i}"
     show nate n at left
     Nathan "Alô?"
@@ -57,7 +53,7 @@ label intro:
 
     jump intro2
 
-label intro2:
+label intro2: #Intro indo no mercado pela primeira vez - Dia 1
     scene bg mercado dia
     show halfblack
     show nate n at left
@@ -78,7 +74,6 @@ label intro2:
     Lucas "NATHAN!!!" #Lucas chega tremendo a tela, empurrando a erika pra fora do frame
     show lucas ch at right with vpunch
     Lucas "NÃO ACREDITO VOCÊ TA VIVO! POR QUE VOCÊ NÃO FALOU COM A GENTE ESSE TEMPO TODO?"
-
 
     menu:
         "Eu não tava muito afim":
@@ -147,7 +142,7 @@ label intro2:
     show black with dissolve
     jump quartodia1
 
-label quartodia1:
+label quartodia1: #Quarto e final do dia 1 - Dia 1
     show bg quarto tarde with dissolve
     scene bg quarto tarde
     show halfblack

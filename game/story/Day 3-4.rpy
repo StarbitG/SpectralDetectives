@@ -233,7 +233,6 @@ label delegaciaday3:
         "Falar com seu Pai":
             Nathan "Talvez o John tenha razão dessa vez, vou tentar falar com ele."
             jump delegaciapai
-##################################### FAZER O DIALOGO DO PAI
 
 label delegaciavivian:
     Nathan "{i}(Espero que aquele David não esteja por aqui, assim poderia falar com a Vivian com tranquilidade.){/i}"
@@ -241,13 +240,12 @@ label delegaciavivian:
     show bg delegacia dentro with dissolve
     scene bg delegacia dentro
     show halfblack
-    #se a erika pega a aliança tem que cair direto no else e não ter esse dialogo de baixo, pq se n n faz sentido narrativo, deveria ser:
     show nate f at left
     Nathan "Com licença, você é a Vivian, certo?"
     show vivian f at right
-    Vivian "Oii, você é o garoto daquele dia né? Precisa de alguma coisa?"
+    Vivian "Oii, você é o garoto daquele dia né? Precisa de alguma coisa, só peço que seja breve, preciso ir até a sala do Delegado discutir alguns assuntos."
     show nate ns
-    Nathan "Na verdade, eu acho que tenho algumas informações importantes para o caso."
+    Nathan "Vou ser breve, na verdade, acho que tenho algumas informações importantes para o caso."
     show vivian f2
     Vivian "Sério? Que bom! Desembuxa ai."
     
@@ -301,6 +299,11 @@ label delegaciapai:
     show bg sala do pai clara with dissolve 
     scene bg sala do pai clara
     show halfblack
+    "Chego na sala do meu pai e aguardo um pouco, até que a Vivian entra na sala"
+    show vivian f at right
+    Vivian "Você não é aquele garoto do outro dia? O que faz aqui?"
+    "Antes de poder responder meu pai entra na sala"
+    hide vivian
     show pai s at right
     Pai "Nathan?"
     show nate s at left
@@ -310,7 +313,7 @@ label delegaciapai:
     show vivian s at right
     Vivian "''Filho?'' Você é filho do delegado Fábio? por que não me contou antes?"
     show nate n
-    Nathan "Desculpe, não achei que fosse necessario falar sobre isso"
+    Nathan "Desculpe, não achei que fosse necessário falar sobre isso"
     show vivian n
     Vivian "Ele estava me passando informações sobre o caso dos assaltos recentes"
     hide vivian 
@@ -376,7 +379,6 @@ label delegaciapai:
     Camilla "Acho bom você nem pensar em devolver isso, afinal, ele é o único suspeito até agora."
     John "Ela tem razão, isso pode nos dar uma chance maior de descobrir se ele realmente roubou algo."
     Nathan "Tudo bem, entçao vamos pra casa por hoje, temos mais um dia longo amanhã."
-    #MUDAR O DIALOGO NO BRANCH DE IR DIRETO NO ESCRITORIO DO PAI
     pause
     show black with dissolve
     jump falamaecasa

@@ -1,4 +1,4 @@
-label startday2:
+label startday2: #Começo do dia 2 - Quarto - Dia 2
     show bg quarto dia with dissolve
     scene bg quarto dia
     show halfblack
@@ -29,7 +29,7 @@ label startday2:
     $ renpy.notify("Agora você tem uma torta")
     jump lojaday2
 
-label lojaday2:
+label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian - Dia 2
     scene bg mercado roubado dia
     show halfblack
     "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem; A equipe policial também estava no local."
@@ -46,7 +46,7 @@ label lojaday2:
     show david s
     David "O QUÊÊÊ??? VOCÊ É O FILHO DO DELEGADO?? MINHAS SINCERAS DESCULPAS, FILHO DO DELEGADO, SENHOR!"
     show nate s
-    Nathan "{i}Ele acha que eu tenho algum tipo de controle sobre ele por ser filho do patrão dele?, talvez eu possa usar isso ao meu favor pra que ele me conte o que aconteceu aqui.{/i}"
+    "{i}Ele acha que eu tenho algum tipo de controle sobre ele por ser filho do patrão dele?, talvez eu possa usar isso ao meu favor pra que ele me conte o que aconteceu aqui.{/i}"
     Nathan "David, você sabe me dizer o que aconteceu por aqui?"
     show david f
     David "Sim, senhor! Durante a noite, alguém quebrou a janela do mercado com um tijolo, senhor!"
@@ -111,7 +111,7 @@ label lojaday2:
 
     jump delegaciaday2
 
-label delegaciaday2:
+label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando Lucas e Sebastian - Dia 2
     show bg delegacia frente dia with dissolve
     scene bg delegacia frente dia
     show halfblack
@@ -191,13 +191,14 @@ label delegaciaday2:
             "Então me despedi dos meus amigos e fui diretamente para casa. Precisava pensar no que fazer."
             $ inventory_items.remove("Torta")
         "Não parece ser uma boa hora":
+            show nate n
+            "Acho que não é o melhor momento pra isso, melhor entregar isso outra hora"
             $ mantevetorta += 1
-            pause
     #menu de entregar a torta ou não, se entregar a torta lá no dia 5 eles mencionam ela dnv
 
     jump quartodia2
     
-label quartodia2:
+label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos do caso - Dia 2
     show bg quarto tarde with dissolve
     scene bg quarto tarde
     show halfblack
@@ -300,7 +301,7 @@ label quartodia2:
    
    
 
-label delegaciacomcamilla:
+label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
     "Decidi tirar um cochilo durante a tarde para não ter a chance de desmaiar de sono durante minha invasão."
     show bg quarto noite with dissolve
     pause
@@ -382,7 +383,7 @@ label delegaciacomcamilla:
             John "Não sei do que você tá reclamando, pela ventilação a gente consegue chegar direto na sala do seu pai, vamos logo!"
             jump saladopai
 
-label delegaciasemcamilla:
+label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
     "Decidi tirar um cochilo durante a tarde para não ter a chance de desmaiar de sono durante minha invasão."
     show bg quarto noite with dissolve
     show nate n at left
@@ -421,7 +422,7 @@ label delegaciasemcamilla:
             John "Não sei do que você tá reclamando, pela ventilação a gente consegue chegar direto na sala do seu pai, vamos logo!"
             jump saladopai
 
-label saladopai:
+label saladopai: #Você invade a delegacia e vai para a sala do seu pai - Dia 2
     show bg sala do pai escuro with dissolve
     scene bg sala do pai escuro
     show john n at right 
@@ -430,7 +431,7 @@ label saladopai:
     Nathan "Nem eu lembrava. Me pergunto onde devo começar a procurar..."
     jump saladopaiprocura
     
-label saladopaiprocura:
+label saladopaiprocura: #Voce procura os arquivos na sala do seu pai - Dia 2
     menu:
         "Mesa":
             show john n at right
@@ -456,7 +457,7 @@ label saladopaiprocura:
             $ renpy.notify("Você pegou os arquivos!")
             jump quartodia21
 
-label quartodia21:
+label quartodia21: #voce volta para casa e encerra o dia 2 - Dia 2
     "Saímos pelo mesmo caminho que entramos, com sorte não vimos ninguém na rua."
     show bg quarto noite with dissolve
     scene bg quarto noite
@@ -542,25 +543,26 @@ label actualday2:
             "Continuar a discussão do outro dia ":
                 #FALTAM AS EXPRESSOES
                 show nate n
-                Nathan "Tô... eu acho. Acho que não dormi bem."
+                Nathan "Tô... eu acho, não dormi muito bem."
                 show pai n
                 Pai "Desculpa por anteontem. Eu sei que tava estressado e ando sendo fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por um momento estressante e acabei descontando em você. Sinto muito."
-                
+                show nate b
                 Nathan "O problema não é esse, é que você não me respeita nunca, sempre me diminuindo e me tratando mal sem nenhum motivo"
                 Nathan "Queria que você tentasse me entender um pouco mais antes de julgar em tudo que eu faço!"
-                
+                show pai s
                 Pai "..."
                 Pai "Desculpe Nathan, acho que deviamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
                 Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsavel com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
-                
+                hide pai
+                show mae b at right
                 Mãe "Vocês dois estão discutindo de novo?"
-                
+                show nate ns
                 Nathan "Dessa vez não mãe, acho que finalmente estamos tentando entender um ao outro na verdade."
-                
+                show mae f
                 Mãe "Que bom! ainda bem que estão se entendendo melhor, fico muito feliz com isso"
                 "Eu e meu pai continuamos a conversar por um tempo até que ele sai para trabalhar"
             "Não continuar a discussão do outro dia":
-                Nathan "Tô... eu acho. Acho que não dormi bem."
+                Nathan "Tô... eu acho, não dormi muito bem."
                 hide black
                 show pai s at right
                 Pai "Bom dia, filho. Desculpa por anteontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estressado e acabei descontando em você. Sinto muito."
@@ -569,18 +571,19 @@ label actualday2:
                 show pai s2
                 Pai "Não, claro que não."
                 show bg quarto dia with hpunch
-                show halfblack
+                show halfblack with dissolve
                 Mãe "Foi sim!!!"
-                "Minha mãe gritou da cozinha"
+                "Minha mãe grita da cozinha"
                 Pai "B-bom, eu vou indo pro trabalho, se você precisar de alguma coisa, pode falar comigo, beleza? É isso que eu queria dizer."
                 show nate f
                 Nathan "Tudo bem, obrigado."
-                "Assim que meu pai sai da sala, eu pego os arquivos que antes peguei na sala dele e começo a analisá-los."
-                show nate n
-                Nathan "Estranho, eu não vejo nenhuma foto nesse documento, apenas o histórico criminal desse cara. Será que ele chegou lá antes?"
-                Nathan "Acho que isso explica a entrada que eu usei estar quebrada... Será que a biblioteca tem algum arquivo do caso? Posso tentar pegar uma versão mais completa por lá."
-                "Me levanto, guardo os arquivos na minha mochila novamente e vou à biblioteca."
                 hide pai
+
+    "Assim que meu pai sai da sala, eu pego os arquivos que antes peguei na sala dele e começo a analisá-los."
+    show nate n
+    Nathan "Estranho, eu não vejo nenhuma foto nesse documento, apenas o histórico criminal desse cara. Será que ele chegou lá antes?"
+    Nathan "Acho que isso explica a entrada que eu usei estar quebrada... Será que a biblioteca tem algum arquivo do caso? Posso tentar pegar uma versão mais completa por lá."
+    "Me levanto, guardo os arquivos na minha mochila novamente e vou à biblioteca."        
     jump biblioteca
 
 label biblioteca:
@@ -600,7 +603,9 @@ label biblioteca:
     "Eu me sentei na mesa que o moço me indicou e comecei a ler os arquivos novamente."
     hide nate 
     hide joseph
+    hide halfblack
     pause
+    show halfblack
     dErika "..."
     dErika "BOO!"
     show nate s2 at left with vpunch
@@ -765,31 +770,52 @@ label ruadavid:
     show bg rua tarde with dissolve
     scene bg rua tarde
     "Enquanto estava indo pra casa, me encontrei com o David."
+    show david f at right
     David "Perito David se apresentando para o serviço senhor filho do delegado, Senhor!"
+    show nate n at left
     Nathan "..."
+    show nate f at right
     Nathan "David!.. Oi!"
+    show david n
     David "Precisa de ajuda com alguma coisa, Senhor?"
+    show nate ns
     Nathan "Acredito que não, só estou indo pra casa no momento, mas obrigado!"
+    hide david 
+    show camilla n at right
     Camilla "Nathan, você podia pedir pra ele devolver os arquivos originais do caso para o escritório do seu pai."
     Camilla "Não acho que ele seja muito confiavel pra isso, mas não devolver pode ser ruim para o seu pai."
+    hide camilla
+    show john ex at right
     John "Eu não vou muito com a cara dele não, mas a Camilla pode estar certa."
+    hide john 
+    show david f at right
     David "Bom, já vou indo então, Senhor!"
     menu:
         "Espera! (Devolver os arquivos)":
+            show nate s2
             Nathan "Espera!"
+            show david n 
             David "O que precisa, Senhor?"
+            show nate n
             Nathan "Você poderia deixar esses arquivos no armário da sala do meu pai? Mas ele não pode saber de jeito nenhum!"
+            show david t
             David "Hmm, um pouco suspeito senhor! Mas posso sim."
+            show nate f
             Nathan "Perfeito! Aqui estão os arquivos."
             $ inventory_items.remove("arquivos")
             $ renpy.notify("Você devolveu os arquivos")
             $ moralfinalruim += 1
             pause 0.5
+            show david n
             David "Posso perguntar o motivo de você ter esses arquivos, senhor?"
+            show nate b
             Nathan "Não."
+            show david f
             David "Senhor, sim, senhor!"
         "Não confio nele, prefiro manter os arquivos comigo por agora.":
+            show nate n
             Nathan "Nos vemos outra hora então, David."
+            show david n
             David "Até mais ver, senhor!"
 
     if saiucomerika >=1:
@@ -802,6 +828,7 @@ label ruadavid:
 #expressões
 label casadia2:
     show black with dissolve
+    scene bg casa fora noite with dissolve
     "Chegando em casa, vi meu pai abalado por algo."
     show nate n at left
     Nathan "Oi, pai, você está bem?"
@@ -814,13 +841,21 @@ label casadia2:
     if "arquivos" in inventory_items:
         menu:
             "Admitir que pegou os arquivos":
+                show nate n
                 Nathan "Pai... Na verdade preciso te contar algo..."
+                show pai n2
                 Pai "O que?"
+                show nate s2
                 Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
+                show pai b
                 Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
+                show nate ch
                 Nathan "..."
+                hide pai 
+                show mae b at right
                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
+                show nate t
                 Nathan "Foi mal... Vou para o meu quarto..."
 
             "Não falar nada sobre os arquivos e mante-los com você":
@@ -895,19 +930,32 @@ label casadia2alt:
     show mae b at right
     Mãe "Pare com isso Fábio, não tem como ter sido o Nathan se eles estavam na delegacia."
     Mãe "Se os seus arquivos sumiram provavelmente foi porque você não os guardou direito. Não tente culpar o Nathan por causa disso."
+    hide mae
     menu:
             "Admitir que pegou os arquivos":
+                show nate s at left
                 Nathan "Pai... Na verdade preciso te contar algo..."
+                show pai n2 at right
                 Pai "O que?"
+                show nate s2
                 Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
+                show pai b
                 Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
+                show nate ch
                 Nathan "..."
+                hide pai 
+                show mom b at right
                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
+                show nate ch
                 Nathan "Foi mal... Vou para o meu quarto..."
             "Mentir sobre os arquivos e mante-los com você":
+                show nate b at left
                 Nathan "Você tá doido? Como eu ia roubar os seus arquivos? Não vem tentar me culpar sem motivos!"
+                show pai s at right
                 Pai "Você tem razão... Desculpe, acho que ando muito estressado."
+                show nate n 
+                "Essa foi por pouco.."
                 
     "Eu subo em silêncio para o meu quarto."
 
