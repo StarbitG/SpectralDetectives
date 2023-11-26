@@ -297,9 +297,7 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
             Nathan "Eu tenho que concordar com ele dessa vez, desculpa."
             Camilla "..."
             hide camilla
-            jump delegaciasemcamilla
-   
-   
+            jump delegaciasemcamilla  
 
 label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
     "Decidi tirar um cochilo durante a tarde para não ter a chance de desmaiar de sono durante minha invasão."
@@ -536,7 +534,7 @@ label actualday2:
     "{i}Toc toc toc{/i}"
     show pai f at right
     Pai "Nathan? Você está já está de pé?"
-    #expressões
+    
     show nate s at left
     if brigacompai >= 1:
         menu:
@@ -700,7 +698,7 @@ label conversaerikadia2:
             Nathan "Tudo bem, espero que pense bem nisso. A gente se vê amanhã, beleza? Preciso investigar mais."
             show erika n2
             Erika "Tchau tchau, Nate!"
-            jump casadia2alt
+            jump ruadavid
         "Não quero incomodar mais o bibliotecário":
             show nate n at left
             Nathan "Deve ser só uma pedrinha brilhante, nada de mais."
@@ -712,7 +710,9 @@ label conversaerikadia2:
             Nathan "A gente se vê amanhã, beleza? Preciso investigar mais."
             show erika n2
             Erika "Tchau tchau, Nate!"
-            jump casadia2alt
+            hide nate 
+            hide erika
+            jump ruadavid
 
 label conversabibliotecario:
     "Eu acordei mais tarde com o bibliotecário Joseph me dando alguns tapinhas nas costas."
@@ -758,14 +758,14 @@ label rachadura1:
             $ renpy.notify("Você recuperou as alianças!")
             $ pegaranel += 1
             Nathan "Eu não acredito que eu achei isso aqui, mas por que aqui? Bom, isso é coisa do eu futuro pensar. Por agora, eu vou para casa."
-            jump casadia2
+            jump ruadavid
         "Correr pra casa":
             show nate s
             Nathan "Deve ser só uma pedrinha brilhante, e além disso, o bibliotecário deve estar vindo atrás de mim ainda."
             show black with dissolve
-            jump casadia2
+            jump ruadavid
 
-#expressões
+
 label ruadavid:
     show bg rua tarde with dissolve
     scene bg rua tarde
@@ -774,7 +774,7 @@ label ruadavid:
     David "Perito David se apresentando para o serviço senhor filho do delegado, Senhor!"
     show nate n at left
     Nathan "..."
-    show nate f at right
+    show nate f at left
     Nathan "David!.. Oi!"
     show david n
     David "Precisa de ajuda com alguma coisa, Senhor?"
@@ -817,6 +817,8 @@ label ruadavid:
             Nathan "Nos vemos outra hora então, David."
             show david n
             David "Até mais ver, senhor!"
+            hide nate
+            hide david 
 
     if saiucomerika >=1:
         jump casadia2alt
@@ -824,8 +826,6 @@ label ruadavid:
         jump casadia2
             
 
-
-#expressões
 label casadia2:
     show black with dissolve
     scene bg casa fora noite with dissolve
@@ -918,8 +918,10 @@ label casadia2:
         show black with dissolve
         jump startday3
 
-#expressões
+
 label casadia2alt:
+    hide nate
+    hide david
     "Me despedi da Erika e fui para casa. Ao entrar, vi meu pai sentado, um pouco abalado."
     show bg quarto noite with dissolve
     scene bg quarto noite
@@ -944,7 +946,7 @@ label casadia2alt:
                 show nate ch
                 Nathan "..."
                 hide pai 
-                show mom b at right
+                show mae b at right
                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
                 show nate ch
@@ -959,7 +961,7 @@ label casadia2alt:
                 
     "Eu subo em silêncio para o meu quarto."
 
-    show mae n 
+    show mae n at right
     "Minha mãe então me puxou de canto para conversar."
     Mãe "Nathan, eu sei que seu pai está chateado agora, mas você precisa entender que ele está preocupado com a segurança dos arquivos."
     Mãe "Talvez seja melhor conversarmos sobre isso mais tarde, quando as coisas estiverem mais calmas."

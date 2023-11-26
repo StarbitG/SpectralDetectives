@@ -433,21 +433,6 @@ label quartodia4:
 #Falar com a Vivian sobre o assunto (caso vc tenha feito a quest de mostrar o anel ( ͡° ͜ʖ ͡°)) entregar a chave para o David (péssima ideia, adiciona moral para o final ruim) e investigar por conta própria com a Erika (leva pro final neutro)
 #menu de escolha aparece a historia se divide em rotas apartir daqui
 
-#(Tarde)
-#(BRANCH DO FINAL BOM) Pedir ajuda da Vivian
-#Caso você peça ajuda da Vivian, vocês se encontra com ela na recepção da delegacia
-#Você mostra o jogo de chaves pra ela e fala o que aconteceu na noite anterior, por ela estar desconfiada devido as pistas que você tinha apresentado anteriormente, e pelo fato da casa dela ter sido invadida na noite anterior ela decide ajudar
-#vocês dois vão até a biblioteca e começam a investigar
-#fazer um menu igual o da sala do pai dele kkkkkkjjj se fodeu
-#após procurar em todos os cantos da bilbioteca eles não acham nada, até que camilla sugerem que o tapete parece suspeito
-#você levanta o tapete e encontra um cofre escondido, mas vocês não tem a combinação para abri-lo
-#Voce tem duas opções para gerar a cena exclusiva, tentar chutar a senha do cofre, ou seguir o conselho do john de ir atrás da combinação na sala do seu pai e isso levanta varias duvidas na cabeça de Nathan que já estava de mal humor com seu pai
-#se tentar chutar a combinação vc erra 3 vezes até o camilla sugerir 1,2, 3 e 4, se você chutar essa combinação você corta a cena de ir até a delegacia  
-#A Vivian então desacreditada que o Joseph podia ter feito tal coisa decide verificar nas câmeras, e percebe que ele sai antes da hora do crime do dia anterior
-#A Vivian diz que precisa ir atrás de Joseph para conseguir respostas e te passa o contato dela e caso voce tente ir atrás de tentar descobrir a combinação do cofre antes vc vai até a delegacia
-
-#voce pode tentar acertar a combinação do cofre ou não (bagulho q a gente falou com o saulo e a gi)
-
 #(Noite)
 #A noite você se prepara para outra invasão na delegacia mas a segurança lá parece ter sido reforçada
 #Ainda sim você consegue entrar e ir até a sala do seu pai pegar o papel com as combinações

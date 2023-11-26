@@ -37,6 +37,8 @@ label lojadia5:
     "Entramos no mercado com pressa para evitar que o David falasse mais alguma coisa estranha."
     show bg shop with dissolve
     Lucas "Nathan! Erika! Que bom ter vocês aqui de novo! Ficamos muito felizes com a reabertura do mercado!"
+    if mantevetorta == 0:
+        Lucas "Antes que eu me esqueça, agradeça sua mão pela torta daquele dia, estava muito boa, por mais que só pudemos comer metade já que o David comeu quase tudo sozinho."
     Nathan "Só uma pergunta, como vocês reabriram a loja tão rápido? achei que vocês iam demorar um pouco mais para poder reabri-la" 
     Sebastian "Acontece que o pai do Lucas é um cara bem influente pelo que parece, ele conseguiu um pessoal que consertou tudo rapidinho."
     Nathan "Outra coisa, Por que o David tá ali do lado de fora?"
