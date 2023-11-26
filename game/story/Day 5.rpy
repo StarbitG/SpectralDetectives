@@ -38,7 +38,6 @@ label lojadia5:
     Sebastian "O Luca não parou de falar sobre a loja quando descobriu que ela estava completamente reparada após a investigação da polícia."
     Nathan "Só uma dúvida, vocês sabem o pq que o David ta na porta ali?"
     Sebastian "Aparentemente a policia quero aumentar a segurança em loja enquanto eles não encontrarem o ladrão, e o David foi selecionado pra cuidar daqui."
-    David "Isso mesmo, senhor!"
     Sebastian "Cá entre nós, eu acho que eles escolheram o policial mais folgado possível. Já vi ele roubando salgadinhos demais na loja."
     Lucas "Não me importo muito com isso, é tipo um pagamento por ele estar nos protegendo."
     Sebastian "Vocês nos dão um minuto, eu vou ter que explicar pro Lucas de novo o motivo do porque entregar produtos da loja de graça é ruim"
@@ -56,12 +55,22 @@ label lojadia5:
         "Falar com a Vivian" if vivianescolha >= 1:
             Nathan "Acho que eu deveria falar com a Vivian na delegacia, ela é mais inteligente que o david afinal."
             Erika "Vivian? Ah sim, a moça que me interrogou quando eu fui assaltada antes da loja, ela é uma moça legal, você vai agora?"
-            Nathan "Acho que é bom eu ir agora, não quero perder muito tempo do dia entende?"
-            Erika "Entendo completamente, boa sorte falando com ela Nate!"
+            Nathan "Acho que é bom eu ir agora, não quero perder muito tempo do dia entende? Consegue dar tchau pros meninos por mim?"
+            Erika "Consigo sim e entendo completamente! Boa sorte falando com ela Nate!"
+            "Então eu saio da loja, e vou correndo até a delegacia"
+            jump delegaciavivian2
+        "Investigar por conta própria":
+            pass
         "Entregar as chaves para o David":
             pass
-        "Investigar por conta prórpia":
-            pass
+
+label delegaciavivian2:
+    show bg delegacia frente dia with dissolve
+    pause 1.0
+    show bg delegacia frente dia tarde with dissolve
+    pause 1.0
+    show bg delegacia dentro with dissolve
+    pause   
 #Dia 5
 #(Dia)
 #Nathan acorda e recebe uma ligação de Erika falando que o mercadinho foi reaberto e pede para que você vá até o mercado para ver seus amigos

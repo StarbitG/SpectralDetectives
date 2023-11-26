@@ -24,12 +24,15 @@ label startday2:
     John "É por isso que eu te odeio, sabia?"
     Nathan "Você odeia até sua própria sombra, John, sem mim você nem existiria. Fica quietinho aí."
     "Eu pego a torta das mãos da minha mãe, ela tem um cheiro exageradamente doce, e vou em direção ao mercadinho dos meninos mais uma vez."
+    #adicionar uma torta no inventário?
+    $ inventory_items.append("Torta")
+    $ renpy.notify("Agora você tem uma torta")
     jump lojaday2
 
 label lojaday2:
     scene bg mercado roubado dia
     show halfblack
-    "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem; a equipe policial também estava no local."
+    "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem; A equipe policial também estava no local."
     show nate s at left
     Nathan "O que aconteceu aqui?"
     show david f at right
@@ -168,12 +171,29 @@ label delegaciaday2:
     show david s
     David "Digo, não senhor..."
     show nate f
-    Nathan "Entendo, muito obrigado, David. Sebastian, Lucas, eu preciso ir, mas espero encontrar vocês por aí, okay? Se cuidem!"
-    Nathan "Antes que eu me esqueça, minha mãe pediu pra entregar essa torta pra vocês como agradecimento pelas compras"
-    hide david
-    show lucas n at right
-    Lucas "Obrigado Nathan, agradeça sua mãe pela gente também"
-    "Após dizer adeus a meus amigos, fui diretamente para casa. Precisava pensar no que fazer."
+    Nathan "Entendo, muito obrigado, David. Sebastian, Lucas, eu preciso ir mas espero encontrar vocês por aí, okay? Se cuidem!"
+    "Verdade, acho deveria entregar a torta para o Lucas e pro Sebastian, mas será que esse é um bom momento?"
+    menu:
+        "Entregar a torta":
+            Nathan "Antes que eu me esqueça, minha mãe pediu pra entregar essa torta pra vocês como agradecimento pelas compras"
+            hide david
+            show lucas n at right
+            Lucas "Obrigado Nathan, agradeça sua mãe pela gente também"
+            hide lucas 
+            show david f at right
+            David "Nossa que torta bonita! Posso pegar um pedaço?"
+            hide david
+            show lucas f at right
+            Lucas "Pode sim!"
+            hide lucas
+            show john ch at right
+            John "Ele comeu tudo!! NÃÃÃÃOOOO!!"
+            "Então me despedi dos meus amigos e fui diretamente para casa. Precisava pensar no que fazer."
+            $ inventory_items.remove("Torta")
+        "Não parece ser uma boa hora":
+            $ mantevetorta += 1
+            pause
+    #menu de entregar a torta ou não, se entregar a torta lá no dia 5 eles mencionam ela dnv
 
     jump quartodia2
     
@@ -187,6 +207,16 @@ label quartodia2:
     John "MAS EU TAVA TE ZOANDO, só não achei que o David seria burro ao nível de entregar informações confidenciais..."
     show john n
     John "..."
+    
+    if "Torta" in inventory_items:
+        show john f
+        John "Pô, e aquela torta lá? não vai comer não?"
+        Nathan "Eu ia entregar pra eles amanhã"
+        John "Mas ela vai estar ruim até lá, por que você não come?"
+        Nathan "Verdade, acho que eles não vão ligar, vou mandar pra dentro!"
+        $ inventory_items.remove("Torta")
+        $ renpy.notify("Você ficou de buchinho cheio")
+
     John "Eu tive uma ideia."
     hide john 
     show camilla b at right 
@@ -404,8 +434,7 @@ label saladopaiprocura:
     menu:
         "Mesa":
             show john n at right
-            John "Não parece ter nada aqui..."
-            "Há um papel com uma cmbinação de alguns números, mas acho que não seria útil agora."
+            Nathan "Há um livro escrito ''Manual da polícia de como destrancar cofres e fechaduras'', mas acho que não seria útil agora."
             $ procuramesapai += 1
             hide john
             jump saladopaiprocura
@@ -498,6 +527,7 @@ label quartodia21:
     "O tempo passa..."
     jump actualday2
 
+#BARRACO AQUI EM BAIXO
 label actualday2:
     show bg quarto dia with dissolve
     scene bg quarto dia
@@ -506,27 +536,42 @@ label actualday2:
     show pai f at right
     Pai "Nathan? Você está já está de pé?"
     show nate s at left
-    Nathan "Tô... eu acho. Acho que não dormi bem."
-    hide black
-    show pai s at right
-    Pai "Bom dia, filho. Desculpa por ontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estressado e acabei descontando em você. Sinto muito."
-    show nate ns at left
-    Nathan "Foi a mãe que fez você se desculpar, não foi?"
-    show pai s2
-    Pai "Não, claro que não."
-    show bg quarto dia with hpunch
-    show halfblack
-    Mãe "Foi sim!!!"
-    "Minha mãe gritou da cozinha"
-    Pai "B-bom, eu vou indo pro trabalho, se você precisar de alguma coisa, pode falar comigo, beleza? É isso que eu queria dizer."
-    show nate f
-    Nathan "Tudo bem, obrigado."
-    "Assim que meu pai sai da sala, eu pego os arquivos que antes peguei na sala dele e começo a analisá-los."
-    show nate n
-    Nathan "Estranho, eu não vejo nenhuma foto nesse documento, apenas o histórico criminal desse cara. Será que ele chegou lá antes?"
-    Nathan "Acho que isso explica a entrada que eu usei estar quebrada... Será que a biblioteca tem algum arquivo do caso? Posso tentar pegar uma versão mais completa por lá."
-    "Me levanto, guardo os arquivos na minha mochila novamente e vou à biblioteca."
-    hide pai
+    if brigacompai >= 1:
+        menu:
+            "Continuar a discussão do outro dia ":
+                Nathan "Tô... eu acho. Acho que não dormi bem."
+                Pai "Desculpa por anteontem. Eu sei que tava estressado e ando sendo fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por um momento estressante e acabei descontando em você. Sinto muito."
+                Nathan "O problema não é esse, é que você não me respeita nunca, sempre me diminuindo e me tratando mal sem nenhum motivo"
+                Nathan "Queria que você tentasse me entender um pouco mais antes de julgar em tudo que eu faço!"
+                Pai "..."
+                Pai "Desculpe Nathan, acho que deviamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
+                Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsavel com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
+                Mãe "Vocês dois estão discutindo de novo?"
+                Nathan "Dessa vez não mãe, acho que finalmente estamos tentando entender um ao outro na verdade."
+                Mãe "Que bom! ainda bem que estão se entendendo melhor, fico muito feliz com isso"
+                "Eu e meu pai continuamos a conversar por um tempo até que ele sai para trabalhar"
+            "Não continuar a discussão do outro dia":
+                Nathan "Tô... eu acho. Acho que não dormi bem."
+                hide black
+                show pai s at right
+                Pai "Bom dia, filho. Desculpa por anteontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estressado e acabei descontando em você. Sinto muito."
+                show nate ns at left
+                Nathan "Foi a mãe que fez você se desculpar, não foi?"
+                show pai s2
+                Pai "Não, claro que não."
+                show bg quarto dia with hpunch
+                show halfblack
+                Mãe "Foi sim!!!"
+                "Minha mãe gritou da cozinha"
+                Pai "B-bom, eu vou indo pro trabalho, se você precisar de alguma coisa, pode falar comigo, beleza? É isso que eu queria dizer."
+                show nate f
+                Nathan "Tudo bem, obrigado."
+                "Assim que meu pai sai da sala, eu pego os arquivos que antes peguei na sala dele e começo a analisá-los."
+                show nate n
+                Nathan "Estranho, eu não vejo nenhuma foto nesse documento, apenas o histórico criminal desse cara. Será que ele chegou lá antes?"
+                Nathan "Acho que isso explica a entrada que eu usei estar quebrada... Será que a biblioteca tem algum arquivo do caso? Posso tentar pegar uma versão mais completa por lá."
+                "Me levanto, guardo os arquivos na minha mochila novamente e vou à biblioteca."
+                hide pai
     jump biblioteca
 
 label biblioteca:
@@ -705,6 +750,31 @@ label rachadura1:
             show black with dissolve
             jump casadia2
 
+#AQUI É PRA DEVOLVER OS ARQUIVOS OU NÃO
+label ruadavid:
+    show bg rua tarde with dissolve
+    scene bg rua tarde
+    "Enquanto estava indo pra casa, me encontrei com o David."
+    David "Perito David se apresentando para o serviço senhor filho do delegado, Senhor!"
+    Nathan "..."
+    Nathan "David!.. Oi!"
+    David "Precisa de ajuda com alguma coisa, Senhor?"
+    Nathan "Acredito que não, só estou indo pra casa no momento, mas obrigado!"
+    Camilla "Nathan, você podia pedir pra ele devolver os arquivos originais do caso para o escritório do seu pai."
+    Camilla "Não acho que ele seja muito confiavel pra isso, mas não devolver pode ser ruim para o seu pai."
+    John "Eu não vou muito com a cara dele não, mas a Camilla pode estar certa."
+    David "Bom, já vou indo então, Senhor!"
+    menu:
+        "Espera! (Devolver os arquivos)":
+            Nathan "Espera!"
+            David "O que precisa, Senhor?"
+            Nathan ""
+            $ inventory_items.remove("arquivos")
+            $ renpy.notify("Você devolveu os arquivos")
+        "Não confio nele, prefiro manter os arquivos comigo por agora.":
+            pass
+
+
 label casadia2:
     show black with dissolve
     "Chegando em casa, vi meu pai abalado por algo."
@@ -720,9 +790,12 @@ label casadia2:
     Nathan "Vou tentar manter a calma com ele, prometo."
     show bg quarto noite with dissolve
     scene bg quarto noite
+    show nate n at left
     Nathan "Vou só fazer uma coisa, acho que investigar assim pode ajudar"
     show bg quarto com pistas noite with dissolve
+    Nathan "Pronto, muito melhor."
     scene bg quarto com pistas noite
+    pause
     show halfblack
     if "aliança" in inventory_items:
         show camilla n at right

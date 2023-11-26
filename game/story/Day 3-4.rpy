@@ -205,7 +205,7 @@ label bibliotecaday3:
     Nathan "Tá tranquilo, posso pegar carona com meu pai depois alguém na delegacia deve saber de algo"
     show erika n2
     Erika "Tudo bem então, te vejo amanha nate!"
-    hide nateral
+    hide nate
     hide erika
     jump delegaciaday3
 
@@ -227,13 +227,13 @@ label delegaciaday3:
     hide camilla
     hide nate
     menu:
-        "Falar com a vivian":
+        "Falar com a Vivian":
             Nathan "Talvez a Camilla tenha razão, vou tentar falar com ela."
             jump delegaciavivian   
-        "Falar com seu pai":
+        "Falar com seu Pai":
             Nathan "Talvez o John tenha razão dessa vez, vou tentar falar com ele."
             jump delegaciapai
-
+##################################### FAZER O DIALOGO DO PAI
 
 label delegaciavivian:
     Nathan "{i}(Espero que aquele David não esteja por aqui, assim poderia falar com a Vivian com tranquilidade.){/i}"
@@ -375,7 +375,7 @@ label delegaciapai:
     "Ele saiu correndo e não me escutou."
     Camilla "Acho bom você nem pensar em devolver isso, afinal, ele é o único suspeito até agora."
     John "Ela tem razão, isso pode nos dar uma chance maior de descobrir se ele realmente roubou algo."
-    Nathan "Tudo bem, entçao vamospra casa por hoje, temos mais um dia longo amanhã."
+    Nathan "Tudo bem, entçao vamos pra casa por hoje, temos mais um dia longo amanhã."
     #MUDAR O DIALOGO NO BRANCH DE IR DIRETO NO ESCRITORIO DO PAI
     pause
     show black with dissolve
@@ -390,7 +390,7 @@ label falamaecasa:
     Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei parguntar sobre, preferi esperar aqui fora."
     Nathan "Desculpa mãe, eu não vi o tempo passar dessa vez."
     Mãe "Você devia pelo menos comer algo e depois ir para o seu quarto, beleza?"
-    Nathan "udo be mãe, desculpa mais uma vez"
+    Nathan "Tudo bem mãe, desculpa mais uma vez"
     show black with dissolve
     scene black 
     "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que algúem tinha colocado uma montanha nas minhas costas"

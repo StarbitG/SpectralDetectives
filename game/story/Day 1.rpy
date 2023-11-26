@@ -21,7 +21,6 @@ label intro:
     Erika "Mhm! Com certeza, pensei que a gente podia conversar com os meninos também, eles têm bastante assunto pra falar com você."
     Nathan "Acho que isso é uma ótima ideia, bom, então te vejo amanhã, Erika!"
     Erika "Obrigada, Nathan. Mal posso esperar para ver você novamente. Nos encontramos em breve!"
-
     show bg quarto dia with fade
     scene bg quarto dia
     show halfblack
@@ -189,6 +188,7 @@ label quartodia1:
             hide pai
             show nate ns at left
             Nathan "Certo, vamos lá!"
+            $ brigacompai += 1
 
         "Responder de forma agressiva":
             show nate b
@@ -216,6 +216,7 @@ label quartodia1:
             hide mae
             show nate ns at left
             Nathan "Certo, obrigado, mãe!"
+            $ brigacompai += 1
 
         "Não responder nada":
             show nate n at left

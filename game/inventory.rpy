@@ -12,7 +12,8 @@ default item_descriptions = {
     "arquivos": "arquivos suspeitos",
     "cópia arquivos": "arquivos suspeitos",
     "luvas": "está escrito donovan em uma delas...",
-    "Lista de compras": "Uma tarefa que sua mãe lhe deu"
+    "Lista de compras": "Uma tarefa que sua mãe lhe deu",
+    "Torta": "yummy"
 }
 default inventory_items = []
 default item_description = ""
@@ -27,7 +28,8 @@ default item_images = {
     "arquivos": "images/arquivos.png",
     "cópia arquivos": "images/arquivos.png",
     "luvas": "images/luvas.png",
-    "Lista de compras": "images/Lista de compras.png"
+    "Lista de compras": "images/Lista de compras.png",
+    "Torta": "images/chave.png"
 } # imagens devem ser pequenas para caber no inventário
 
 
