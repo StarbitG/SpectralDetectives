@@ -3,6 +3,7 @@ define moralfinalruim = 0
 default pegaranel = 0
 define arrombaranel = 0
 define saiucomerika = 0
+define foisus = 0
 
 #Procura na biblioteca
 define procuraprateleira = 0
