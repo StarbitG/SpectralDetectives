@@ -336,6 +336,7 @@ label delegaciapai:
     pause
     show bg delegacia frente dia noite with dissolve
     scene bg delegacia frente dia noite
+    show halfblack
     "Do lado de fora da delegacia John e Camilla tentam me acalmar"   
     show nate b at left
     Nathan "Não entendo porque ele sempre faz isso. Estou de saco cheio dele ser sempre assim!"
@@ -357,16 +358,24 @@ label delegaciapai:
     hide nate 
     show bg rua noite with dissolve 
     scene bg rua noite
+    show halfblack
     "Caminhando por não prestar atenção esbarro em alguma pessoa"
     show joseph d at center with vpunch
     Nathan "Desculp—"
     show joseph n at center with dissolve
+    show joseph n at right
+    Joseph "Desculpe, estou com um pouco de pressa."
     show joseph n at offscreenright with move
     show nate s2 at left
     Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa"
+    show john n at right
     John "Você tá bem cara? Foi uma batida meio feia..."
+    show nate s
     Nathan "Sim sim eu to bem, valeu por perguntar."
+    hide john 
+    show camilla n at right 
     Camilla "Que bom! Ah, parece que o joseph derrubou algo quando bateu em você agora."
+    show nate n
     Nathan "Sério?"
     "Olho para a calçada para ver se realmente tem algo por ali"
     Nathan "O que é isso?"
@@ -376,9 +385,12 @@ label delegaciapai:
     $ renpy.notify("Você pegou as chaves do Joseph")
     Nathan "Ei! você derrubou suas chaves!"
     "Ele saiu correndo e não me escutou."
+    show camilla b 
     Camilla "Acho bom você nem pensar em devolver isso, afinal, ele é o único suspeito até agora."
+    hide camilla
+    show john n at right
     John "Ela tem razão, isso pode nos dar uma chance maior de descobrir se ele realmente roubou algo."
-    Nathan "Tudo bem, entçao vamos pra casa por hoje, temos mais um dia longo amanhã."
+    Nathan "Tudo bem, então vamos para casa por hoje, teremos um dia longo amanhã..."
     pause
     show black with dissolve
     jump falamaecasa
@@ -387,14 +399,20 @@ label falamaecasa:
     show bg casa fora noite with dissolve
     scene bg casa fora noite
     show halfblack
+    show mae s at right
     Mãe "Nathan! O que você faz fora de casa tão tarde? Até seu pai chegou antes de você."
+    show nate ex at left
     Nathan "Oi mãe. Eu só estava resolvendo alguns asuntos com a Erika, nada de mais, desculpa te preocupar."
     Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei parguntar sobre, preferi esperar aqui fora."
+    show nate n
     Nathan "Desculpa mãe, eu não vi o tempo passar dessa vez."
-    Mãe "Você devia pelo menos comer algo e depois ir para o seu quarto, beleza?"
+    show mae f
+    Mãe "Você devia pelo menos comer algo e depois ir para o seu quarto, tá bom?"
     Nathan "Tudo bem mãe, desculpa mais uma vez"
     show black with dissolve
-    scene black 
+    scene black
+    hide nate 
+    hide mae 
     "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que algúem tinha colocado uma montanha nas minhas costas"
     jump quartodia4
 
@@ -402,9 +420,15 @@ label quartodia4:
     show bg quarto com pistas noite with dissolve
     scene bg quarto com pistas noite 
     show halfblack
+    show john b2 at right
     John "Mano, do que você acha que Joseph tava correndo mais cedo? Se ele é o culpado ele não devia estar correndo, talvez ele estivesse aprontando alguma coisa."
+    show nate n at left
     Nathan "John, você consegue guardar esse pensamento pra amanhã? Eu tô muito cansado pra pensar, só quero dormir por agora"
+    hide john
+    show camilla n at right
     Camilla "Ele tem um ótimo ponto na verdade, mas você quem sabe Nathan, vamos te deixar em paz essa noite, boa noite."
+    hide camilla
+    hide nate
     "Assim um dos meus últimos dias nessa correria se encerram, se eu tenho algo não resolvido, é bom resolver agora e rápido..."
     jump startday5
     
@@ -446,8 +470,8 @@ label quartodia4:
 #No dia seguinte voce liga para vivian logo cedo e ela fala que encontrou o joseph e pede para que você vá direto para a biblioteca para explicar a situação
 #Chegando lá o joseph explica a situação e esclaresse os mal-entendidos e o corte em sua perna, que não tinha nada a ver com os crimes cometidos
 #
-label demoend:
-    "Obrigado por jogar a demo! Não esqueça de preencher o formulário. Se possível, também chame mais alguém para testar nosso jogo, por favor!"
-    pause
+#label demoend:
+#3   "Obrigado por jogar a demo! Não esqueça de preencher o formulário. Se possível, também chame mais alguém para testar nosso jogo, por favor!"
+#   pause
 
-"O biblioteca tenta vir atrás da gente mas não consegue acompanhar nosso ritmo, ao olhar para trás percebo que ele está com uma perna machucada e mancando"
+#"O biblioteca tenta vir atrás da gente mas não consegue acompanhar nosso ritmo, ao olhar para trás percebo que ele está com uma perna machucada e mancando"

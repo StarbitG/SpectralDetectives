@@ -144,31 +144,44 @@ label bibliotecaday5continuação:
             hide camilla 
             hide john 
             hide nate 
-            jump delegaciapai2
+            jump invasao2
 
 
             
         #nessa opçao ainda ta de tarde e quando vc chega na delegacia ta de noite
 
-label casadia5:
-    
-    show bg quarto com pistas tarde with dissolve
-    show bg quarto com pistas noite with dissolve
-    scene bg quarto com pistas noite
-
-label delegaciapai2:
-    show bg delegacia fora dia tarde with dissolve
-    show bg delegacia fora dia noite with dissolve
+label invasao2:
+    show bg delegacia frente dia tarde with dissolve
+    show bg delegacia frente dia noite with dissolve
     Nathan "Vocês acham que isso é uma boa ideia mesmo?"
-    John "É seu pai, não é como se você tivesse a melhor reputação com el já né"
-    Camilla "E além do mais, se você não pegar essa senha hoje, é possível que o ladrão troque ela amanhã."
-    Nathan "Ta bom então, é agora ou nunca."
+    John "É seu pai, não é como se você tivesse a melhor reputação com ele já né"
+    Camilla "E além do mais, se você não pegar essa senha hoje, o emprego da Vivian está em jogo agora."
+    menu:
+        "Invadir quando a delegacia estiver vazia":
+            Nathan "A gente consegue esperar até a delegacia esvaziar, assima a gente entra"
+            pass
+        "Tentar pegar o livro enquanto seu pai está lá":
+            Nathan "Ta bom então, é agora ou nunca."
+            jump delegaciapai2
+    pause
+label delegaciapai2:
     show bg sala do pai clara with dissolve 
     scene bg sala do pai clara
     "Eu entro na sala do meu pai devagar, pra não deixá-lo estressado."
     Nathan "Opa, consegue conversar?"
-    Pai "O que você tá fazendo aqui filho? Já falei pra não se meter em assuntos policiais."
-    Nathan "Não é nada disso não, eu tava passando por aqui e queria perguntar se você conseguiria me deixar em casa depois que terminar o trabalho aí"
+    Pai "O que você tá fazendo aqui? É Bom que você não tenha vindo até pra falar sobre esse caso recente, já estou cansado de dizer pra não se meter nos assuntos do meu trabalho."
+    Nathan "Não é nada disso não, eu tava passando por aqui e queria perguntar se você conseguiria me deixar em casa depois que terminar o trabalho"
+    Pai "Ah, se é só isso, consigo sim, só sai da minha sala por favor."
+    Nathan "Mas por quê? Eu não to te atrapalhando nem nada."
+    Pai "Mas você vai me atrapalhar se continuar falando."
+    Nathan "Tá bom tudo bem, eu fico quieto, bem aqui."
+    "Me aproximo da mesa dele, e vejo o mesmo livro que tinha visto aquele dia"
+    John "Alí. É ele, o livro! ''Manual da polícia de como destrancar cofres e fechaduras''!"
+    Camilla "Agora é a sua chance! Pega ele!"
+    Pai "Nathan eu imploro, só espera do lado de fora da minha sala por favor."
+    Nathan "Tá bom eu saio, não vou te atrapalhar mais eu juro."
+    "Assim que eu termino a frase, aproveito que ele se distraiu e puxo o livro da mesa, saindo o mais rápido possivel da sala com o livro na mão."
+
     
     
     

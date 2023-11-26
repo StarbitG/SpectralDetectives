@@ -407,7 +407,8 @@ label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
             show nate s
             Nathan "Eu me sinto mal por fazer isso."
             John "Vamos só entrar antes que você desista. Só de você quebrar esse cadeado não tem mais volta."
-            scene bg delegacia dentro
+            scene bg delegacia 
+            show halfblack
             show john ex at right
             John "Você pelo menos se lembra onde fica a sala do seu pai?"
             show nate n at left
@@ -603,9 +604,8 @@ label biblioteca:
     hide nate 
     hide joseph
     hide halfblack
-    pause
-    show halfblack
-    dErika "..."
+    pause(2.0)
+    show halfblack with vpunch
     dErika "BOO!"
     show nate s2 at left with vpunch
     Nathan "AHHH!"
@@ -773,6 +773,7 @@ label rachadura1:
 label ruadavid:
     show bg rua tarde with dissolve
     scene bg rua tarde
+    show halfblack
     "Enquanto estava indo pra casa, me encontrei com o David."
     show david f at right
     David "Perito David se apresentando para o serviço senhor filho do delegado, Senhor!"
@@ -833,6 +834,7 @@ label ruadavid:
 label casadia2:
     show black with dissolve
     scene bg casa fora noite with dissolve
+    show halfblack
     "Chegando em casa, vi meu pai abalado por algo."
     show nate n at left
     Nathan "Oi, pai, você está bem?"
@@ -859,7 +861,7 @@ label casadia2:
                 show mae b at right
                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
-                show nate t
+                show nate ex
                 Nathan "Foi mal... Vou para o meu quarto..."
 
             "Não falar nada sobre os arquivos e mante-los com você":
@@ -867,6 +869,7 @@ label casadia2:
     "Eu subo em silêncio para o meu quarto."
     show bg quarto noite with dissolve
     scene bg quarto noite
+    show halfblack
     show nate n at left
     Nathan "Vou só fazer uma coisa, acho que investigar assim pode ajudar"
     show bg quarto com pistas noite with dissolve
