@@ -1,41 +1,41 @@
-Sun Nov 26 20:56:54 2023
+Mon Nov 27 18:57:02 2023
 Windows-10-10.0.22621
 Ren'Py 8.1.1.23060707
  
 
 Bootstrap to the start of init.init. took 0.03s
 Early init. took 0.00s
-Loader init. took 0.08s
+Loader init. took 0.06s
 Loading error handling. took 0.03s
-Loading script. took 0.26s
-Loading save slot metadata. took 0.05s
+Loading script. took 0.43s
+Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.05s
+Running init code. took 0.06s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.30s
+Creating interface object. took 0.34s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.08s
+Interface start. took 0.09s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -52,12 +52,12 @@ controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 890.61s
+Bootstrap to the start of init.init. took 70.98s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.03s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.10s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
 Running init code. took 0.04s
@@ -65,16 +65,16 @@ Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.44s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.35s
+Creating interface object. took 0.33s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -82,7 +82,7 @@ Save screen analysis took 0.02s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
-Running _start took 0.01s
+Running _start took 0.00s
 Performance test:
 Interface start. took 0.04s
 
@@ -99,18 +99,969 @@ Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 915.71s
+Bootstrap to the start of init.init. took 426.75s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
-Loading script. took 0.21s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 691.86s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.20s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/story/Day 5-6 final bom.rpy", line 441: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    if arrombaranel >= 1:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start. took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 720.73s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.06s
+Loading persistent. took 0.00s
+
+File "game/story/Day 5-6 final bom.rpy", line 441: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    if arrombaranel >= 1:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start. took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 743.52s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+
+File "game/story/Day 5-6 final bom.rpy", line 450: else clause expects a non-empty block.
+    else:
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start. took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 754.28s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.23s
 Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
 Running init code. took 0.04s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.26s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1231.23s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.13s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.37s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1237.69s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1364.87s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1384.81s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1531.86s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1633.46s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1688.49s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1885.93s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 1967.15s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.39s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2057.16s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.06s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 2431.47s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.20s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.37s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2526.77s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.51s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2576.98s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.21s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2633.21s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.21s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.37s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2660.74s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.20s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2686.88s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.21s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.06s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 2726.59s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.21s
+Loading save slot metadata. took 0.51s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
@@ -128,7 +1079,7 @@ Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.05s
@@ -146,172 +1097,81 @@ Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 1251.92s
+Bootstrap to the start of init.init. took 2759.16s
 Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.33s
-Loading save slot metadata. took 0.06s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.12s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.04s
+Running init code. took 0.05s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.33s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 1813.84s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5 final bom.rpy", line 189: choice menuitem expects a non-empty block.
-    "No armário":
-                 ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.52s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 1886.42s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5 final bom.rpy", line 184: expected statement.
-    break  
-           ^
-
-File "game/story/Day 5 final bom.rpy", line 191: choice menuitem expects a non-empty block.
-    "No armário":
-                 ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.43s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 1913.89s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5 final bom.rpy", line 184: expected statement.
-    break  
-           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.45s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 2308.89s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.41s
+Creating interface object. took 0.35s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 3135.14s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.09s
+Cleaning cache. took 0.02s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -330,39 +1190,246 @@ Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
 Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-
-Full traceback:
-  File "game/story/Day 5 final bom.rpy", line 181, in script
-    menu:
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1922, in execute
-    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\exports.py", line 1072, in menu
-    condition = renpy.python.py_eval(condition)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/story/Day 5 final bom.rpy", line 192, in <module>
-    "No armário" if avalanche == 0:
-NameError: name 'avalanche' is not defined
-
-While running game code:
-  File "game/story/Day 5 final bom.rpy", line 181, in script
-    menu:
-  File "game/story/Day 5 final bom.rpy", line 192, in <module>
-    "No armário" if avalanche == 0:
-NameError: name 'avalanche' is not defined
 Resetting cache.
-Bootstrap to the start of init.init. took 2389.77s
+Bootstrap to the start of init.init. took 3160.00s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
-Loading script. took 0.20s
+Loading script. took 0.30s
+Loading save slot metadata. took 0.10s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 3443.29s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.67s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 3900.85s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
 Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
 Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Resetting cache.
+Bootstrap to the start of init.init. took 3967.61s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
 Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/story/Day 5.rpy", line 19, in script
+    show camilla n qt right
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\display\core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'camilla n' does not accept attributes 'qt right'.
+
+While running game code:
+  File "game/story/Day 5.rpy", line 19, in script
+    show camilla n qt right
+Exception: Image 'camilla n' does not accept attributes 'qt right'.
+Resetting cache.
+Bootstrap to the start of init.init. took 3975.54s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
@@ -370,6 +1437,80 @@ Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init. took 4254.71s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
@@ -400,18 +1541,112 @@ Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 2916.27s
+Bootstrap to the start of init.init. took 4315.44s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 4344.74s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.10s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 4373.81s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.04s
+Running init code. took 0.05s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
@@ -420,9 +1655,197 @@ Initial gc. took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.39s
+Creating interface object. took 0.33s
 Cleaning stores took 0.00s
 Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 4407.42s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 5010.63s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.06s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 5038.27s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.16s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.06s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 5088.64s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.02s
+Loading script. took 0.51s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -447,18 +1870,18 @@ Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 2983.98s
+Bootstrap to the start of init.init. took 5265.93s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.04s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
@@ -467,129 +1890,7 @@ Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.32s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-
-Full traceback:
-  File "game/story/Day 5 final bom.rpy", line 188, in script
-    jump casadia5alt
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'casadia5alt'.
-
-While running game code:
-  File "game/story/Day 5 final bom.rpy", line 188, in script
-    jump casadia5alt
-ScriptError: could not find label 'casadia5alt'.
-Resetting cache.
-Bootstrap to the start of init.init. took 3170.42s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.06s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
 Creating interface object. took 0.35s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-
-Full traceback:
-  File "game/story/Day 5 final bom.rpy", line 188, in script
-    jump casadia5alt
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'casadia5alt'.
-
-While running game code:
-  File "game/story/Day 5 final bom.rpy", line 188, in script
-    jump casadia5alt
-ScriptError: could not find label 'casadia5alt'.
-Resetting cache.
-Bootstrap to the start of init.init. took 3183.61s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.33s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
@@ -601,310 +1902,6 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 3370.01s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.38s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 3672.68s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5 final bom.rpy", line 232: expected statement.
-    h
-     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.50s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 3684.96s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.35s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init. took 3877.32s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.05s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.39s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 3899.03s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.05s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-
-The label delegaciavivian2 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 1:
-
-and File "game/story/Day 5-6 final bom.rpy", line 1:
-label delegaciavivian2:
-
-
-The label bibliotecaday5 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 36:
-
-and File "game/story/Day 5-6 final bom.rpy", line 36:
-label bibliotecaday5:
-
-
-The label bibliotecaday5procura is defined twice, at File "game/story/Day 5 final bom.rpyc", line 49:
-
-and File "game/story/Day 5-6 final bom.rpy", line 49:
-label bibliotecaday5procura:
-
-
-The label bibliotecaday5continuação is defined twice, at File "game/story/Day 5 final bom.rpyc", line 80:
-
-and File "game/story/Day 5-6 final bom.rpy", line 80:
-label bibliotecaday5continuação:
-
-
-The label invasao2 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 154:
-
-and File "game/story/Day 5-6 final bom.rpy", line 154:
-label invasao2:
-
-
-The label invadir2 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 171:
-
-and File "game/story/Day 5-6 final bom.rpy", line 171:
-label invadir2:
-
-
-The label escolhainvasao is defined twice, at File "game/story/Day 5 final bom.rpyc", line 181:
-
-and File "game/story/Day 5-6 final bom.rpy", line 181:
-label escolhainvasao:
-
-
-The label delegaciapai2 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 203:
-
-and File "game/story/Day 5-6 final bom.rpy", line 203:
-label delegaciapai2:
-
-
-The label casadia5 is defined twice, at File "game/story/Day 5 final bom.rpyc", line 221:
-
-and File "game/story/Day 5-6 final bom.rpy", line 221:
-label casadia5:
-
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.56s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 3927.82s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.16s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.62s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
@@ -920,460 +1917,12 @@ Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
 Resetting cache.
-Bootstrap to the start of init.init. took 5289.92s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.34s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 7335.24s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.46s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 7451.45s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5-6 final bom.rpy", line 310: choice menuitem expects a non-empty block.
-    "Motivo das provas estarem no cofre":
-                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.56s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 7920.34s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.35s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-
-Full traceback:
-  File "game/story/Day 5-6 final bom.rpy", line 225, in script
-    jump casadia5alt
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'casadia5alt'.
-
-While running game code:
-  File "game/story/Day 5-6 final bom.rpy", line 225, in script
-    jump casadia5alt
-ScriptError: could not find label 'casadia5alt'.
-Resetting cache.
-Bootstrap to the start of init.init. took 7953.31s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.63s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.05s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.54s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-
-Full traceback:
-  File "game/story/Day 5-6 final bom.rpy", line 307, in script
-    menu:
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1922, in execute
-    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\exports.py", line 1072, in menu
-    condition = renpy.python.py_eval(condition)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Pichau\Documents\Renpy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/story/Day 5-6 final bom.rpy", line 315, in <module>
-    "Motivo de estar mancando" if mancada == 0:
-NameError: name 'mancada' is not defined
-
-While running game code:
-  File "game/story/Day 5-6 final bom.rpy", line 307, in script
-    menu:
-  File "game/story/Day 5-6 final bom.rpy", line 315, in <module>
-    "Motivo de estar mancando" if mancada == 0:
-NameError: name 'mancada' is not defined
-Resetting cache.
-Bootstrap to the start of init.init. took 8012.11s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.03s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.10s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.32s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8040.41s
+Bootstrap to the start of init.init. took 5287.61s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
 Loading script. took 0.26s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.05s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.32s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8059.35s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.05s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.06s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.04s
-Index archives took 0.00s
-Dump and make backups. took 0.06s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.38s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8099.41s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.25s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.05s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.33s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init. took 8232.88s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.04s
+Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
 Running init code. took 0.04s
@@ -1388,19 +1937,19 @@ Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.32s
+Creating interface object. took 0.38s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.08s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
+Save screen analysis took 0.51s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.05s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -1414,15 +1963,8 @@ Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
 Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 8257.72s
+Bootstrap to the start of init.init. took 5624.71s
 Early init. took 0.00s
 Loader init. took 0.05s
 Loading error handling. took 0.02s
@@ -1430,26 +1972,26 @@ Loading script. took 0.25s
 Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.06s
+Running init code. took 0.04s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.06s
+Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.33s
+Creating interface object. took 0.38s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
+Save screen analysis took 0.01s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -1468,149 +2010,113 @@ Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
 Maximum texture size: 4096x4096
 controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
 controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 8273.36s
+Bootstrap to the start of init.init. took 5707.50s
 Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-
-File "game/story/Day 5-6 final bom.rpy", line 159: expected statement.
-    sh
-      ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.43s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8276.55s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.45s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8333.66s
-Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Set script version to: (8, 1, 1)
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.32s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.07s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.79'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
-Maximum texture size: 4096x4096
-controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
-controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
-Resetting cache.
-Bootstrap to the start of init.init. took 8720.45s
-Early init. took 0.00s
-Loader init. took 0.06s
+Loader init. took 0.08s
 Loading error handling. took 0.02s
 Loading script. took 0.24s
 Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
 Set script version to: (8, 1, 1)
-Running init code. took 0.06s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.83s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 5720.88s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.22s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 531.79'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1120, 630) drawable=(1120, 630)
+Maximum texture size: 4096x4096
+controller: '03000000d620000011a7000012016800' 'Nintendo Switch Pro Controller' 1
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 5758.59s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Set script version to: (8, 1, 1)
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
@@ -1619,19 +2125,19 @@ Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.42s
+Creating interface object. took 0.35s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.07s
+Interface start. took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)

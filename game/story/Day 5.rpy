@@ -12,11 +12,11 @@ label startday5:
     Erika "Entendi, mas enfim, tenho uma ótima notícia! O mercadinho foi reaberto e os meninos já estão esperando a gente por lá."
     show nate f 
     Nathan "Sério? Isso é incrível! Vou me arrumar rapidinho e já já estarei por lá okay?"
-    show erika f
+    show erika n
     Erika "Ai que ótimo! Te encontro na frente da loja então tudo bem? Até mais tarde!"
     hide erika
     "Erika encerra a ligação*"
-    show camilla n
+    show camilla n at right
     Camilla "Espera aí Nate, antes de sair, você sabe o que vai fazer com a chave do Joseph?"
     show nate n
     Nathan "Ah, é verdade. Ainda não sei o que fazer com ela. Acho que vou conversar com a Erika primeiro e ver o que ela acha."
@@ -37,7 +37,7 @@ label lojadia5:
     scene bg mercado dia
     show halfblack
     "Chegando na frente do mercado, Erika já estava lá me esperando"
-    show erika f at right
+    show erika n at right
     Erika "Nate você chegou! Até que foi rápido."
     show nate f at left
     Nathan "A gente não teve a chance de passar tanto tempo com os meninos por conta do assalto, então eu decidi vir correndo haha"
@@ -60,6 +60,7 @@ label lojadia5:
     hide nate
     show david n
     David "É nois, tamo junto, senhor!"
+    hide david
     "Entramos no mercado com pressa para evitar que o David falasse mais alguma coisa estranha."
     show bg shop with dissolve
     show halfblack
@@ -72,38 +73,39 @@ label lojadia5:
         show sebastian b at right
         Sebastian "Por mais que só pudemos comer metade já que o David comeu quase tudo sozinho."
         Sebastian "Não vou muito com a cara dele, algo me parece estranho nesse cara..."
-        hide sebastian
+        hide seb
         show lucas b at right
         Lucas "Sebastian, para com isso!"
         hide lucas
         show sebastian n
         Sebastian "..."
-        hide sebastian
+        hide seb
         hide lucas
     show nate n at left
     Nathan "Só uma pergunta, como vocês reabriram a loja tão rápido? achei que vocês iam demorar um pouco mais para poder reabri-la"
-    show sebastian f at right 
+    hide lucas
+    show seb f at right 
     Sebastian "Acontece que o pai do Lucas é um cara bem influente pelo que parece, ele conseguiu um pessoal que consertou tudo rapidinho."
     Nathan "Outra coisa, Por que o David tá ali do lado de fora?"
-    hide sebastian
+    hide seb
     show lucas n at right
     Lucas "Aparentemente o departamento de policia quer aumentar a segurança na região enquanto eles não encontrarem o ladrão, e o David foi selecionado pra cuidar daqui."
     hide lucas
-    show sebastian b at right
+    show seb b at right
     Sebastian "Cá entre nós, eu acho que eles escolheram o policial mais folgado possível. A cada 30 minutos ele vem aqui e pega um saldinho e sai sem pagar!."
-    hide sebastian
+    hide seb
     show lucas n at right
     Lucas "Ah, eu não me importo muito com isso, eu acho válido já que ele está se arriscando pra nos proteger."
     hide lucas
-    show sebastian f2 at right
+    show seb f2 at right
     Sebastian "Vocês nos dão um minuto, eu vou ter que explicar novamente pro Lucas o porque entregar produtos de graça nos gera prejuízo."
-    hide sebastian
+    hide seb
     hide lucas
     hide nate
     "Os dois vão para os fundos da loja, o Sebastian parece estar dando uma bronca no Lucas"
     show nate n at left 
     Nathan "Erika, aproveitando que eles sairam, deixa eu te contar o que achei ontem."
-    show erika f at right
+    show erika n at right
     Erika "O que é que você encontrou? é de comer?"
     show nate s
     Nathan "O que? Não, a não ser que você goste de comer chaves"
@@ -117,7 +119,7 @@ label lojadia5:
     Nathan "Só não sei muito bem o que eu devo fazer com elas, você tem alguma ideia?"
     Erika "Hmmm..."
     Erika "Eu até tenho algumas."
-    show erika f
+    show erika n2
     Erika "Você pode tentar entrega-las para a policia, ou se você preferir a gente pode tentar investigar a biblioteca juntos, o que acha?" 
     Nathan "Deixa eu pensar..."
     if vivianescolha >= 1:
@@ -133,7 +135,7 @@ label lojadia5:
             show erika n at right
             Erika "Vivian? Ah sim, a moça que me interrogou quando eu fui assaltada antes da loja, ela é bem gente boa, você vai agora?"
             Nathan "Acho que melhor eu ir agora, não quero perder muito tempo, entende? Consegue dar tchau pros meninos por mim?"
-            show erika f 
+            show erika n2
             Erika "Consigo sim e entendo completamente! Boa sorte falando com ela Nate!"
             "Então eu saio da loja, e vou correndo até a delegacia"
             hide erika
@@ -150,7 +152,7 @@ label lojadia5:
             "O David entra na loja pra roubar mais um salgadinho, eu abordo ele antes que ele pegue"
             show nate n at left
             Nathan "Acho que vou falar com o David então"
-            show erika f at right
+            show erika n at right
             Erika "Ok, te vejo outra hora então!"
             Nathan "David!"
             hide erika
