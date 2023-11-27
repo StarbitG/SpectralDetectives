@@ -4,6 +4,11 @@ default pegaranel = 0
 define arrombaranel = 0
 define saiucomerika = 0
 define foisus = 0
+define avalanche = 0
+define doisdiasatras = 0
+define perguntacofre = 0
+define mancada = 0 
+
 
 #Procura na biblioteca
 define procuraprateleira = 0
