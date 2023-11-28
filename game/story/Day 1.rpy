@@ -1,3 +1,20 @@
+image splash = "Ods splash.png"
+
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "{color=#FFFFFF}Esse jogo se trata da ODS número 16, que aborda ''Paz, Justiça e Instituições Eficazes''{/color}"
+    with Pause(2.5)
+    hide text
+    show splash with dissolve
+    with Pause(4)
+
+    scene black with dissolve
+    with Pause(1)
+
+    return
+
 label start:
     window hide
     show black with fade

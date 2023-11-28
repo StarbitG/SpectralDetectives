@@ -1,6 +1,20 @@
 label dianeutro:
-    pass
+    #David "O que tem na frente da biblioteca?"
+    #"David aparece atrás da gente com um salgadinho Torresminos na mão"
+    #Nathan "Ahn? Biblioteca? acho que você está ouvindo coisa"
+    #Erika "{size=*0.75}Lucas, Sebastian, ajudem a gente aqui...{/size}"
+    #David "Tenho certeza que ouvi vocês dizendo que iam para a biblioteca a noite, não posso deixar vocês irem sem estarem acompanhados senhor!"
+    #Nathan "Não, não, tenho certeza que você está ouvindo coisas"
+    #Sebastian "Ei, cara, quando que você vai pagar por esses salgadinhos ai"
+    #David "{i}*Gulp*{/i} err, você ta falando comigo? hehe, eu já ia pagar agorinha mesmo!"
+    #Erika "Vamos aproveitar e sair daqui"
+    #Lucas "{size=*0.75} Vão logo, a gente mantém ele aqui."
+    #"Eu e Erika corremos para fora e vamos para a biblioteca"
+    
+    #rua
+    #Nathan "Acho que vamos ter que ir agora de tarde mesmo, "
 
+    
 # Nathan convida Erika para ir à biblioteca com ele procurar as últimas pistas
 # Erika aceita o convite
 # David se oferece para ir junto e acaba atrapalhando a investigação mas lucas e sebastian te ajudam distraindo o David (voce pede a ajuda de lucas e sebastian pq sabe q o David iria atrapalhar)
@@ -20,4 +34,4 @@ label dianeutro:
 # Voce não se sente confiante para isso e vai dormir
 # final mediocre, as coisas ficaram em aberto
 
-#============================================================================================================================================================================================================================
+#=============================================================================================================================================================================================================================================================

@@ -149,6 +149,7 @@ label casadia5ruim:
 
 label quartodia5ruim:
     scene bg quarto com pistas noite with dissolve
+    show camilla 
     Camilla "Nossa, quanta informação."
     John "De fato, quem imaginária que o culpado era o David esse tempo todo?"
     Nathan "Estou preocupado com Joseph... será que ele vai conseguir se provar inocente?"
@@ -169,36 +170,95 @@ label quartodia6ruim:
     hide john 
     show camilla n at right
     Camilla "Não sei, mas ta meio tarde já."
+    show nate s
     Nathan "Droga, preciso ligar para o Joseph"
     "Disco o número de Joseph no meu celular"
+    show nate n
     Joseph "Alô? Nathan? Aconteceu alguma coisa?"
     Nathan "Não, eu só liguei para saber se estava tudo bem."
     Joseph "Está sim... Na verdade não está tão bem... Estou com a Vivian aqui na biblioteca."
     Joseph "Será que você pode vir até aqui? acho que vou precisar da sua ajuda."
+    show nate ns
     Nathan "Ok, estou a caminho!"
     jump bibliotecadia6ruim
 
 label bibliotecadia6ruim:
+    scene bg delegacia dentro with dissolve
     "Chegando lá, Me encontro com Joseph e Vivian que parecem agitados."
-    Vivian "Caramba Joseph, eu quero acreditar no que você está dizendo, mas não tem nada que comprove sua inocência!—"
+    show vivian b at left
+    Vivian "Caramba Joseph, eu quero acreditar no que você está dizendo, mas não tem nada que comprove sua inocên—"
+    show joseph s at right
     Joseph "Nathan! Desculpe faze-lo vir até aqui"
+    hide vivian
+    show nate s2 at left
     Nathan "O que houve, está tudo bem?"
+    show joseph s2 
     Joseph "Não muito na verdade, não posso provar minha própria inocência!"
+    hide joseph 
+    show vivian n at right
     Vivian "Nathan, você acha que tem alguma pista que pode comprovar o que o Joseph está dizendo?"
+    show nate s at left
     Nathan "Não... acredito que só posso agir como testemunha a esse ponto."
     Vivian "Entendo... Bom, é nossa melhor chance agora."
     Vivian "Vamos para a delegacia, talvez o delegado Fábio consiga nos ajudar"
-    Nathan "Certo."
+    Nathan "Certo!"
     jump delegaciadia6ruim
 
 label delegaciadia6ruim:
+    scene bg delegacia frente dia with dissolve 
+    pause(1.0)
+    scene bg delegacia dentro with dissolve
+    "Chegando na delegacia nós nos deparamos com David e meu pai que já estavam a caminho da biblioteca para prender o Joseph"
+    show pai s at right
+    Pai "Nathan, Vivian? O que está acontecendo aqui? Afastem-se desse homem imediatamente!"
+    show nate s at left
+    Nathan "Calma pai, ele não é o ladrão"
+    hide pai 
+    show david b at right
+    David "Mas é claro que é! tenho todas as provas bem aqui!"
+    hide david 
+    show joseph s2 at right
+    Joseph "Mas não fui eu que coloquei essas coisas no cofre e você sabe disso, até por que você é o verdadeiro culpado!"
+    hide joseph 
+    show david b at right
+    David "Cofre? então você admite?"
+    hide david 
+    show joseph b at right
+    Joseph "O que!? Eu sei que foi você, pare de tentar distorcer a história!"
+    hide joseph 
+    show david b at right
+    David "Mas que acusação absurda! você precisa provar o que está falando, ou as coisa vão ficar ainda pior pro seu lado."
+    Joseph "Não tenho como provar, você deletou as gravações das cameras!"
+    David "Como que eu poderia deletas as SUAS, gravações?"
+    Vivian "{size=*0,75}Joseph... Pare de falar, está só piorando sua situação{/size}"
+    Pai "Já ouvi o bastante, prendam esse homem!"
+    Nathan "Pai, escuta, você ta cometendo um erro! ele ta falando a verdade, ele só não tem provas agora, mas se você der mais tempo a ele tenho certeza qu—"
+    Pai "BASTA! Pare de agir como se você fosse algum tipo de investigador, você é só um moleque!"
+    Nathan "..."
+    Joseph "Tudo bem Nathan, vai dar tudo certo, sei que você tentou ajudar..."
+    "Meu pai leva o Joseph algemado para uma sala nos fundos da delegacia."
+    Vivian "Está tudo bem Nathan, isso foi uma armadilha, não estávamos preparados, mas não se preocupe, não vou descansar até provar a inocência do Joseph"
+    Vivian "Vai pra casa... Imagino que esteja bem cansado, obrigado pela ajuda."
 
-#voce vai com ele para a delegacia onde toda a armadilha já estava armada
-#logo após ele explicar a situação o David aparece com um mandato de prisão para o Joseph com "provas" de que ele era o culpado pelos crimes recentes
-#voce e vivian ficam indignados mas não podem fazer nada, e voce vai embora para casa
-#chegando em casa camilla e john tentam te animar mas não conseguem 
-#no dia seguinte voce acorda e encontra seu pai desolado, aparentemente ele sofreu uma denuncia por alterar arquivos confidenciais da policia e perdeu o emprego, mesmo não tendo feito nada disso
-#você se sente sem rumo e decide passar o dia isolado em seu quarto acreditando que só piorou toda a situação desse caso.
+label casadia6ruim:
+    Camilla "Nathan... Está tudo bem?"
+    John "Você não falou uma palavra desde que saiu da delegacia cara."
+    Nathan "Eu só não to afim... Isso tudo foi culpa minha, se eu não tivesse me envolvido tanto não teria atrapalhado a investigação e o Joseph não teria sido preso"
+    Camilla "Você não podia fazer nada ali Nathan, o David armou pra ele."
+    Nathan "Acho que só vou dormir, não quero pensar mais nisso..."
 
+label quartodia7ruim:
+    scene black with dissolve
+    with Pause(1)
 
-
+    show text "{color=#FFFFFF}Alguns dias depois, o Joseph acabou sendo julgado como culpado por todos os crimes recentes e logo após isso meu pai foi demitido do cargo por adulteração de arquivos {/color}"
+    with Pause(3)
+    hide text 
+    show text "{color=#FFFFFF}Acredito que tenha sido obra do David também, mas decidi que era melhor não me envolver mais nesse tipo de coisa...{/color}"
+    with Pause(3)
+    hide text 
+    show text "{color=#FFFFFF}...Será que eu podia ter feito algo diferente?{/color}"
+    hide text
+    with Pause(3)
+    scene black with dissolve
+    with Pause(1.5)

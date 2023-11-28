@@ -196,7 +196,7 @@ label bibliotecaday5continuação:
             $ renpy.notify("Vivian te passou o número dela.")
             "Após Vivian me entregar o número dela, ela sai pela porta. Eu vou logo em seguida, direto pra casa."
             hide vivian
-            hide nathan
+            hide nate
             hide halfblack
             jump casadia5
             #se voce tenta chutar as senhas ao sair da biblioteca ja ta escurecendo
@@ -348,8 +348,7 @@ label delegaciapai2:
     hide nate
 
 label casadia5:
-    show bg quarto com pistas noite with dissolve
-    scene bg quarto com pistas noite
+    scene bg quarto com pistas noite with dissolve
     "Chegando em casa, me sinto extremamente aliviado, todo esse meu trabalho duro finalmente vai chegar em algum lugar."
     show camilla f at right
     Camilla "E aí detetive? Como você se sente?"
@@ -610,11 +609,8 @@ label bibliotecaday6continua:
     hide nate
     pause(2.0)
     "Joseph e Vivian saem da sala de segurança."
-    show vivian n at left
-    show joseph n at right
     pause(1.0)
-    hide vivian
-    hide joseph
+
     show bg biblioteca segredo dia with hpunch
     show vivian b at left
     Vivian "Nathan, Joseph!"
@@ -752,34 +748,60 @@ label delegaciadia6:
     show nate n
     Nathan "..."
     John "Eai? como foi? pela sua cara parece que deu bom."
+    show nate f
     Nathan "Marcamos um encontro."
+    show camilla f at right
     Camilla "BOAAA, Vamos ter certeza de não te atrapalhar amanhã Nate, não se preocupe."
+    hide camilla 
+    show john f at right
     John "Vai dormir agora campeão, que você vai ter um dia cheio amanhã."
     "Me deito cheio de ansiedade e tento dormir o melhor que posso para o dia seguinte."
     jump EpilogoBom
 
 label EpilogoBom:
+    scene bg quarto com pistas dia with dissolve
     "Acordo cedo e vou escovar os dentes e tomar um banho para meu encontro com a Erika"
+    show john f at right
     John "É hoje, o grande dia, boa sorte lá Nathan!"
+    hide john 
+    show camilla f at right
     Camilla "Estaremos torcendo por você!"
+    hide camilla 
     "Termino de me aprontar e antes de sair de casa a Erika me liga"
+    show nate f at left
     Erika "Nate? tudo pronto? já estou a caminho do mercado."
     Nathan "Já estou saindo, pode ficar tranquila"
 
-    #na frente do mercado
+    scene bg mercado dia with dissolve
     "Eu chego na frente do mercado praticamente ao mesmo tempo que Erika."
+    show erika n2 at right
     Erika "E ai? vamos?"
+    show nate ns at left
     Nathan "Bora"
+    show erika n
     Erika "Não quer passar pra ver os meninos? eles estão bem felizes porque você conseguiu ajudar eles a recuperar as alianças e o dinheiro roubado do mercado."
     Nathan "Nah, outra hora eu falo com eles."
-    #(muda pro cenário da rua)
+
+    scene bg rua dia with dissolve
+    show erika n2 at right
     Erika "E ai, pra onde a gente vai?"
+    show nate f at left
     Nathan "É surpresa"
+    show erika n
     Erika "hmm, ta bom, e ai? Já decidiu o que vai fazer da vida? eu continuo com o plano de abrir minha floricultura"
     Erika "Ainda pretende continuar viajando pra descobrir o que fazer?"
     Nathan "Na verdade, já decidi sim, eu descobri que quero ser um investigador da policia, talvez eu tenha jeito pra isso."
+    show erika n2
     Erika "Realmente, acho que você tem mesmo!"
-    "E foi assim que eu resolvi o meu primeiro caso investigativo e criei coragem pra chamar minha melhor amiga pra sair num encontro!"
-    show black with dissolve 
-    
-    #talvez fazer um menu de escolha de ir ou para a frente da biblioteca ou para a frente do mercado
+    pause(0.5)
+    show black with dissolve
+    pause
+    jump quartodia7bom
+
+    label quartodia7bom:
+        scene black with dissolve
+        with Pause(1)
+        show text "{color=#FFFFFF}E foi assim que eu resolvi o meu primeiro caso investigativo e criei coragem pra chamar minha melhor amiga pra sair num encontro!{/color}"
+        with Pause(3)
+        scene black with dissolve
+        with Pause(1.5)

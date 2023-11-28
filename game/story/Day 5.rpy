@@ -145,7 +145,7 @@ label lojadia5:
             show nate n at left
             Nathan "Acho melhor investigarmos por conta própria mesmo, a policia não tem provas o suficiente para investiga-lo, então acho que eles não vão ajudar."
             show erika n at right
-            Erika "Justo, na frente da bilbioteca hoje a noite então?"
+            Erika "Justo, na frente da biblioteca hoje a noite então?"
             Nathan "isso, a gente se vê por lá"
             jump dianeutro
             pause
