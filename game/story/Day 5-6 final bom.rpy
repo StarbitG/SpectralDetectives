@@ -638,55 +638,125 @@ label bibliotecaday6continua:
     jump delegaciadia6
             
 label delegaciadia6:
-    "Saimos as pressas para a delegacia para mostrar as evidencias que possuiamos para o meu pai"
-    "chegando lá encontramos com meu pai e David conversando"
+    scene bg delegacia frente dia with dissolve
+    "Saímos as pressas para a delegacia para mostrar as evidencias que possuíamos para o meu pai"
     David "Eu estou dizendo senhor! Tenho todas as evidencias que comprovam que o Bibliotecário Joseph é o culpado!"
+    scene bg delegacia dentro with dissolve
     Pai "Certo, impressionantemente esse relatório está muito convincente, vou encaminhar um mandato para investigar a bibliotec-"
+    scene bg sala do pai clara with dissolve
+    show nate b at left
     Nathan "ESPERE, PARADO JÁ AI DAVID!"
+    show pai s at right
     Pai "Nathan!? Vivian!? que alvoroço é esse??"
+    hide pai 
+    show david s at right
     David "V-Vivian!?? o que houve? e por que esse homem está aqui?"
     "David aponta para o Joseph"
     Nathan "Podemos provar que o culpado dos crimes é o David e não o Joseph!"
+    show david f 
     David "Senhor Nathan! que surpesa! mas acho que o senhor está equivocado! essa é uma acusação muito séria que está fazendo!"
-    David "E como já ia falando ao senhor delegado Fábio, tenho provas que relatam que o culpado é o Joseph!! só preciso de um mandato oficial para investigar a biblioteca e poderei provar o que estou dizendo!"
+    David "E como já ia falando ao senhor delegado Fábio, tenho provas que relatam que o culpado é o Joseph!! Só preciso de um mandato oficial para investigar a biblioteca e poderei provar o que estou dizendo!"
+    hide david 
+    show joseph b at right
     Joseph "Mas isso é um absurdo!! você sabe muito bem que eu não fiz nada disso."
+    hide joseph 
+    show vivian b at right
     Vivian "Você tem como provar, é? interessante, eu tenho gravações que dizem o contrário!"
+    hide vivian
+    show pai s2 at right
     Pai "Calma, o que está acontecendo aqui? Vivian, que gravações são essas?"
+    hide pai 
+    show vivian b at right
     Vivian "Veja você mesmo delegado."
+    hide vivian
+    show david n at right
     David "Eu acho que não é necessário. Vamos acalmar os ânimos..."
+    hide david 
+    show pai b at right
     Pai "Deixe me ver essas gravações, Vivian"
     "meu pai coloca as gravações e vê o David arrombando as fechaduras da biblioteca e colocando os items roubados no cofre pouco tempo depois dos crimes terem acontecido oficialmente."
     Pai "Mas o que é isso?"
+    hide pai 
+    show david ex at right
     David "Eu posso explicar, err"
     "David tenta sair correndo pela porta da delegacia mas é impedido por Joseph"
     Nathan "Por que você fez isso David? achei que você era um cara legal!"
-    David "Por que eu fiz isso? Sério? todos me tratam como idiota, se eu conseguisse resolver um mistério"
-    David ""
-    pause
+    show david b at right
+    David "Por que eu fiz isso? Sério? todos me tratam como idiota, se eu conseguisse resolver um mistério que ninguém conseguiu eu seria visto como um heroi e não teria mais que ouvir o delegado me diminuindo!"
+    David "{size=*0.75}E de quebra esse malandro ai ia preso e eu finalmente poderia ficar com minha linda Vivian...{/size}"
+    hide david
+    show vivian s at right
+    Vivian "???????" 
+    show vivian b
+    Vivian "Você é maluco! eu nunca ficaria com você!!"
+    hide vivian 
+    show pai b at right
+    Pai "Acho que eu já vi o bastante, David, você está preso!"
+    "Meu pai se levanta e algema David"
+    Pai "Meus parabéns pelo seu trabalho Vivian, ótima resolução do caso."
+    hide pai 
+    show vivian f at right
+    Vivian "Senhor, você deveria estar agradecendo ao seu filho por isso, foi ele que descobriu tudo! eu só o ajudei."
+    hide vivian 
+    show pai n2 at right
+    show nate ns
+    Pai "Sério? Nathan, sei que fui duro com você e não tenho direito de dizer isso, mas, bom trabalho filho! Estou orgulhoso de você."
+    "Meu pai me abraça e leva o David algemado para fora, Vivian e Joseph se despedem e eu volto para casa."
 
+    scene bg quarto com pistas noite with dissolve
+    Nathan "Finalmente, acabou, conseguimos!"
+    John "Parabéns por ter solucionado o mistério Nathan!"
+    Camilla "Estamos orgulhosos de você!"
+    Nathan "Eu não teria conseguido sem vocês, obrigado!"
+    Camilla "Que isso, estamos sempre aqui por você, o que você vai fazer agora?"
+    Nathan "Acho que vou tomar coragem e fazer algo que já devia ter feito a muito tempo."
+    John "Não pode ser, você vai?..."
+    Nathan "Sim, vou chamar a Erika pra sair."
+    "Eu ligo para Erika, meu coração está bastante acelerado de ansiedade, cada vez que o telefone toca sinto uma leve parada cardiaca até que ela atende."
+    Erika "Alô, Nate? Aconteceu alguma coisa? está bem tarde."
+    Nathan "Oi, Erika, desculpe, tá tudo bem sim, na verdade está tudo ótimo, conseguimos pegar o verdadeiro ladrão."
+    Erika "Sério?? e ai?? o que aconteceu?"
+    Nathan "Acontece que o ladrão era o David esse tempo todo, ele tava fazendo isso como uma forma de se vingar e solucionar o crime que ele mesmo cometeu"
+    Nathan "Ele achou que fazendo isso as pessoas iam ver ele como um heroi e parariam de pegar no pé dele"
+    Erika "Nossa... Dá até pra sentir um pouco de pena dele..."
+    Nathan "É..."
+    Nathan "Bom, na verdade eu não te liguei pra falar disso, escuta, err, eu..."
+    Erika "Você?..."
+    Nathan "Você quer sair comigo amanhã? tipo, pra um encontro?"
+    Erika "SIM, CLARO"
+    Erika "..." 
+    Erika "Quero dizer, Sim, claro, eu adoraria."
+    Nathan "Ok, a gente se encontra amanhã na frente do mercado então?"
+    Erika "Pode ser. Te vejo lá amanhã então, boa noite Nate."
+    Nathan "Boa noite Erika, até amanhã."
+    Nathan "..."
+    John "Eai? como foi? pela sua cara parece que deu bom."
+    Nathan "Marcamos um encontro."
+    Camilla "BOOA, Vamos ter certeza de não te atrapalhar amanhã Nate, não se preocupe."
+    John "Vai dormir agora campeão, que você vai ter um dia cheio amanhã."
+    "Me deito cheio de ansiedade e tento dormir o melhor que posso para o dia seguinte."
+    jump dia6bom
 
+label Epilogo:
+    "Acordo cedo e vou escovar os dentes e tomar um banho para meu encontro com a Erika"
+    John "É hoje, o grande dia, boa sorte lá Nathan!"
+    Camilla "Estaremos torcendo por você!"
+    "Termino de me aprontar e antes de sair de casa a Erika me liga"
+    Erika "Nate? tudo pronto? já estou a caminho do mercado."
+    Nathan "Já estou saindo, pode ficar tranquila"
 
-#===========================================================================================================================================================================================================================
-#(a primeira coisa dita no livro de como abrir cofres antigos é testar senhas como 1, 2, 3 e 4)
-
-#Dia 6, dia decisivo para a conclusão
-#dividir em ifs
-#No dia seguinte voce liga para vivian logo cedo e ela fala que encontrou o joseph e pede para que você vá direto para a biblioteca para explicar a situação
-#Chegando lá o joseph explica a situa ção e esclaresse os mal-entendidos e o corte em sua perna, que não tinha nada a ver com os crimes cometidos
-#O joseph explica que não sabe como as coisas foram parar naquele cofre, e ele diz que nunca nem chegou a usar aquele cofre desde que foi instalado
-#ele tambem conta que o ferimento em sua perna foi porque ele derrubou um aquario velho enquanto tentava limpa-lo em sua casa e acabou se cortando
-#e que na noite do dia 4 ele estava com pressa porque viu o David tacando o tijolo na janela da casa da vivian
-#voce fica muito chocado ao descobrir que o culpado é o david 😯😯😯😯
-#o Joseph consegue pegar as gravações do backup que conseguiam comprovar que David era o culpado
-#voces pegam as gravações e vão para a delegacia, lá o David e seu pai estão no escritorio do seu pai, o David parecia estar prestes a denunciar que o Bibliotecario era o culpado pelos crimes
-#voces chegam gritando OBJECTION
-#voces mostram as provas e por ser incontestavel, o David é preso na hora e confessa o porque que ele fez os crimes
-#seu pai fica orgulhoso de que você conseguiu pegar o verdadeiro culpado
-#o dia se encerra
-
-#dia 7 epilogo bom
-# voce passa o dia com a Erika e convida para sair
-# Lucas liga falando algo horrivel aconteceu sobre a erika, e na verdade ela só soltou outro gato na loja
-#voce chama erika pra sair e voces conversam na rua
-#ela pergunta o que você vai querer fazer da vida e voce responde que quer ser um investigador enquanto ela quer ser abrir a propria floricultura
-# "E foi assim que eu resolvi o meu primeiro caso de muitos (frase de efeito final)"
+    #na frente do mercado
+    "Eu chego na frente do mercado praticamente ao mesmo tempo que Erika."
+    Erika "E ai? vamos?"
+    Nathan "Bora"
+    Erika "Não quer passar pra ver os meninos? eles estão bem felizes porque você conseguiu ajudar eles a recuperar as alianças e o dinheiro roubado do mercado."
+    Nathan "Nah, outra hora eu falo com eles."
+    #(muda pro cenario da rua)
+    Erika "E ai, pra onde a gente vai?"
+    Nathan "É surpresa"
+    Erika "hmm, ta bom, e ai? Já decidiu o que vai fazer da vida? eu continuo com o plano de abrir minha floricultura"
+    Erika "Ainda pretende continuar viajando pra descobrir o que fazer?"
+    Nathan "Na verdade, já decidi sim, eu descobri que quero ser um investigador da policia, talvez eu tenha jeito pra isso."
+    Erika "Realmente, acho que você tem mesmo!"
+    "E foi assim que eu resolvi o meu primeiro caso investigativo e criei coragem pra chamar minha melhor amiga pra sair num encontro!"
+    show black with dissolve 

@@ -147,6 +147,7 @@ label lojadia5:
             show erika n at right
             Erika "Justo, na frente da bilbioteca hoje a noite então?"
             Nathan "isso, a gente se vê por lá"
+            jump dianeutro
             pause
         "Entregar as chaves para o David" if moralfinalruim >= 1:
             "O David entra na loja pra roubar mais um salgadinho, eu abordo ele antes que ele pegue"
@@ -180,6 +181,7 @@ label lojadia5:
             "David tenta fazer uma pose de super herói mas fica ridículo e ele vai embora."
             hide david
             hide nate
+            jump dia5finalruim
             pause
             
             #se vc seguir pelo final neutro, o David aparece e te atrapalha de conseguir resolver o caso quando vc tenta invadir a biblioteca com a Erika

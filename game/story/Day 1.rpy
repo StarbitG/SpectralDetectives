@@ -235,99 +235,99 @@ label quartodia1: #Quarto e final do dia 1 - Dia 1
     "E assim se finaliza o meu primeiro dia na cidade."
     jump startday2
 
-label invteste:
-    screen botaoCasal():
-        image "bg shop.png"
-        if "chave" in inventory_items:
-            imagebutton:
-                xpos 1620
-                ypos 500
-                auto "Red_button_%s.png"
-                action Notify("Itens removidos"), Jump("removetudo")
+# label invteste:
+#     screen botaoCasal():
+#         image "bg shop.png"
+#         if "chave" in inventory_items:
+#             imagebutton:
+#                 xpos 1620
+#                 ypos 500
+#                 auto "Red_button_%s.png"
+#                 action Notify("Itens removidos"), Jump("removetudo")
 
-        if "chave" not in inventory_items:
-            imagebutton:
-                xalign 0.5
-                yalign 0.5
-                auto "Red_button_%s.png"
-                action Notify("Você tem todos os itens agora"), Jump("ColetaChave")
+#         if "chave" not in inventory_items:
+#             imagebutton:
+#                 xalign 0.5
+#                 yalign 0.5
+#                 auto "Red_button_%s.png"
+#                 action Notify("Você tem todos os itens agora"), Jump("ColetaChave")
     
-        imagebutton:
-            xalign 0.0
-            yalign 1.0
-            auto "Mochila %s.png"
-            action ToggleScreen("inventory_item_description")
+#         imagebutton:
+#             xalign 0.0
+#             yalign 1.0
+#             auto "Mochila %s.png"
+#             action ToggleScreen("inventory_item_description")
 
-label ColetaChave:
-    $ inventory_items.append("chave")
-    $ inventory_items.append("arquivos")
-    $ inventory_items.append("caderno aberto")
-    $ inventory_items.append("caderno fechado")
-    $ inventory_items.append("aliança")
-    $ inventory_items.append("distintivo")
-    $ inventory_items.append("luvas")
-    jump retornoCasal
+# label ColetaChave:
+#     $ inventory_items.append("chave")
+#     $ inventory_items.append("arquivos")
+#     $ inventory_items.append("caderno aberto")
+#     $ inventory_items.append("caderno fechado")
+#     $ inventory_items.append("aliança")
+#     $ inventory_items.append("distintivo")
+#     $ inventory_items.append("luvas")
+#     jump retornoCasal
 
-label removetudo:
-    $ inventory_items.remove("chave")
-    $ inventory_items.remove("arquivos")
-    $ inventory_items.remove("caderno aberto")
-    $ inventory_items.remove("caderno fechado")
-    $ inventory_items.remove("aliança")
-    $ inventory_items.remove("distintivo")
-    $ inventory_items.remove("luvas")
-    jump retornoCasal
-screen botaoJornal():
-    image "bg biblioteca.png"
-    imagebutton:
-        xalign 0.5
-        yalign 0.5
-        auto "Red_button_%s.png"
-        action Jump("biblioteca")
+# label removetudo:
+#     $ inventory_items.remove("chave")
+#     $ inventory_items.remove("arquivos")
+#     $ inventory_items.remove("caderno aberto")
+#     $ inventory_items.remove("caderno fechado")
+#     $ inventory_items.remove("aliança")
+#     $ inventory_items.remove("distintivo")
+#     $ inventory_items.remove("luvas")
+#     jump retornoCasal
+# screen botaoJornal():
+#     image "bg biblioteca.png"
+#     imagebutton:
+#         xalign 0.5
+#         yalign 0.5
+#         auto "Red_button_%s.png"
+#         action Jump("biblioteca")
 
-# Mapa
+# # Mapa
 
-screen mapa():
-    image "bg map.jpg"
-    imagebutton:
-        xalign 0.5
-        yalign 0.5
-        auto "Red_button_%s.png"
-        action Hide(), Show("botaoQuarto", fade)
+# screen mapa():
+#     image "bg map.jpg"
+#     imagebutton:
+#         xalign 0.5
+#         yalign 0.5
+#         auto "Red_button_%s.png"
+#         action Hide(), Show("botaoQuarto", fade)
     
-    imagebutton:
-        xalign 1.0
-        yalign 0.5
-        auto "Red_button_%s.png"
-        action Hide(), Show('botaoCasal', fade)
+#     imagebutton:
+#         xalign 1.0
+#         yalign 0.5
+#         auto "Red_button_%s.png"
+#         action Hide(), Show('botaoCasal', fade)
 
-    imagebutton:
-        xalign 0.0
-        yalign 0.5
-        auto "Red_button_%s.png"
-        action Hide(), Show('botaoJornal', fade)
+#     imagebutton:
+#         xalign 0.0
+#         yalign 0.5
+#         auto "Red_button_%s.png"
+#         action Hide(), Show('botaoJornal', fade)
 
-    imagebutton:
-        xalign 1.0
-        yalign 0.0
-        auto "Red_button_%s.png"
-        action Hide(), Show('botaoErika', fade)
+#     imagebutton:
+#         xalign 1.0
+#         yalign 0.0
+#         auto "Red_button_%s.png"
+#         action Hide(), Show('botaoErika', fade)
 
 
 
-label finalexemplo:
-    scene bg quarto
-    show halfblack:
-        alpha 0.2
-    pause
-    window hide
-    show halfblack with dissolve
-    show vivian test at left
-    show erika test at right
-    Erika "Lorem ipsum."
-    Vivian "Lorem ipsum."
-    show erika test at left with move
-    show vivian test at right with move
-    Erika "teste"
-    Vivian "Teste"
-    pause
+# label finalexemplo:
+#     scene bg quarto
+#     show halfblack:
+#         alpha 0.2
+#     pause
+#     window hide
+#     show halfblack with dissolve
+#     show vivian test at left
+#     show erika test at right
+#     Erika "Lorem ipsum."
+#     Vivian "Lorem ipsum."
+#     show erika test at left with move
+#     show vivian test at right with move
+#     Erika "teste"
+#     Vivian "Teste"
+#     pause
