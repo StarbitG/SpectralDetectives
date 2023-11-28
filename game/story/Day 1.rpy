@@ -123,7 +123,7 @@ label intro2: #Intro indo no mercado pela primeira vez - Dia 1
     #Lucas pega a lista das minhas mãos e sai por um tempo
     Nathan "Você pode me contar essa história do gato de rua?"
     show seb b at right
-    Sebastian "Basicamente, a gênia ali soltou um gato feroz dentro da loja que derrubou TUDO de TODAS as prateleiras. Foi bem complicado de explicar pro pai do Lucas que a gente não conseguiu vender nada no dia porque ficou arrumando a loja depois."
+    Sebastian "Basicamente, a genia ali soltou um gato feroz dentro da loja que derrubou TUDO de TODAS as prateleiras. Foi bem complicado de explicar pro pai do Lucas que a gente não conseguiu vender nada no dia porque ficou arrumando a loja depois."
     show seb f at right
     Sebastian "Você teve sorte de não ser banida de entrar nesse mercado, Erika, hahaha."
     hide nate

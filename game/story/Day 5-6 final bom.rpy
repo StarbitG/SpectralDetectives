@@ -40,7 +40,7 @@ label delegaciavivian2:
     Nathan "O máximo que pode acontecer é a gente não encontrar nada."
     show vivian f
     Vivian "Se acontecer algo de ruim, o peso vai cair nas suas costas ouviu? Vamos logo antes que eu mude de ideia"
-    "Então eu e Vivian fomos até a bilbioteca"
+    "Então eu e Vivian fomos até a biblioteca."
     hide nate 
     hide vivian
     jump bibliotecaday5
@@ -68,6 +68,7 @@ label bibliotecaday5procura:
     menu:
         "Estante":
             show halfblack
+            show nate n at left
             Nathan "Aqui só tem alguns livros infantis, são muito finos pra esconder algo..."
             $ procuraestante += 1
             hide halfblack
@@ -171,7 +172,7 @@ label bibliotecaday5continuação:
             Nathan "Ahn!? Não, eu tava falando sozinho mesmo"
             Vivian "Okay?"
             show nate n
-            Nathan "Desculpa as perguntas meio invasisvas aliás."
+            Nathan "Desculpa as perguntas meio invasivas aliás."
             Vivian "Não não, tudo bem."
             hide vivian
             show john n at right
@@ -190,7 +191,7 @@ label bibliotecaday5continuação:
             Nathan "Mas ainda precisamos interroga-lo para saber o porque dele ter cometido os crimes."
             Vivian "Enquanto eu olhava as câmeras, percebi que o Joseph não estava na biblioteca durante o horário dos crimes mas..."
             show vivian n
-            Vivian "Ainda é dificil de acreditar que ele cometeria tais atos, vou me encontrar com ele depois pra interrogá-lo."
+            Vivian "Ainda é difícil de acreditar que ele cometeria tais atos, vou me encontrar com ele depois pra interrogá-lo."
             Vivian "Acho que é melhor a gente se separar agora, vou te passar o meu número e você já pode ir pra casa, qualquer coisa eu entro em contato."
             $ renpy.notify("Vivian te passou o número dela.")
             "Após Vivian me entregar o número dela, ela sai pela porta. Eu vou logo em seguida, direto pra casa."
@@ -207,12 +208,12 @@ label bibliotecaday5continuação:
             Nathan "Você tem razão, é melhor não mexermos no cofre por agora, acha que teria alguma forma de descobrir a senha sem a tentar abrir ele aqui?"
             show vivian n at right
             Vivian "O Joseph deve saber a senha... O cofre é dele afinal, vou tentar perguntar pra ele mais tarde."
-            Vivian "Na verdade, acho melhor eu ir atrás dele agora mesmo, até outra hora nathan, toma meu telefone, você sabe onde me achar se precisar."
+            Vivian "Na verdade, acho melhor eu ir atrás dele agora mesmo, até outra hora Nathan, toma meu telefone, você sabe onde me achar se precisar."
             Vivian "Antes que eu me esqueça, de acordo com as câmeras, Joseph não estava por aqui no horário do crime, não queria ter que fazer isso, mas vou ter que interrogar ele mais a fundo."
             Nathan "Ele não estava aqui? Mas ele praticamente nunca sai da biblioteca."
             Vivian "Essa é a parte esquisita, a câmera é meio ruim por ser antiga, mas eu consegui ver ele saindo daqui claramente."
             show vivian f
-            Vivian "Bom, parece que nós dois conseguimos ótimas informações nesse tempinho. Acho que deviamos nos separar por agora, se eu descobrir algo a mais sobre o Joseph, vou te ligar ok?"
+            Vivian "Bom, parece que nós dois conseguimos ótimas informações nesse tempinho. Acho que devíamos nos separar por agora, se eu descobrir algo a mais sobre o Joseph, vou te ligar ok?"
             hide vivian 
             show john n at right
             John "Ei, não tinha um documento na sala do seu pai falando sobre destrancar cofres? Talvez ele seja útil"
@@ -221,7 +222,7 @@ label bibliotecaday5continuação:
             show camilla n at right
             Camilla "Acho que não custa tentar, qualquer coisa você poderia enganar o seu pai e pegar enquanto ele está distraído."
             Nathan "Hmm, vou pensar no que fazer e decido quando chegarmos na delegacia"
-            "A vivian então saiu da bilbioteca anotando sobre as coisas que ela descobriu por aqui."
+            "A vivian então saiu da biblioteca anotando sobre as coisas que ela descobriu por aqui."
             hide vivian 
             hide camilla 
             hide john 
@@ -340,7 +341,7 @@ label delegaciapai2:
     show pai n at right
     Pai "Nathan, só espera do lado de fora da minha sala por favor."
     Nathan "Tá bom eu saio, não vou te atrapalhar mais eu juro."
-    "Assim que eu termino a frase, aproveito que ele se distraiu e puxo o livro da mesa, saindo o mais rápido possivel da sala com o livro na mão."
+    "Assim que eu termino a frase, aproveito que ele se distraiu e puxo o livro da mesa, saindo o mais rápido possível da sala com o livro na mão."
     hide john
     hide pai
     hide camilla
@@ -353,7 +354,7 @@ label casadia5:
     show camilla f at right
     Camilla "E aí detetive? Como você se sente?"
     show nate n at left
-    Nathan "Exausto, esses ultimos 5 dias tem sido.. algo, definitivamente."
+    Nathan "Exausto, esses últimos 5 dias tem sido... algo, definitivamente."
     hide camilla
     show john f at right
     John "Algo bom, você tem evoluído bastante, pelo menos tem feito algo a mais do que ficar trancado no quarto o dia todo."
@@ -513,18 +514,18 @@ label perguntasjoseph:
                 show nate s
                 Nathan "Nos já tentamos isso, não é essa senha!"
                 hide camilla 
-                show joseph s
+                show joseph s at right
                 Joseph "Estranho..."
                 "Joseph tenta destrancar o cofre sem sucesso e então eu pego o livro que roubei da sala do meu pai"
                 show nate ns
                 Nathan "Vamos tentar usar isso."
                 hide joseph 
-                show vivian f
+                show vivian f at right
                 Vivian "Um livro de destrancar cofres? que conveniente"
                 "Abro o livro e a primeira coisa escrita é, tentar senhas simples como 1, 2, 3 e 4"
                 hide vivian 
                 show john ex at right
-                John "Isso é tão ridiculo que eu fico me perguntando porque de não termos testado, mas acho que é impossivel ser isso"
+                John "Isso é tão ridículo que eu fico me perguntando porque de não termos testado, mas acho que é impossível ser isso"
                 "Tento a senha 1, 2, 3 e 4 e cofre se abre"
                 show nate s at left
                 Nathan "..."
@@ -654,7 +655,7 @@ label delegaciadia6:
     "David aponta para o Joseph"
     Nathan "Podemos provar que o culpado dos crimes é o David e não o Joseph!"
     show david f 
-    David "Senhor Nathan! que surpesa! mas acho que o senhor está equivocado! essa é uma acusação muito séria que está fazendo!"
+    David "Senhor Nathan! que surpresa! mas acho que o senhor está equivocado! essa é uma acusação muito séria que está fazendo!"
     David "E como já ia falando ao senhor delegado Fábio, tenho provas que relatam que o culpado é o Joseph!! Só preciso de um mandato oficial para investigar a biblioteca e poderei provar o que estou dizendo!"
     hide david 
     show joseph b at right
@@ -682,7 +683,7 @@ label delegaciadia6:
     "David tenta sair correndo pela porta da delegacia mas é impedido por Joseph"
     Nathan "Por que você fez isso David? achei que você era um cara legal!"
     show david b at right
-    David "Por que eu fiz isso? Sério? todos me tratam como idiota, se eu conseguisse resolver um mistério que ninguém conseguiu eu seria visto como um heroi e não teria mais que ouvir o delegado me diminuindo!"
+    David "Por que eu fiz isso? Sério? todos me tratam como idiota, se eu conseguisse resolver um mistério que ninguém conseguiu eu seria visto como um herói e não teria mais que ouvir o delegado me diminuindo!"
     David "{size=*0.75}E de quebra esse malandro ai ia preso e eu finalmente poderia ficar com minha linda Vivian...{/size}"
     hide david
     show vivian s at right
@@ -698,46 +699,66 @@ label delegaciadia6:
     show vivian f at right
     Vivian "Senhor, você deveria estar agradecendo ao seu filho por isso, foi ele que descobriu tudo! eu só o ajudei."
     hide vivian 
-    show pai n2 at right
+    show pai s at right
     show nate ns
     Pai "Sério? Nathan, sei que fui duro com você e não tenho direito de dizer isso, mas, bom trabalho filho! Estou orgulhoso de você."
     "Meu pai me abraça e leva o David algemado para fora, Vivian e Joseph se despedem e eu volto para casa."
 
     scene bg quarto com pistas noite with dissolve
+    show nate f2 at left
     Nathan "Finalmente, acabou, conseguimos!"
+    show john f at right
     John "Parabéns por ter solucionado o mistério Nathan!"
+    hide john 
+    show camilla f at right 
     Camilla "Estamos orgulhosos de você!"
     Nathan "Eu não teria conseguido sem vocês, obrigado!"
+    show camilla ex
     Camilla "Que isso, estamos sempre aqui por você, o que você vai fazer agora?"
+    show nate ns
     Nathan "Acho que vou tomar coragem e fazer algo que já devia ter feito a muito tempo."
+    hide camilla 
+    show john n at right
     John "Não pode ser, você vai?..."
+    show nate f2
     Nathan "Sim, vou chamar a Erika pra sair."
-    "Eu ligo para Erika, meu coração está bastante acelerado de ansiedade, cada vez que o telefone toca sinto uma leve parada cardiaca até que ela atende."
+    show nate n
+    "Eu ligo para Erika, meu coração está bastante acelerado de ansiedade, cada vez que o telefone toca sinto uma leve parada cardíaca até que ela atende."
+    hide john 
     Erika "Alô, Nate? Aconteceu alguma coisa? está bem tarde."
+    show nate ns 
     Nathan "Oi, Erika, desculpe, tá tudo bem sim, na verdade está tudo ótimo, conseguimos pegar o verdadeiro ladrão."
     Erika "Sério?? e ai?? o que aconteceu?"
+    show nate f
     Nathan "Acontece que o ladrão era o David esse tempo todo, ele tava fazendo isso como uma forma de se vingar e solucionar o crime que ele mesmo cometeu"
-    Nathan "Ele achou que fazendo isso as pessoas iam ver ele como um heroi e parariam de pegar no pé dele"
+    Nathan "Ele achou que fazendo isso as pessoas iam ver ele como um herói e parariam de pegar no pé dele"
     Erika "Nossa... Dá até pra sentir um pouco de pena dele..."
+    show nate n
     Nathan "É..."
+    show nate s
     Nathan "Bom, na verdade eu não te liguei pra falar disso, escuta, err, eu..."
     Erika "Você?..."
+    show nate s2
     Nathan "Você quer sair comigo amanhã? tipo, pra um encontro?"
+
     Erika "SIM, CLARO"
     Erika "..." 
     Erika "Quero dizer, Sim, claro, eu adoraria."
+    show nate f2
     Nathan "Ok, a gente se encontra amanhã na frente do mercado então?"
     Erika "Pode ser. Te vejo lá amanhã então, boa noite Nate."
+    show nate ns
     Nathan "Boa noite Erika, até amanhã."
+    show nate n
     Nathan "..."
     John "Eai? como foi? pela sua cara parece que deu bom."
     Nathan "Marcamos um encontro."
-    Camilla "BOOA, Vamos ter certeza de não te atrapalhar amanhã Nate, não se preocupe."
+    Camilla "BOAAA, Vamos ter certeza de não te atrapalhar amanhã Nate, não se preocupe."
     John "Vai dormir agora campeão, que você vai ter um dia cheio amanhã."
     "Me deito cheio de ansiedade e tento dormir o melhor que posso para o dia seguinte."
-    jump dia6bom
+    jump EpilogoBom
 
-label Epilogo:
+label EpilogoBom:
     "Acordo cedo e vou escovar os dentes e tomar um banho para meu encontro com a Erika"
     John "É hoje, o grande dia, boa sorte lá Nathan!"
     Camilla "Estaremos torcendo por você!"
@@ -751,7 +772,7 @@ label Epilogo:
     Nathan "Bora"
     Erika "Não quer passar pra ver os meninos? eles estão bem felizes porque você conseguiu ajudar eles a recuperar as alianças e o dinheiro roubado do mercado."
     Nathan "Nah, outra hora eu falo com eles."
-    #(muda pro cenario da rua)
+    #(muda pro cenário da rua)
     Erika "E ai, pra onde a gente vai?"
     Nathan "É surpresa"
     Erika "hmm, ta bom, e ai? Já decidiu o que vai fazer da vida? eu continuo com o plano de abrir minha floricultura"
@@ -760,3 +781,5 @@ label Epilogo:
     Erika "Realmente, acho que você tem mesmo!"
     "E foi assim que eu resolvi o meu primeiro caso investigativo e criei coragem pra chamar minha melhor amiga pra sair num encontro!"
     show black with dissolve 
+    
+    #talvez fazer um menu de escolha de ir ou para a frente da biblioteca ou para a frente do mercado

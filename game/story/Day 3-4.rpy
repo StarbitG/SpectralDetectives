@@ -162,7 +162,7 @@ label bibliotecaday3:
     hide halfblack 
     show bg biblioteca tarde with hpunch
     show halfblack
-    "Assim que os livros caem, o bibliotecário joseph se aproxima de nós, aparentemente ele não sabia que estávamos por lá."
+    "Assim que os livros caem, o bibliotecário Joseph se aproxima de nós, aparentemente ele não sabia que estávamos por lá."
     show erika s2 at left with vpunch
     Erika "Ahh!{nw}{w=0.5}"
     hide erika
@@ -174,7 +174,7 @@ label bibliotecaday3:
     Joseph "Tem certeza? você parece meio assustado, está tudo bem?"
     hide nate 
     show erika s at left
-    Erika "Nós já vimos tudo o que precisavamos, obrigado, já estamos de saída"
+    Erika "Nós já vimos tudo o que precisávamos, obrigado, já estamos de saída"
     Joseph "Esperem!{nw}{w=2.0}"
     hide joseph
     hide nate 
@@ -213,7 +213,7 @@ label delegaciaday3:
     show bg delegacia frente dia tarde with dissolve
     scene bg delegacia frente dia tarde
     show halfblack
-    "Antes de entrar na delegacia, john e camilla me abordam"
+    "Antes de entrar na delegacia, john e Camilla me abordam"
     show john n at right
     John "Cara, eu acho que você devia falar direto com seu pai, será que ele conseguiria entender o que você ta fazendo? Ele se desculpou afinal."
     show nate n at left
@@ -247,12 +247,12 @@ label delegaciavivian:
     show nate ns
     Nathan "Vou ser breve, na verdade, acho que tenho algumas informações importantes para o caso."
     show vivian f2
-    Vivian "Sério? Que bom! Desembuxa ai."
+    Vivian "Sério? Que bom! Desembucha ai."
     
     if pegaranel >= 1:
         show nate n
         Nathan "Acho que sei quem está cometendo os crimes recentes."
-        Nathan "Encontrei uma das alianças na entrada da biblioteca e o bibliotecario de lá estava com a perna mancando por conta de um corte que parece ter sido feito com vidro."
+        Nathan "Encontrei uma das alianças na entrada da biblioteca e o bibliotecário de lá estava com a perna mancando por conta de um corte que parece ter sido feito com vidro."
         Nathan "O nome dele é Joseph"
         show vivian s2
         Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
@@ -288,10 +288,10 @@ label delegaciavivian:
         Nathan "Acredito que o culpado possa ser o bibliotecário, ele tem agido de forma estranha e estava mancando por um corte de vidro em sua perna"
         show vivian b
         Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
-        Vivian "Olha, isso não serve como evidência, não posso fazer nada sem provas concretas, não trabalhamos com achismos e suspeitas infudamentadas"
+        Vivian "Olha, isso não serve como evidência, não posso fazer nada sem provas concretas, não trabalhamos com achismos e suspeitas infundamentadas"
         show nate s
         Nathan "Mas—" 
-    "Antes que pudessemos concluir a conversa meu pai aparece na recepção" 
+    "Antes que pudéssemos concluir a conversa meu pai aparece na recepção" 
 
     
     
@@ -348,7 +348,7 @@ label delegaciapai:
     John "Pô cara, acho que se ta viajando porque ta com raiva, tenta esfriar a cabeça um pouco"
     hide john 
     show camilla t at right
-    Camilla "Ter que ouvir e concordar com o John é dificil, mas ele ta certo."
+    Camilla "Ter que ouvir e concordar com o John é difícil, mas ele ta certo."
     Nathan "..."
     show nate n
     Nathan "Não quero mais falar sobre isso, só quero ir pra casa"
@@ -402,8 +402,8 @@ label falamaecasa:
     show mae s at right
     Mãe "Nathan! O que você faz fora de casa tão tarde? Até seu pai chegou antes de você."
     show nate ex at left
-    Nathan "Oi mãe. Eu só estava resolvendo alguns asuntos com a Erika, nada de mais, desculpa te preocupar."
-    Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei parguntar sobre, preferi esperar aqui fora."
+    Nathan "Oi mãe. Eu só estava resolvendo alguns assuntos com a Erika, nada de mais, desculpa te preocupar."
+    Mãe "Quando for assim me avisa por favor, seu pai parecia irritado como sempre então eu nem tentei perguntar sobre, preferi esperar aqui fora."
     show nate n
     Nathan "Desculpa mãe, eu não vi o tempo passar dessa vez."
     show mae f
@@ -413,7 +413,7 @@ label falamaecasa:
     scene black
     hide nate 
     hide mae 
-    "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que algúem tinha colocado uma montanha nas minhas costas"
+    "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que alguém tinha colocado uma montanha nas minhas costas"
     jump quartodia4
 
 label quartodia4:

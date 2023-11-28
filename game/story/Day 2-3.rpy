@@ -158,7 +158,7 @@ label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando L
     show nate f
     Nathan "Ótima ideia! David! Preciso de sua ajuda aqui!"
     show john n
-    John "Ei, eu tava zuando, volta aqui!"
+    John "Ei, eu tava zoando, volta aqui!"
     hide john
     Nathan "David! Posso perguntar uma coisa?"
     show david f at right
@@ -257,7 +257,7 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
             John "Não tem de quê, Nathan!"
             hide john
             show camilla b at right
-            Camilla "Vocês são ridiculos, não sei porque ainda tento ajudar..."
+            Camilla "Vocês são ridículos, não sei porque ainda tento ajudar..."
             Camilla "Isso é tipo, a primeira coisa que vocês tinham que pensar, vocês se quer pensam?"
             hide camilla
             show john n at right
@@ -338,7 +338,7 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
         "Destrancar o cadeado" if "chave" in inventory_items:
             hide john
             show camilla t at right 
-            Camilla "Na verdade nathan, você tem a chave do seu pai, por que você não só abre o cadeado que nem uma pessoa normal?"
+            Camilla "Na verdade Nathan, você tem a chave do seu pai, por que você não só abre o cadeado que nem uma pessoa normal?"
             show nate f2 at left
             Nathan "Ah é né, esqueci."
             "Destranco o cadeado, aparentemente ele nem estava trancado, então só bastou um toquinho."
@@ -407,7 +407,7 @@ label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
             show nate s
             Nathan "Eu me sinto mal por fazer isso."
             John "Vamos só entrar antes que você desista. Só de você quebrar esse cadeado não tem mais volta."
-            scene bg delegacia 
+            scene bg delegacia dentro
             show halfblack
             show john ex at right
             John "Você pelo menos se lembra onde fica a sala do seu pai?"
@@ -523,7 +523,7 @@ label quartodia21: #voce volta para casa e encerra o dia 2 - Dia 2
     John "Tá bom, a gente pode ajudar o Nathan sim."
     hide john
     show camilla f at right
-    Camilla "Ebaa."
+    Camilla "Eba!"
     hide camilla
     "O tempo passa..."
     jump actualday2
@@ -551,8 +551,8 @@ label actualday2:
                 Nathan "Queria que você tentasse me entender um pouco mais antes de julgar em tudo que eu faço!"
                 show pai s
                 Pai "..."
-                Pai "Desculpe Nathan, acho que deviamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
-                Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsavel com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
+                Pai "Desculpe Nathan, acho que devíamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
+                Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsável com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
                 hide pai
                 show mae b at right
                 Mãe "Vocês dois estão discutindo de novo?"

@@ -70,14 +70,14 @@ label lojadia5:
         Lucas "Antes que eu me esqueça, agradeça sua mãe pela torta daquele dia, estava muito boa!"
         Lucas "Ela ajudou muito naquele dia, eu tava bem triste com a situação da loja."
         hide lucas
-        show sebastian b at right
+        show seb b at right
         Sebastian "Por mais que só pudemos comer metade já que o David comeu quase tudo sozinho."
         Sebastian "Não vou muito com a cara dele, algo me parece estranho nesse cara..."
         hide seb
         show lucas b at right
         Lucas "Sebastian, para com isso!"
         hide lucas
-        show sebastian n
+        show seb n at right
         Sebastian "..."
         hide seb
         hide lucas
@@ -104,7 +104,7 @@ label lojadia5:
     hide nate
     "Os dois vão para os fundos da loja, o Sebastian parece estar dando uma bronca no Lucas"
     show nate n at left 
-    Nathan "Erika, aproveitando que eles sairam, deixa eu te contar o que achei ontem."
+    Nathan "Erika, aproveitando que eles saíram, deixa eu te contar o que achei ontem."
     show erika n at right
     Erika "O que é que você encontrou? é de comer?"
     show nate s
@@ -154,7 +154,7 @@ label lojadia5:
             show nate n at left
             Nathan "Acho que vou falar com o David então"
             show erika n at right
-            Erika "Ok, te vejo outra hora então!"
+            Erika "Ok, acho que te vejo outra hora então!"
             Nathan "David!"
             hide erika
             show david n at right
@@ -166,7 +166,7 @@ label lojadia5:
             show david f
             David "E o que você têm aí com você meu bom?"
             David "...Senhor!"
-            Nathan "Eu encontrei essas chaves aqui, acredito que elas pertencem ao bibliotecario."
+            Nathan "Eu encontrei essas chaves aqui, acredito que elas pertencem ao bibliotecário."
             show david t
             David "?"
             Nathan "A gente pode investigar a biblioteca juntos, acredito que lá tenham evidências que provam que o Joseph seja o culpado!"
@@ -177,10 +177,8 @@ label lojadia5:
             David "Hmm, interessante. Vou levar essas chaves comigo, e ver se elas se encaixam em alguma evidência. Obrigado, Senhor!"
             show nate s
             Nathan "Espera! Eu não vou ajudar?"
-            David "Claro que não, isso é muito arriscado para envolver um cívil, deixa isso nas mãos do Super David!" 
+            David "Claro que não, isso é muito arriscado para envolver um civil, deixa isso nas mãos do Super David!" 
             "David tenta fazer uma pose de super herói mas fica ridículo e ele vai embora."
-            hide david
-            hide nate
             jump dia5finalruim
             pause
             
