@@ -56,13 +56,13 @@ label dianeutro:
 label ruaneutra:
     scene bg rua dia with dissolve
     scene bg rua tarde with dissolve
-    show nate f at right
     show halfblack
+    show nate f at left
     Nathan "Acho que vamos ter que ir agora de tarde mesmo, se não o David vai atrapalhar a gente"
     show erika n at right
     Erika "Sim, vamos aproveitar que os meninos estão distraindo ele"
 
-    scene bg delegacia frente dia tarde with dissolve
+    scene bg biblioteca fora tarde with dissolve
     show nate n at left
     Nathan "É isso, vamos entrar."
 
@@ -107,7 +107,7 @@ label biblioteca5neutro:
         Nathan "Nada..."
         Nathan "Acho que devíamos desistir e sair daqui antes qu—"
         "Erika tropeça no tapete e se esborracha no chão revelando um cofre escondido."
-        show bg biblioteca dentro tarde with hpunch
+        show bg biblioteca segredo tarde with hpunch
         show erika n2 at right
         Erika "Viu só o que eu encontrei de maneira totalmente proposital?"
         show nate s at left 
@@ -138,7 +138,7 @@ label biblioteca5neutro:
 
 #Fora da biblioteca (ainda de tarde?)
 label bibliotecaneutra2:
-    scene bg biblioteca segredo with dissolve 
+    scene bg biblioteca segredo tarde with dissolve 
     show david f at right
     David "Finalmente alcancei vocês. O que vocês viram ai dentro?"
     hide david
@@ -163,7 +163,7 @@ label bibliotecaneutra2:
     David "Não se preocupe, o Super David vai cuidar de tudo, senhor!"
     hide david 
     show erika s at right
-    Erika "{size=*0,75}Nós nem conseguimos dizer quais eram as provas...{/size}"
+    Erika "{size=*0.75}Nós nem conseguimos dizer quais eram as provas...{/size}"
     "Sem muita opções eu e Erika nos despedimos e voltamos para casa"
     jump quartodia5neutro
 
@@ -201,19 +201,27 @@ label dia6neutro:
     jump delegaciadia6neutra
 
 label delegaciadia6neutra:
-    scene bg delegacia frente dia 
-
-#delegacia (faz a cutscene como se ele fosse entrando na delegacia, parte de fora e depois parte de dentro, a cena vai rolar na recepção) [ok]
-#Joseph "ISSO É UM ABSURDO, COMO VOCÊS PODEM ME PRENDER? EU NÃO FIZ NADA, ISSO É UM ABSURDO!"
-#Pai "Você pode dizer tudo isso no tribunal, agora andando"
-#John "É, parece que ele não é tão idiota assim."
-#"Meu pai me ignora completamente enquanto leva o Joseph para os fundos, é como se ele nem tivesse me visto passar pela recepção"
-#"David e Vivian entram logo em seguida"
-#David "Ei Vivian, agora que eu solucionei esse mistério SOZINHO com meu incrível intelecto, você gostaria de sair comigo?"
-#Vivian "Você ficou maluco? não, não entendo nem como você pode estar me perguntando algo assim agora!"
-#Vivian "Algo claramente está errado com esse caso, o Joseph nunca cometeria um crime, ele é uma das melhores pessoas que eu já conheci."
-#David "Hmpf, que seja."
-#"Não tem mais nada que eu possa fazer aqui pelo jeito, vou embora." (meme do napoleao) [🥖🥖🥖🥖🥖🥖🥖🥖🥖🥖🥖🥖]
+    scene bg delegacia frente dia with dissolve
+    scene bg delegacia dentro with dissolve
+    show joseph b at right with hpunch
+    Joseph "ISSO É UM ABSURDO, COMO VOCÊS PODEM ME PRENDER? EU NÃO FIZ NADA, ISSO É UM ABSURDO!"
+    show pai b at left 
+    Pai "Você pode dizer tudo isso no tribunal, agora andando"
+    hide joseph 
+    show john n at right 
+    John "É, parece que ele não é tão idiota assim."
+    hide pai with dissolve 
+    "Meu pai me ignora completamente enquanto leva o Joseph para os fundos, é como se ele nem tivesse me visto passar pela recepção"
+    "David e Vivian entram logo em seguida"
+    hide john
+    show david f at right
+    David "Ei Vivian, agora que eu solucionei esse mistério SOZINHO com meu incrível intelecto, você gostaria de sair comigo?"
+    show vivian b at left
+    Vivian "Você ficou maluco? não, não entendo nem como você pode estar me perguntando algo assim agora!"
+    Vivian "Algo claramente está errado com esse caso, o Joseph nunca cometeria um crime, ele é uma das melhores pessoas que eu já conheci."
+    show david b
+    David "Hmpf, que seja."
+    "Não tem mais nada que eu possa fazer aqui pelo jeito, vou embora." 
 
 label quartodia7neutro:
     scene black with dissolve
@@ -221,49 +229,58 @@ label quartodia7neutro:
 
     show text "{color=#FFFFFF}Um tempo depois...{/color}"
     with Pause(3)
-    hide text 
+    hide text
+    jump mercadoneutro
 
+label mercadoneutro:
+    scene bg shop with dissolve 
+    show lucas f at right
+    Lucas "Nathan!, muito obrigado por ajudar a gente a recuperar as alianças cara, você é um anjo!!"
+    show nate ns at left
+    Nathan "Que isso, eu não fiz nada..."
+    hide lucas 
+    show seb f at right
+    Sebastian "Não esquenta, a Erika contou tudo a gente sabe que foram vocês que descobriram quem era o ladrão."
+    hide seb 
+    show lucas f at right
+    Lucas "Nunca imaginei que o Joseph fosse o culpado... Ele sempre foi tão gente boa comigo, mesmo comigo atrasando as devoluções dos livros"
+    hide lucas 
+    show erika n at right
+    Erika "Apesar do David ter ficado com toda a glória... Pelo menos a gente sabe quem foi que realmente descobriu o caso, não é Nathan?"
+    show nate n at left
+    Nathan "É... Acho que já vou pra casa galera."
+    show erika n2 at right
+    Erika "Tudo bem, você merece um descanso, senhor detetive!"
+    show nate ns at left
+    Nathan "É... haha"
+    jump finalneutrofinalmesmo
 
-#parte de dentro do mercadinho
-#Lucas "Nathan!, muito obrigado por ajudar a gente a recuperar as alianças cara, você é um anjo!!"
-#Nathan "Que isso, eu não fiz nada..."
-#Sebastian "Não esquenta, a Erika contou tudo a gente sabe que foram vocês que descobriram quem era o ladrão."
-#Lucas "Nunca imaginei que o Joseph fosse o culpado... Ele sempre foi tão gente boa comigo, mesmo comigo atrasando as devoluções dos livros"
-#Erika "Apesar do David ter ficado com toda a glória... Pelo menos a gente sabe quem foi que realmente descobriu o caso, não é Nathan?"
-#Nathan "É... Acho que já vou pra casa galera."
-#Erika "Tudo bem, você merece um descanso, senhor detetive!"
-#Nathan "É... haha"
+label finalneutrofinalmesmo:
+    scene bg mercado dia with dissolve
+    pause 1.0
+    scene bg rua dia with dissolve
+    pause 1.0 
+    scene bg casa fora dia with dissolve 
+    pause 1.0 
+    scene bg quarto com pistas dia with dissolve
+    show john n at right
+    John "Ei, Nathan. Você tá bem cara?"
+    John "Você ta estranho desde que resolveu o caso do bibliotecário."
+    hide john 
+    show camilla t at right 
+    Camilla "É, você devia estar orgulhoso! Acho até que seria um bom momento pra você chamar a Erika pra sair!"
+    show nate n at left
+    Nathan "Não, eu não consigo. Sinto que tem algo errado nesse caso, mas não sei dizer o que é."
+    Nathan "É como se...{w=1} faltasse uma peça do quebra-cabeça."
+    Nathan "O que será?..."
+    "Me deito e vou dormir um pouco"
+    jump finalPiacabouamém
 
+label finalPiacabouamém:
+    scene black with dissolve
+    with Pause(1)
 
-#(Cutscenete, parte de fora do mercado, rua, parte de fora da casa, quarto)
-#John "Ei, Nathan. Você tá bem cara?"
-#John "Você ta estranho desde que resolveu o caso do bibliotecário."
-#Camilla "É, você devia estar orgulhoso! Acho até que seria um bom momento pra você chamar a Erika pra sair!"
-#Nathan "Não, eu não consigo. Sinto que tem algo errado nesse caso, mas não sei dizer o que é."
-#Nathan "É como se faltasse uma peça do quebra-cabeça"
-#Nathan "O que será?..."
-#"Me deito e vou dormir um pouco"
-
-#Final mediocre, o mistério não parece ter sido solucionado corretamente.
-
-
-
-
-
-
-
-#=============================================================================================================================================================================================================================================================
-
-#  No dia seguinte voce decide ir até a delegacia para saber o que aconteceu
-#  chegando na recepção voce se depara com o joseph algemado e sendo levado preso enquanto gritava que era inocente
-#  O David diz que o ladrão foi pego graças a sua ajuda
-#  A Vivian aparece logo em seguida e diz que algo está errado mas que ela n sabe e que ela não vai parar até descobrir o que
-#  Voce vai até a loja contar o que aconteceu para o Lucas, Sebastian e Erika
-#  lucas, sebastian e Erika agradecem voce por ter solucionado o misterio e ficam felizes que vão ter suas coisas de volta
-#  Voces passam o dia juntos até que você vai para casa dormir
-#  em casa voce conversa com john e camilla, vc não está feliz com a solução do caso, algo parece estar errado e a fala de vivian te convence cada vez mais
-#  John e Camilla dizem que voce está muito cansado e john sugere que voce chame erika para sair
-#  Voce não se sente confiante para isso e vai dormir
-#  final mediocre, as coisas ficaram em aberto
-
-# =============================================================================================================================================================================================================================================================
+    show text "{color=#FFFFFF}Será que eu fiz algo de errado?...{/color}" with dissolve
+    with Pause(3)
+    hide text with dissolve
+    pause(2.0)

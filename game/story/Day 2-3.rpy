@@ -108,6 +108,8 @@ label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian 
     David "Senhor! Me desculpe, mas não temos mais tempo para conversas."
     "Já não basta a Erika me puxando pra todos os lugares, o David veio me puxar também."
     "Eu preciso encontrar essa moça de novo, essa garota de azul ciano... Será que era a Erika??."
+    hide nate
+    hide david 
 
     jump delegaciaday2
 
@@ -198,8 +200,7 @@ label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando L
     jump quartodia2
     
 label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos do caso - Dia 2
-    show bg quarto tarde with dissolve
-    scene bg quarto tarde
+    scene bg quarto tarde with dissolve
     show halfblack
     show nate f at left
     Nathan "Achei que você tava me zoando, John, isso foi extremamente útil."
@@ -231,7 +232,7 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
     Nathan "..."
     show nate ns
     Nathan "Acho que pode dar certo."
-    Camilla "Eu não ajudar vocês a fazer isso!"
+    Camilla "Eu não vou ajudar vocês a fazer isso!"
     menu:
         "Camilla, por favor!":
             show nate n
@@ -564,7 +565,7 @@ label actualday2:
                 Nathan "Tô... eu acho, não dormi muito bem."
                 hide black
                 show pai s at right
-                Pai "Bom dia, filho. Desculpa por anteontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estressado e acabei descontando em você. Sinto muito."
+                Pai "Bom dia, filho. Desculpa por anteontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estresse e acabei descontando em você. Sinto muito."
                 show nate ns at left
                 Nathan "Foi a mãe que fez você se desculpar, não foi?"
                 show pai s2

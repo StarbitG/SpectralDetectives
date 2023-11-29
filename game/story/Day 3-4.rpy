@@ -204,7 +204,7 @@ label bibliotecaday3:
     show nate f
     Nathan "Tá tranquilo, posso pegar carona com meu pai depois alguém na delegacia deve saber de algo"
     show erika n2
-    Erika "Tudo bem então, te vejo amanha nate!"
+    Erika "Tudo bem então, te vejo amanha Nate!"
     hide nate
     hide erika
     jump delegaciaday3
@@ -363,7 +363,7 @@ label delegaciapai:
     show joseph d at center with vpunch
     Nathan "Desculp—"
     show joseph n at center with dissolve
-    show joseph n at right
+    show joseph n at right with move
     Joseph "Desculpe, estou com um pouco de pressa."
     show joseph n at offscreenright with move
     show nate s2 at left

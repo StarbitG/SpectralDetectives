@@ -6,15 +6,12 @@ label startday5:
     "{i}trim... trim... trim...{/i}"
     show nate n at left
     Nathan "... Alô?"
-    show erika n at right
     Erika "Nathan! Finalmente consegui entrar em contato, você dormiu mais do que o normal hoje, tá tudo bem ai?."
     Nathan "Tá sim, só dormi um pouco mais tarde ontem"
     Erika "Entendi, mas enfim, tenho uma ótima notícia! O mercadinho foi reaberto e os meninos já estão esperando a gente por lá."
     show nate f 
     Nathan "Sério? Isso é incrível! Vou me arrumar rapidinho e já já estarei por lá okay?"
-    show erika n
     Erika "Ai que ótimo! Te encontro na frente da loja então tudo bem? Até mais tarde!"
-    hide erika
     "Erika encerra a ligação*"
     show camilla n at right
     Camilla "Espera aí Nate, antes de sair, você sabe o que vai fazer com a chave do Joseph?"
@@ -92,7 +89,7 @@ label lojadia5:
     Lucas "Aparentemente o departamento de policia quer aumentar a segurança na região enquanto eles não encontrarem o ladrão, e o David foi selecionado pra cuidar daqui."
     hide lucas
     show seb b at right
-    Sebastian "Cá entre nós, eu acho que eles escolheram o policial mais folgado possível. A cada 30 minutos ele vem aqui e pega um saldinho e sai sem pagar!."
+    Sebastian "Cá entre nós, eu acho que eles escolheram o policial mais folgado possível. A cada 30 minutos ele vem aqui e pega um salgadinho e sai sem pagar!."
     hide seb
     show lucas n at right
     Lucas "Ah, eu não me importo muito com isso, eu acho válido já que ele está se arriscando pra nos proteger."
