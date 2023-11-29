@@ -2127,9 +2127,7 @@ class Bar(renpy.display.core.Displayable):
 
                 self.value = value
                 adjustment = value.get_adjustment()
-
-                if renpy.game.interface is not None:
-                    renpy.game.interface.timeout(0)
+                renpy.game.interface.timeout(0)
 
                 tooltip = value.get_tooltip()
                 if tooltip is not None:
