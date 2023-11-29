@@ -12,16 +12,80 @@ label dianeutro:
     #"Eu e Erika corremos para fora e vamos para a biblioteca"
     
     #rua
-    #Nathan "Acho que vamos ter que ir agora de tarde mesmo, "
+    #Nathan "Acho que vamos ter que ir agora de tarde mesmo, se não o David vai atrapalhar a gente"
+    #Erika "Sim, vamos aproveitar que os meninos estão distraindo ele"
 
+    #Frente da delegacia
+    #Nathan "É isso, vamos entrar."
+
+    #Dentro da biblioteca
+    #Erika "Vamos procurar o que pudermos o mais rápido possível, não sabemos quanto tempo Lucas e Sebastian vão segurar o David."
+    #Nathan "Certo!"
+    #Erika "Por onde a gente começa?"
+
+label biblioteca5neutro:
+    scene bg biblioteca dentro tarde with dissolve
+    menu:
+        "Estante":
+            show halfblack
+            show nate n at left
+            Nathan "Aqui só tem alguns livros infantis, são muito finos pra esconder algo..."
+            $ procuraestante += 1
+            hide halfblack
+        "Bancada principal" if procuraestante >= 1:
+            show halfblack
+            show nate n at left
+            Nathan "Documentos sobre emprestar e devolver livros, parece que o Lucas pegou algo emprestado faz alguns meses e não devolveu ainda."
+            show erika n at right
+            Erika "Olha só, parece que o Lucas não é tão santinho como parece."
+            hide nate
+            $ procurabancada += 1
+            hide halfblack
+        "Prateleira" if procurabancada >= 1:
+            show halfblack
+            "Procurar essa prateleira me faz pensar quando eu comecei a investigar tudo isso. Não parece ter nada por aqui ainda."
+            show nate n at left
+            Nathan "Tem que ter alguma coisa por aqui, se aqui não tem nada, o David vai acabar saindo ileso."
+            $ procuraprateleira += 1
+            hide camilla 
+            hide nate
+            hide john
+            hide halfblack
+
+    if procuraprateleira >=1 and procurabancada >=1 and procuraestante >=1:
+        Nathan "Nada..."
+        Nathan "Acho que devíamos desistir e sair daqui antes qu—"
+        "Erika tropeça no tapete e se esborracha no chão revelando um cofre escondido."
+        Erika "Viu só o que eu encontrei de maneira totalmente proposital?"
+        Nathan "Err, bom trabalho?"
+        Nathan "Mas como vamos abri-lo?"
+        Erika "Deixa isso comigo."
+        "Erika encosta a cabeça no cofre e começa a testar varias combinações, até que ouvimos um *Clack* e o cofre se abre."
     
-# Nathan convida Erika para ir à biblioteca com ele procurar as últimas pistas
-# Erika aceita o convite
-# David se oferece para ir junto e acaba atrapalhando a investigação mas lucas e sebastian te ajudam distraindo o David (voce pede a ajuda de lucas e sebastian pq sabe q o David iria atrapalhar)
-# voces vão até a biblioteca no entardecer mesmo, chegando lá vocês exploram a biblioteca e encontram o cofre
-# A erika sabe abrir cofres e fechaduras então ela te ajuda a abrir o cofre assim que voces encontram
-# Abrindo o cofre voces encontram todas as evidencias dos crimes anteriores
-# Assim que voces veem isso voces saem rapidamente da biblioteca e se deparam com o David do lado de fora, voces contam para ele o que tinha dentro da biblioteca e ele diz que vai cuidar de tudo apartir de agora
+    else:
+        jump biblioteca5neutro
+    
+    #cena da biblioteca com o cofre
+    Erika "Isso é o que eu to pensando que é?"
+    Nathan "Todas os objetos roubados..."
+    Nathan "A gente estava certo, o Joseph é o ladrão!"
+    Erika "Precisamos avisar alguém da policia, tipo, agora."
+
+#Fora da biblioteca (ainda de tarde?)
+
+#David "Finalmente alcancei vocês. O que vocês viram ai dentro?"
+#Erika "David! precisávamos falar com você!"
+#David "E o que seria?" (coloca ele com uma expressão brava aqui)
+#Nathan "O Joseph, é ele, ele é o ladrão."
+#David "É?... Quem é Joseph, Senhor!?" (coloca ele normal de volta aqui)
+#Erika "O bibliotecário??"
+#David "Ah sim, entendo, então eu assumo daqui!"
+#Nathan "Mas—"
+#David "Não se preocupe, o Super David vai cuidar de tudo, senhor!"
+#Erika "{size=*0,75}Nós nem conseguimos dizer quais eram as provas...{/size}"
+
+
+
 # No dia seguinte voce decide ir até a delegacia para saber o que aconteceu
 # chegando na recepção voce se depara com o joseph algemado e sendo levado preso enquanto gritava que era inocente
 # O David diz que o ladrão foi pego graças a sua ajuda

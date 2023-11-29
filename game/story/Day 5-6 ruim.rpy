@@ -1,10 +1,17 @@
 label dia5finalruim:
+    show nate s at left
     Nathan "Erika! Espera!"
+    show erika n at right 
     Erika "Oi, e ai? deu certo?  entregou as chaves pro David?"
+    show nate n
     Nathan "Entreguei, mas ele não me passou confiança de que ia fazer um bom trabalho..."
+    show nate ns
     Nathan "O que você acha da gente ir pra biblioteca durante a noite para tentar investigar nós mesmos?"
+    show erika s
     Erika "Não sei não Nathan, pode ser meio arriscado..."
+    show nate n
     Nathan "Tudo bem, não quero fazer você se arriscar sem motivo."
+    show erika n
     Erika "Não, eu vou junto. Acho que consigo te ajudar com uma coisa!"
     Nathan "E o que seria?"
     Erika "Você vai descobrir na hora."
@@ -12,31 +19,51 @@ label dia5finalruim:
     "Então nós dois saímos e ficamos aguardando a noite cair enquanto conversávamos com os meninos."
     
     scene bg rua noite with dissolve
+    show erika n2 at right 
     Erika "Finalmente meu kit de {i}lockpick{/i} vai ser útil!"
+    show nate f at left    
     Nathan "Então esse era o segredo?"
     Nathan "Por que você tem um kit desses em casa?"
+    show erika s
     Erika "..."
     Erika "Vai que... eu...{w=1.0} esqueço minha chave qualquer dia desses né?"
+    show nate n
     Nathan "Você vai esquecer sua chave mas não uma gazua?"
     Erika "A gente pode focar no que é importante de verdade?"
+    show nate ns
     Nathan "Certo. A biblioteca."
     dJoseph "{i}Ai...{/i}"
+    show erika s2
     Erika "Que barulho foi esse?"
     dJoseph "Aqui..."
     "Olhamos pra caçamba de lixo convenientemente posicionada fora da tela."
+    show nate s2
     Nathan "Joseph?"
+    hide erika 
+    show joseph s2 at right
     Joseph "O-o que? O que aconteceu...? Como vim parar aqui? Não importa, eu preciso ir, preciso avisar a Vivian"
+    show nate s
     Nathan "Avisar? do que você está falando?"
+    hide joseph 
+    show erika s at right
     Erika "Você precisa de um médico urgentemente!"
+    hide erika 
+    show joseph s at right
     Joseph "Agora não, preciso ver se a Vivian está bem."
     Joseph  "O David jogou um tijolo na janela dela!"
     Nathan "O quê? Mas por quê?!"
     Joseph "Eu não sei... mas tenho certeza que era ele, ele está tramando algo."
     Joseph "...Minhas chaves... Droga, perdi minhas chaves!"
     Nathan "Suas chaves? Droga... Eu as encontrei, mas entreguei elas para o David..."
+    show joseph s2
     Joseph "VOCÊ O QUE?"
+    hide joseph 
+    show erika s at right
     Erika "Ei, calma ai, ele não sabia, e como a gente vai saber se você não ta inventando essa história inteira?"
+    hide erika 
+    show joseph s at right
     Joseph "Eu... Eu não posso."
+    show nate n
     Nathan "Se o que você está dizendo é verdade precisamos ir até a biblioteca, talvez o David ainda esteja por lá, podemos grampear ele."
     Joseph "...Você tem razão, vamos."
     jump bibliotecaday5ruim
@@ -44,13 +71,21 @@ label dia5finalruim:
 label bibliotecaday5ruim:
     scene bg biblioteca fora noite with dissolve
     "Chegamos na biblioteca mas não parece ter nada fora do comum."
+    show joseph s2 at right
     Joseph "Droga, está trancada! não temos como entrar agora."
+    hide joseph 
+    show erika n at right
     Erika "Minha hora de brilhar!"
     "Erika puxa um kit de gazuas e começa a destrancar as portas da biblioteca."
     "{i}Clack{/i}, a porta se abre."
+    show erika n2 at right
     Erika "Eu sou boa demais diz aí."
+    hide erika 
+    show joseph f at right
     Joseph "Obrigado Erika, vamos!" 
+    show nate n at left
     Nathan "Não parece ter nada de diferente aqui..."
+    show joseph n at right
     Joseph "De fato, melhor eu conferir as cameras, podemos descobrir o que David aprontou."
     Joseph "Enquanto vou verificar as gravações, será que vocês poderiam investigar e ver se nâo encontram nada de diferente?"
     "Joseph vai para os fundos verificar nas cameras o que ele pode encontrar"
@@ -149,13 +184,19 @@ label casadia5ruim:
 
 label quartodia5ruim:
     scene bg quarto com pistas noite with dissolve
-    show camilla 
+    show camilla n at right
     Camilla "Nossa, quanta informação."
+    hide camilla 
+    show john n at right 
     John "De fato, quem imaginária que o culpado era o David esse tempo todo?"
+    show ante n at left
     Nathan "Estou preocupado com Joseph... será que ele vai conseguir se provar inocente?"
     Nathan "Acho que mais atrapalhei do que ajudei nesse caso..."
     John "...Não fica pensando nisso cara."
+    hide john 
+    show camilla t at right
     Camilla "Acho que o melhor a se fazer agora é dormir, tenho certeza que a Vivian vai conseguir ajudar."
+    show nathan ns at left
     Nathan "É... Melhor não pensar muito nisso agora."
     "Me deito para dormir..."
     jump quartodia6ruim
@@ -201,6 +242,7 @@ label bibliotecadia6ruim:
     Nathan "Não... acredito que só posso agir como testemunha a esse ponto."
     Vivian "Entendo... Bom, é nossa melhor chance agora."
     Vivian "Vamos para a delegacia, talvez o delegado Fábio consiga nos ajudar"
+    show nate f at left
     Nathan "Certo!"
     jump delegaciadia6ruim
 
@@ -228,23 +270,46 @@ label delegaciadia6ruim:
     hide joseph 
     show david b at right
     David "Mas que acusação absurda! você precisa provar o que está falando, ou as coisa vão ficar ainda pior pro seu lado."
+    hide david 
+    show joseph b at right
     Joseph "Não tenho como provar, você deletou as gravações das cameras!"
+    hide joseph 
+    show david b at right
     David "Como que eu poderia deletas as SUAS, gravações?"
+    hide david 
+    show vivian b at right
     Vivian "{size=*0,75}Joseph... Pare de falar, está só piorando sua situação{/size}"
+    hide vivian 
+    show pai b at right 
     Pai "Já ouvi o bastante, prendam esse homem!"
+    show nate s2
     Nathan "Pai, escuta, você ta cometendo um erro! ele ta falando a verdade, ele só não tem provas agora, mas se você der mais tempo a ele tenho certeza qu—"
     Pai "BASTA! Pare de agir como se você fosse algum tipo de investigador, você é só um moleque!"
     Nathan "..."
+    hide pai 
+    show joseph f at right
     Joseph "Tudo bem Nathan, vai dar tudo certo, sei que você tentou ajudar..."
     "Meu pai leva o Joseph algemado para uma sala nos fundos da delegacia."
+    hide joseph with dissolve 
+    show vivian n
     Vivian "Está tudo bem Nathan, isso foi uma armadilha, não estávamos preparados, mas não se preocupe, não vou descansar até provar a inocência do Joseph"
     Vivian "Vai pra casa... Imagino que esteja bem cansado, obrigado pela ajuda."
 
 label casadia6ruim:
+    scene bg quarto com pistas tarde with dissolve
+    show camilla t at right 
     Camilla "Nathan... Está tudo bem?"
+    hide camilla 
+    show john n at right 
     John "Você não falou uma palavra desde que saiu da delegacia cara."
+    show nate n at left
     Nathan "Eu só não to afim... Isso tudo foi culpa minha, se eu não tivesse me envolvido tanto não teria atrapalhado a investigação e o Joseph não teria sido preso"
+    Nathan "Não sei onde eu estava com a cabeça com essa ideia de investigação..."
+    "Tiro todas as pistas de minha parede, não vejo mais motivo para fazer isso..."
+    scene bg quarto tarde with dissolve
+    show camilla t at right 
     Camilla "Você não podia fazer nada ali Nathan, o David armou pra ele."
+    show nate n at left
     Nathan "Acho que só vou dormir, não quero pensar mais nisso..."
 
 label quartodia7ruim:
