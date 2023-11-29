@@ -8,7 +8,7 @@ define avalanche = 0
 define doisdiasatras = 0
 define perguntacofre = 0
 define mancada = 0 
-
+define fofoca = 0
 
 #Procura na biblioteca
 define procuraprateleira = 0

@@ -741,15 +741,25 @@ label delegaciadia6:
     Erika "..." 
     Erika "Quero dizer, Sim, claro, eu adoraria."
     show nate f2
-    Nathan "Ok, a gente se encontra amanhã na frente do mercado então?"
-    Erika "Pode ser. Te vejo lá amanhã então, boa noite Nate."
+    Nathan "Ok, a gente se encontra amanhã na frente"
+    menu: 
+        "Mercado":
+            Nathan "Ok, a gente se encontra amanhã na frente{fast} do mercado."
+        "Biblioteca":
+            Nathan "Ok, a gente se encontra amanhã na frente{fast} da biblioteca."
+            $ fofoca += 1
+
+    
+    Erika "Pode ser! Te vejo lá amanhã então, boa noite Nate."
     show nate ns
     Nathan "Boa noite Erika, até amanhã."
     show nate n
     Nathan "..."
+    show john f at right
     John "Eai? como foi? pela sua cara parece que deu bom."
     show nate f
     Nathan "Marcamos um encontro."
+    hide john 
     show camilla f at right
     Camilla "BOAAA, Vamos ter certeza de não te atrapalhar amanhã Nate, não se preocupe."
     hide camilla 
@@ -769,18 +779,43 @@ label EpilogoBom:
     hide camilla 
     "Termino de me aprontar e antes de sair de casa a Erika me liga"
     show nate f at left
-    Erika "Nate? tudo pronto? já estou a caminho do mercado."
+    Erika "Nate? tudo pronto? já estou a caminho."
     Nathan "Já estou saindo, pode ficar tranquila"
+    
+    if fofoca == 0:
+        scene bg mercado dia with dissolve
+        "Eu chego na frente do mercado praticamente ao mesmo tempo que Erika."
+        show erika n2 at right
+        Erika "E ai? vamos?"
+        show nate ns at left
+        Nathan "Bora"
+        show erika n
+        Erika "Não quer passar pra ver os meninos? eles estão bem felizes porque você conseguiu ajudar eles a recuperar as alianças e o dinheiro roubado do mercado."
+        Nathan "Nah, outra hora eu falo com eles."
 
-    scene bg mercado dia with dissolve
-    "Eu chego na frente do mercado praticamente ao mesmo tempo que Erika."
-    show erika n2 at right
-    Erika "E ai? vamos?"
-    show nate ns at left
-    Nathan "Bora"
-    show erika n
-    Erika "Não quer passar pra ver os meninos? eles estão bem felizes porque você conseguiu ajudar eles a recuperar as alianças e o dinheiro roubado do mercado."
-    Nathan "Nah, outra hora eu falo com eles."
+    else:
+        if fofoca >=1:
+            scene bg biblioteca fora dia with dissolve
+            "Eu chego na biblioteca um pouco depois de Erika, ela parece um pouco surpresa."
+            show nate s at left
+            Nathan "Consegui! Cheguei. {i}*Ofegante{/i}"
+            show erika n2 at right 
+            Erika "Você não vai acreditar no que eu acabei de ver."
+            show nate ns
+            Nathan "O quê?"
+            show erika n
+            Erika "A Vivian e o bibliotecário... acho que eles estão namorando!"
+            show nate f2 
+            Nathan "O Joseph? Sério? como você soube???"
+            show erika n2
+            Erika "Acabei de ver os dois se beijando bem aqui antes de você chegar."
+            Erika "Bem que você podia fazer o mesmo..."
+            show nate s2 
+            Nathan "... ... ..."
+            show erika n
+            Erika "Brincadeira, vamos indo?"
+            show nate f 
+            Nathan "V-Vamos!"
 
     scene bg rua dia with dissolve
     show erika n2 at right

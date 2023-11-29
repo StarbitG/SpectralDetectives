@@ -194,7 +194,6 @@ label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando L
             show nate n
             "Acho que não é o melhor momento pra isso, melhor entregar isso outra hora"
             $ mantevetorta += 1
-    #menu de entregar a torta ou não, se entregar a torta lá no dia 5 eles mencionam ela dnv
 
     jump quartodia2
     
