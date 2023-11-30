@@ -191,14 +191,14 @@ label quartodia5ruim:
     hide camilla 
     show john n at right 
     John "De fato, quem imaginaria que o culpado era o David esse tempo todo?"
-    show ante n at left
+    show nate n at left
     Nathan "Estou preocupado com Joseph... será que ele vai conseguir se provar inocente?"
     Nathan "Acho que mais atrapalhei do que ajudei nesse caso..."
     John "... Não fica pensando nisso, cara."
     hide john 
     show camilla t at right
     Camilla "Acho que o melhor a se fazer agora é dormir, tenho certeza que a Vivian vai conseguir ajudar."
-    show nathan ns at left
+    show nate ns at left
     Nathan "É... Melhor não pensar muito nisso agora."
     "Me deito para dormir..."
     jump quartodia6ruim
@@ -234,7 +234,7 @@ label bibliotecadia6ruim:
     Vivian "Caramba, Joseph, eu quero acreditar no que você está dizendo, mas não tem nada que comprove sua inocên—"
     show joseph s at right
     Joseph "Nathan! Desculpe fazê-lo vir até aqui."
-    hide vivian
+    hide vivian at right
     show nate s2 at left
     Nathan "O que houve, está tudo bem?"
     show joseph s2 
@@ -296,7 +296,7 @@ label delegaciadia6ruim:
     Joseph "Tudo bem, Nathan, vai dar tudo certo. Sei que você tentou ajudar..."
     "Meu pai leva o Joseph algemado para uma sala nos fundos da delegacia."
     hide joseph with dissolve 
-    show vivian n
+    show vivian n at right
     Vivian "Está tudo bem, Nathan. Isso foi uma armadilha, não estávamos preparados, mas não se preocupe. Não vou descansar até provar a inocência do Joseph."
     Vivian "Vai para casa... Imagino que esteja bem cansado. Obrigado pela ajuda."
     jump casadia6ruim
