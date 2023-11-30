@@ -23,17 +23,17 @@ label start:
     jump intro
 # screens (User interface)
 
-label intro: # Intro no quarto - Dia 1
-    "{i}Trim, trim{/i}"
+label intro: #Intro no quarto - Dia 1
+    "{i}trim, trim{/i}"
     show nate n at left
-    Nate "Alô?"
+    Nathan "Alô?"
     show erika n at right
-    Erika "Nathan, sou eu, Erika! Você vai voltar pra cidade essa semana, não é? Bastante coisa aconteceu desde que você saiu, acho que seria legal a gente se atualizar."
+    dErika "Nathan, sou eu, Erika! Você vai voltar pra cidade essa semana, não é? Bastante coisa aconteceu desde que você saiu, acho que seria legal a gente se atualizar."
     show nate f at left
-    Nate "Erika! Claro! Na verdade, meus pais já tinham me convidado pra jantar um pouco antes do esperado."
-    Nate "Então eu meio que já estou por aqui, você acha que amanhã é um bom momento para nos encontrarmos?"
+    Nathan "Erika! Claro! Na verdade, meus pais já tinham me convidado pra jantar um pouco antes do esperado."
+    Nathan "Então eu meio que já estou por aqui, você acha que amanhã é um bom momento para nos encontrarmos?"
     Erika "Mhm! Com certeza, pensei que a gente podia conversar com os meninos também, eles têm bastante assunto pra falar com você."
-    Nate "Acho que isso é uma ótima ideia, bom, então te vejo amanhã, Erika!"
+    Nathan "Acho que isso é uma ótima ideia, bom, então te vejo amanhã, Erika!"
     Erika "Obrigada, Nathan. Mal posso esperar para ver você novamente. Nos encontramos em breve!"
     show bg quarto dia with fade
     scene bg quarto dia
@@ -41,31 +41,31 @@ label intro: # Intro no quarto - Dia 1
     show erika n at right
     show nate n at left
     Erika "Nathan!! Tá acordado?"
-    Nate "Só mais 5 minutinhos por favor..."
+    Nathan "Só mais 5 minutinhos por favor..."
     Erika "5 minutinhos nada, a gente vai sair agora, sua mãe já até me deu uma lista de coisas que você tem que fazer hoje seu preguiçoso."
-    Nate "Tá bom... Só deixa eu me trocar e eu te encontro lá na frente da loja ok?"
+    Nathan "Tá bom... Só deixa eu me trocar e eu te encontro lá na frente da loja ok?"
     Erika "Certo! Te vejo lá então! Beijinhos!"
 
     hide erika
     show john n at right
     John "Huh, ela tá bem mais animada em te ver hoje, vem cá Nathan, quando é que você vai parar de ser um covarde e vai contar pra ela que você gosta dela hein?"
-    hide john
+    hide john 
     show camilla n at right
     Camilla "John, por favor, você sabe que ele não é covarde, ele só... ele só é..."
-    Nate "Ele tem razão, Camilla, eu sou meio cagão pra essas coisas mesmo, mas isso não é prioridade agora, faz um tempinho que não vejo meus amigos, preciso encontrar eles agora, ok?"
-    Nate "Não quero vocês dois falando um piu enquanto eu estou fora, beleza?"
-    hide camilla
+    Nathan "Ele tem razão, Camilla, eu sou meio cagão pra essas coisas mesmo, mas isso não é prioridade agora, faz um tempinho que não vejo meus amigos, preciso encontrar eles agora, ok?"
+    Nathan "Não quero vocês dois falando um piu enquanto eu estou fora, beleza?"
+    hide camilla 
     show john n at right
     John "Se você pode ver e ouvir a gente não é problema nosso, você que decidiu ser diferentão e nasceu com a capacidade de ver seus guardiões."
     John "E nós nunca atrapalhamos nenhuma conversa sua, rapaz!"
-    hide john
+    hide john 
     show camilla n at right
     Camilla "É verdade, sempre somos incrivelmente legais, divertidos e respeitosos com você, senhor Nathan!"
-    Nate "Tá, tá, só prometam que não vão ficar aparecendo do nada."
-    hide camilla
+    Nathan "Tá, tá, só prometam que não vão ficar aparecendo do nada."
+    hide camilla 
     show john n at right
     John "Hmpf, pode deixar, não vamos atrapalhar, vai lá ver seus amigos e sua namoradinha logo, vai."
-    hide john
+    hide john 
     show camilla n at right
     Camilla "Bom passeio, Nathan, divirta-se!"
     jump intro2
@@ -93,7 +93,7 @@ label intro2: #Intro indo no mercado pela primeira vez - Dia 1
     Lucas "NÃO ACREDITO VOCÊ TA VIVO! POR QUE VOCÊ NÃO FALOU COM A GENTE ESSE TEMPO TODO?"
 
     menu:
-        "Eu não tava muito afim":
+        "Eu não tava muito afim.":
             hide seb
             show nate s at left
             Nathan "Eu não tava muito afim, tinha muitas coisas pra resolver e não pensei que vocês sentiam tanta falta pra ser sincero."
