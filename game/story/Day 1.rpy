@@ -200,7 +200,6 @@ label quartodia1: # Quarto e final do dia 1 - Dia 1
             hide pai
             show nate ns at left
             Nathan "Certo, vamos lá!"
-            $ brigacompai += 1
 
         "Responder de forma agressiva":
             show nate b

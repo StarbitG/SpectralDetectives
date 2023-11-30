@@ -32,7 +32,7 @@ label startday2: # Começo do dia 2 - Quarto - Dia 2
 label lojaday2: # Fachada da loja aparece quebrada, você conhece David e Vivian - Dia 2
     scene bg mercado roubado dia
     show halfblack
-    "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem; A equipe policial também estava no local."
+    "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem. A equipe policial também estava no local."
     show nate s at left
     Nathan "O que aconteceu aqui?"
     show david f at right

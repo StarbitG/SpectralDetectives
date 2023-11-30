@@ -260,6 +260,8 @@ label invasao2:
             Camilla "Eu não posso opinar dessa vez, é uma ideia boa mesmo."
             Nathan "Ta bom então, é agora ou nunca."
             hide halfblack
+            hide camilla
+            hide nate
             jump invadir2
         "Tentar pegar o livro enquanto seu pai está lá":
             show halfblack
@@ -274,14 +276,15 @@ label invadir2:
     "Após uns 30 minutos esperando do lado de fora em um dos arbustos, a delegacia fica vazia."
     show nate b at left
     Nathan "Agora é a hora, vamos nessa."
+    hide nate
     show bg delegacia dentro with dissolve
     pause (1.5)
     show bg sala do pai escuro with dissolve
     show halfblack
     show john n at right
     John "Você lembra onde estava o livro? A sala tá bem escura, mais do que da última vez."
-    show nate n
-    Nathan "Eu acho que estava.."
+    show nate n at left
+    Nathan "Eu acho que estava..."
     hide john
     hide nate
     jump escolhainvasao
@@ -315,7 +318,7 @@ label escolhainvasao:
             pause
 
 label delegaciapai2:
-    show bg sala do pai clara with dissolve 
+    scene bg sala do pai clara with dissolve 
     scene bg sala do pai clara
     show halfblack
     "Eu entro na sala do meu pai devagar, pra não deixá-lo estressado."
