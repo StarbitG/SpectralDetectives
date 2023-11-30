@@ -54,9 +54,9 @@ label startday3alt:
         Erika "Oi, Nathan! Desculpe por te ligar tão cedo, mas queria confirmar que eu vou te ajudar na investigação. Passei a noite pensando sobre isso, acho que isso pode dar certo."
         Nathan "Fico muito feliz que tenha aceitado!!! Deixa eu já te atualizar então. Acredito que o bibliotecário possa estar envolvido, mas preciso de mais provas antes de tirar conclusão."
         show erika s
-        Erika "O bibliotecário? Mas ele é um carinha tão... normal."
+        Erika "O bibliotecário? Mas ele é um carinha tão... Normal."
         Nathan "Ele não gostou muito que eu trouxe o livro de crimes rasgado comigo, isso foi bem estranho da parte dele, e também, ele tem acesso aos arquivos criminais, o que impediria ele de apagar algum que o incriminasse, né."
-        Erika "Até que é uma boa teoria. Mas não acho que ele faria algo assim, de qualquer forma, precisamos encontrar álibis, eu acho que podemos perguntar mais sobre a noite do crime pro Sebastian e o Lucas, o que pensa?."
+        Erika "Até que é uma boa teoria. Mas não acho que ele faria algo assim, de qualquer forma, precisamos encontrar álibis, eu acho que podemos perguntar mais sobre a noite do crime pro Sebastian e o Lucas, o que pensa?"
         Nathan "Acho uma ótima ideia! Vamos fazer exatamente isso! Te encontro lá!"
         show erika n
         Erika "Até daqui a pouquinho!"
@@ -70,17 +70,17 @@ label startday3alt:
         Erika "Passei a noite pensando sobre os roubos na cidade e sobre o seu envolvimento nisso. Cheguei a uma conclusão perturbadora. Eu ACHO que o bibliotecário possa estar diretamente envolvido."
         show nate n
         show erika n
-        Nathan "Erika, você não pode ir por aí acusando os outros-"
+        Nathan "Erika, você não pode ir por aí acusando os outros..."
         show erika s
         Erika "Antes que você fale ''Erika, você não pode sair por aí acusando os outros'', eu achei os anéis do Lucas e do Sebastian ontem naquela rachadura."
         Erika "Só não te contei porque eu queria entender o porquê eles estavam lá. Então, a partir de agora, eu vou te ajudar a investigar isso, okay? "
         show nate s
         Nathan "Primeiro: COMO ASSIM VOCÊ ACHOU AS ALIANÇAS? E segundo: por que elas estavam lá?"
-        Erika "É, foi isso mesmo que você ouviu, e eu acho que estavam lá porque o ladrão é o bibliotecário, mas eu não tenho provas suficientes ainda, queria ir na loja perguntar algumas coisas para os meninos, você aceita?."
+        Erika "É, foi isso mesmo que você ouviu, e eu acho que estavam lá porque o ladrão é o bibliotecário, mas eu não tenho provas suficientes ainda, queria ir na loja perguntar algumas coisas para os meninos, você aceita?"
         show nate f
         Nathan "Obrigado, Erika. Sua ajuda significa muito para mim. E ir perguntar para os meninos sobre a noite do crime pode nos ajudar muito, vamos fazer isso."
         show erika n
-        Erika "Ta bom, para de ser bobão e vamos logo"
+        Erika "Tá bom, para de ser bobão e vamos logo..."
         "E mais uma vez, ela me arrasta para outro lugar"
         jump lojaday3
 
@@ -96,7 +96,7 @@ label lojaday3:
     Sebastian "Erika, Nathan?"
     show nate n at left
     Nathan "Ué, cadê o Lucas? Vocês não estão sempre juntos?"
-    Sebastian "Ah, ele? Não sai de casa desde o incidente, abalou muito ele. Eu vim aqui só pra ver como andava a operação, mas já estou de saída."
+    Sebastian "Ah, O Lucas? Ele não sai de casa desde o incidente, ele ficou bem abalado. Eu vim aqui só pra ver como andava a operação, mas já estou de saída."
     hide seb
     show erika s at right
     Erika "Você tem só um tempinho? Queríamos tirar algumas dúvidas com você."
@@ -110,7 +110,7 @@ label lojaday3:
     show seb n at right
     Sebastian "Eu tinha acabado de fechar a loja, então estava indo para casa."
     Nathan "E você por acaso viu algo estranho nesse meio tempo?"
-    Sebastian "Agora que você diz, eu acho que vi alguém passando por aqui. Ele era meio alto, mas já estava escuro, então esse é o máximo que eu pude ver."
+    Sebastian "Agora que você diz, eu acho que vi alguém passando por aqui. Mas já estava escuro, então esse é o máximo que eu pude ver."
     show nate s 
     Nathan "Isso não ajuda tanto quanto a gente queria, mas já é alguma coisa. Se você achar mais alguma pista ou prova de quem fez isso, por favor, nos conte, beleza?"
     Sebastian "Tudo bem, digo sim."
@@ -128,7 +128,7 @@ label lojaday3:
                 hide erika
                 show seb c at right
                 Sebastian "Hm? Como assim?"
-                Nathan "Lembra que você tinha me pedido para encontrar os seus anéis? Então, eu encontrei eles. Aqui, olha."
+                Nathan "Então, eu encontrei uma das alianças. Aqui, olha."
                 $ inventory_items.remove("aliança")
                 $ renpy.notify("Você devolveu as alianças")
                 $ mostraranel += 1
@@ -150,12 +150,12 @@ label bibliotecaday3:
     scene bg biblioteca fora dia
     show halfblack
     show erika s at right
-    Erika "Bom, chegamos, vamos procurar lá dentro"
+    Erika "Bom, chegamos, vamos procurar lá dentro."
     hide erika 
     show bg biblioteca dentro dia with dissolve
     scene bg biblioteca dentro dia 
     show halfblack
-    "Assim que entramos na biblioteca e começamos a vasculhar entre as prateleiras, tirando e colocando livros do lugar." 
+    "Assim que entramos na biblioteca começamos a vasculhar entre as prateleiras, tirando e colocando livros do lugar." 
     pause
     show bg biblioteca dentro tarde with dissolve
     "Até que acabamos derrubando alguns deles."
@@ -174,7 +174,7 @@ label bibliotecaday3:
     Joseph "Tem certeza? você parece meio assustado, está tudo bem?"
     hide nate 
     show erika s at left
-    Erika "Nós já vimos tudo o que precisávamos, obrigado, já estamos de saída"
+    Erika "Nós já vimos tudo o que precisávamos, obrigado, já estamos de saída."
     Joseph "Esperem!{nw}{w=2.0}"
     hide joseph
     hide nate 
@@ -185,7 +185,7 @@ label bibliotecaday3:
     show erika s at right
     Erika "Cara, que medo, achei que ele ia esfaquear a gente, sei lá."
     show nate s at left
-    Nathan "Nem me fala, já a segunda vez que ele faz isso e eu saio correndo de lá, melhor tomarmos mais cuidado de agora em diante"
+    Nathan "Nem me fala, já a segunda vez que ele faz isso e eu saio correndo de lá, melhor tomarmos mais cuidado de agora em diante."
     Nathan "Mas consegui perceber uma coisa."
     show erika n
     Erika "O quê?"
@@ -193,18 +193,18 @@ label bibliotecaday3:
     Nathan "Ele estava com a perna machucada e mancando."
     show erika t
     Erika "E o que isso tem a ver?"
-    Nathan "O ladrão tem assaltado as lojas entrando pelas janelas, ele deve ter se cortado no vidro."
+    Nathan "O ladrão tem assaltado as lojas entrando quebrando e entrando pelas janelas, ele deve ter se cortado no vidro."
     show erika n2
     Erika "Realmente, faz sentido!"
     show erika n
     Erika "O que a gente faz agora?"
-    Nathan "Acho que vou procurar alguém que possa nos ajudar"
-    Erika "Certo, eu acho que vou pra casa então, ta ficando tarde, não gosto de sair a noite."
-    Erika "Você devia ir pra casa também"
+    Nathan "Acho que vou procurar alguém que possa nos ajudar."
+    Erika "Certo, eu acho que vou pra casa então, tá ficando tarde, não gosto de sair à noite."
+    Erika "Você devia ir pra casa também."
     show nate f
-    Nathan "Tá tranquilo, posso pegar carona com meu pai depois alguém na delegacia deve saber de algo"
+    Nathan "Tá tranquilo, posso pegar carona com meu pai; depois, alguém na delegacia deve saber de algo."
     show erika n2
-    Erika "Tudo bem então, te vejo amanha Nate!"
+    Erika "Tudo bem então, te vejo amanhã, Nate!"
     hide nate
     hide erika
     jump delegaciaday3
@@ -213,17 +213,17 @@ label delegaciaday3:
     show bg delegacia frente dia tarde with dissolve
     scene bg delegacia frente dia tarde
     show halfblack
-    "Antes de entrar na delegacia, john e Camilla me abordam"
+    "Antes de entrar na delegacia, John e Camilla me abordam."
     show john n at right
-    John "Cara, eu acho que você devia falar direto com seu pai, será que ele conseguiria entender o que você ta fazendo? Ele se desculpou afinal."
+    John "Cara, eu acho que você devia falar direto com seu pai, será que ele conseguiria entender o que você tá fazendo? Ele se desculpou afinal."
     show nate n at left
     hide john 
     Nathan "Não sei, não parece uma boa ideia..."
     show camilla n at right
     Camilla "Não confio tanto no seu pai não, você lembra daquela moça de verde? Achei ela legal, talvez seja melhor falar com ela."
-    Nathan "A vivian?"
+    Nathan "A Vivian?"
     show camilla f
-    Camilla "É, ela mesmo."
+    Camilla "É, ela mesma."
     hide camilla
     hide nate
     menu:
@@ -236,7 +236,7 @@ label delegaciaday3:
 
 label delegaciavivian:
     Nathan "{i}(Espero que aquele David não esteja por aqui, assim poderia falar com a Vivian com tranquilidade.){/i}"
-    "Entrando no prédio me deparo com a Vivian na recepção e nenhum sinal de David"
+    "Entrando no prédio me deparo com a Vivian na recepção e nenhum sinal de David."
     show bg delegacia dentro with dissolve
     scene bg delegacia dentro
     show halfblack
@@ -247,29 +247,29 @@ label delegaciavivian:
     show nate ns
     Nathan "Vou ser breve, na verdade, acho que tenho algumas informações importantes para o caso."
     show vivian f2
-    Vivian "Sério? Que bom! Desembucha ai."
+    Vivian "Sério? Que bom! Desembucha aí."
     
     if pegaranel >= 1:
         show nate n
         Nathan "Acho que sei quem está cometendo os crimes recentes."
         Nathan "Encontrei uma das alianças na entrada da biblioteca e o bibliotecário de lá estava com a perna mancando por conta de um corte que parece ter sido feito com vidro."
-        Nathan "O nome dele é Joseph"
+        Nathan "O nome dele é Joseph."
         show vivian s2
-        Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
-        Nathan "Eu estou com uma das alianças aqui, veja"
+        Vivian "O Joseph?? Impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas."
+        Nathan "Eu estou com uma das alianças aqui, veja."
         show vivian n
-        Vivian "hmm, isso é estranho, te garanto que ele não faria nada assim, deve ter sido um engano"
+        Vivian "Hmm, isso é estranho, te garanto que ele não faria nada assim, deve ter sido um engano."
         if mostraranel >= 1:
-            "Procuro a aliança no meu bolso, mas esqueci que já tinha entregado ela pro Sebastian"
-            Nathan "Na verdade, eu tinha a alianças comigo, só que eu ja devolvi ela pro respectivo dono"
+            "Procuro a aliança no meu bolso, mas esqueci que já tinha entregado ela pro Sebastian."
+            Nathan "Na verdade, eu tinha a aliança comigo, só que eu já devolvi ela pro respectivo dono."
             show vivian b
             Vivian "Então você vem no meu trabalho, acusa alguém, e não me mostra prova nenhuma?"
             show nate s
-            Nathan "Eu juro pra você que eu tinha a aliança comigo"
-            Vivian "Olha garoto, somos policiais, não trabalhamos na base do ''eu acho''"
+            Nathan "Eu juro pra você que eu tinha a aliança comigo."
+            Vivian "Olha garoto, somos policiais, não trabalhamos na base do ''eu acho''."
             
         else:
-            "Pego a aliança no meu bolso e entrego para Vivian"
+            "Pego a aliança no meu bolso e entrego para Vivian."
             $ inventory_items.remove("aliança")
             $ renpy.notify("Você entregou a aliança para a Vivian")
             show nate f
@@ -279,30 +279,28 @@ label delegaciavivian:
             show nate ns
             Nathan "Sim, eu juro!"
             show vivian f
-            Vivian "Vou ficar com ela então, quero questiona-lo pessoalmente"
-            Nathan "Okay"
+            Vivian "Vou ficar com ela então, quero questioná-lo pessoalmente."
+            Nathan "Okay."
             $ vivianescolha += 1
             $ moralfinalbom += 1
     else:
         show nate n
-        Nathan "Acredito que o culpado possa ser o bibliotecário, ele tem agido de forma estranha e estava mancando por um corte de vidro em sua perna"
+        Nathan "Acredito que o culpado possa ser o bibliotecário, ele tem agido de forma estranha e estava mancando por um corte em sua perna."
         show vivian b
-        Vivian "O Joseph?? impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas"
-        Vivian "Olha, isso não serve como evidência, não posso fazer nada sem provas concretas, não trabalhamos com achismos e suspeitas infundamentadas"
+        Vivian "O Joseph?? Impossível, eu conheço ele a anos, já até namoramos, ele nunca faria uma coisa dessas."
+        Vivian "Olha, isso não serve como evidência, não posso fazer nada sem provas concretas, não trabalhamos com achismos e suspeitas infundamentadas."
         show nate s
         Nathan "Mas—" 
-    "Antes que pudéssemos concluir a conversa meu pai aparece na recepção" 
-
-    
-    
+    "Antes que pudéssemos concluir a conversa, meu pai aparece na recepção."
+      
 label delegaciapai:
     show bg sala do pai clara with dissolve 
     scene bg sala do pai clara
     show halfblack
-    "Chego na sala do meu pai e aguardo um pouco, até que a Vivian entra na sala"
+    "Chego na sala do meu pai e aguardo um pouco, até que a Vivian entra na sala."
     show vivian f at right
     Vivian "Você não é aquele garoto do outro dia? O que faz aqui?"
-    "Antes de poder responder meu pai entra na sala"
+    "Antes de poder responder, meu pai entra na sala."
     hide vivian
     show pai s at right
     Pai "Nathan?"
@@ -311,25 +309,25 @@ label delegaciapai:
     Pai "O que está fazendo aqui?"
     hide pai 
     show vivian s at right
-    Vivian "''Filho?'' Você é filho do delegado Fábio? por que não me contou antes?"
+    Vivian "''Filho?'' Você é filho do delegado Fábio? Por que não me contou antes?"
     show nate n
-    Nathan "Desculpe, não achei que fosse necessário falar sobre isso"
+    Nathan "Desculpe, não achei que fosse necessário falar sobre isso."
     show vivian n
-    Vivian "Ele estava me passando informações sobre o caso dos assaltos recentes"
+    Vivian "Ele estava me passando informações sobre o caso dos assaltos recentes."
     hide vivian 
     show pai b at right
     Pai "Eu já não falei para você não se meter nos assuntos da polícia?"
     show nate s
     Nathan "Mas eu posso ajudar!"
-    Pai "Não, você não pode! você só vai atrapalhar mais ainda a investigação!"
+    Pai "Não, você não pode! Você só vai atrapalhar mais ainda a investigação!"
     Nathan "Mas—"
     show nate b
-    Nathan "Ah quer saber, não tô com paciência pra discutir com você hoje, vou pra casa a pé mesmo"
+    Nathan "Ah, quer saber, não tô com paciência pra discutir com você hoje, vou pra casa a pé mesmo."
     hide nate
-    "Não estava afim de continuar a discussão com o meu pai então decido ir para casa e saio da delegacia"
+    "Não estava afim de continuar a discussão com o meu pai então decido ir para casa e saio da delegacia."
     show vivian n at left
-    Vivian "Se me permite senhor, acho que você ter sido um pouco duro demais, ele é um bom garoto, entendo sua preocupação mas você podia ter pego um pouco mais leve com ele."
-    Pai "Se eu não agir dessa forma ele nunca vai aprender."
+    Vivian "Se me permite, senhor, acho que você foi um pouco duro demais, ele é um bom garoto, entendo sua preocupação, mas você podia ter pego um pouco mais leve com ele."
+    Pai "Se eu não agir dessa forma, ele nunca vai aprender."
     hide pai 
     hide vivian
     show bg delegacia frente dia tarde with dissolve
@@ -337,21 +335,21 @@ label delegaciapai:
     show bg delegacia frente dia noite with dissolve
     scene bg delegacia frente dia noite
     show halfblack
-    "Do lado de fora da delegacia John e Camilla tentam me acalmar"   
+    "Do lado de fora da delegacia, John e Camilla tentam me acalmar."   
     show nate b at left
     Nathan "Não entendo porque ele sempre faz isso. Estou de saco cheio dele ser sempre assim!"
     show camilla t at right
-    Camilla "Nate... Tenta não levar isso pro coração, você sabe que no fundo ele te ama e só está preocupado com você, ele só não sabe como expressar isso"
+    Camilla "Nate... Tenta não levar isso pro coração, você sabe que no fundo ele te ama e só está preocupado com você, ele só não sabe como expressar isso."
     Nathan "Não, ele só acha que eu sou incapaz de fazer qualquer coisa sozinho, só isso!"
     hide camilla
     show john b at right
-    John "Pô cara, acho que se ta viajando porque ta com raiva, tenta esfriar a cabeça um pouco"
+    John "Pô cara, acho que se ta viajando porque ta com raiva, tenta esfriar a cabeça um pouco."
     hide john 
     show camilla t at right
     Camilla "Ter que ouvir e concordar com o John é difícil, mas ele ta certo."
     Nathan "..."
     show nate n
-    Nathan "Não quero mais falar sobre isso, só quero ir pra casa"
+    Nathan "Não quero mais falar sobre isso, só quero ir pra casa."
     show camilla n
     Camilla "Certo, qualquer coisa chama a gente, vamos estar aqui, ok?"
     hide camilla 
@@ -359,7 +357,7 @@ label delegaciapai:
     show bg rua noite with dissolve 
     scene bg rua noite
     show halfblack
-    "Caminhando por não prestar atenção esbarro em alguma pessoa"
+    "Caminhando por não prestar atenção, esbarro em alguma pessoa."
     show joseph d at center with vpunch
     Nathan "Desculp—"
     show joseph n at center with dissolve
@@ -367,23 +365,23 @@ label delegaciapai:
     Joseph "Desculpe, estou com um pouco de pressa."
     show joseph n at offscreenright with move
     show nate s2 at left
-    Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa"
+    Nathan "Aquele era o Joseph? Se ele está aqui fora significa que pode ter acontecido alguma coisa."
     show john n at right
     John "Você tá bem cara? Foi uma batida meio feia..."
     show nate s
-    Nathan "Sim sim eu to bem, valeu por perguntar."
+    Nathan "Sim, sim, eu to bem, valeu por perguntar."
     hide john 
     show camilla n at right 
-    Camilla "Que bom! Ah, parece que o joseph derrubou algo quando bateu em você agora."
+    Camilla "Que bom! Ah, parece que o Joseph derrubou algo quando bateu em você agora."
     show nate n
     Nathan "Sério?"
-    "Olho para a calçada para ver se realmente tem algo por ali"
+    "Olho para a calçada para ver se realmente tem algo por ali."
     Nathan "O que é isso?"
-    "Me abaixo e pego o objeto estranho"
-    Nathan "Parece ser um jogo de chaves"
+    "Me abaixo e pego o objeto estranho."
+    Nathan "Parece ser um jogo de chaves."
     $ inventory_items.append("chave")
-    $ renpy.notify("Você pegou as chaves do Joseph")
-    Nathan "Ei! você derrubou suas chaves!"
+    $ renpy.notify("Você pegou as chaves do Joseph.")
+    Nathan "Ei! Você derrubou suas chaves!"
     "Ele saiu correndo e não me escutou."
     show camilla b 
     Camilla "Acho bom você nem pensar em devolver isso, afinal, ele é o único suspeito até agora."
@@ -408,12 +406,12 @@ label falamaecasa:
     Nathan "Desculpa mãe, eu não vi o tempo passar dessa vez."
     show mae f
     Mãe "Você devia pelo menos comer algo e depois ir para o seu quarto, tá bom?"
-    Nathan "Tudo bem mãe, desculpa mais uma vez"
+    Nathan "Tudo bem mãe, desculpa mais uma vez."
     show black with dissolve
     scene black
     hide nate 
     hide mae 
-    "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que alguém tinha colocado uma montanha nas minhas costas"
+    "Eu passei pela sala de estar quando ia pro meu quarto, nunca senti um clima tão pesado na vida, parecia que alguém tinha colocado uma montanha nas minhas costas."
     jump quartodia4
 
 label quartodia4:
@@ -423,11 +421,11 @@ label quartodia4:
     show john b2 at right
     John "Mano, do que você acha que Joseph tava correndo mais cedo? Se ele é o culpado ele não devia estar correndo, talvez ele estivesse aprontando alguma coisa."
     show nate n at left
-    Nathan "John, você consegue guardar esse pensamento pra amanhã? Eu tô muito cansado pra pensar, só quero dormir por agora"
+    Nathan "John, você consegue guardar esse pensamento pra amanhã? Eu tô muito cansado pra pensar, só quero dormir por agora."
     hide john
     show camilla n at right
     Camilla "Ele tem um ótimo ponto na verdade, mas você quem sabe Nathan, vamos te deixar em paz essa noite, boa noite."
     hide camilla
     hide nate
-    "Assim um dos meus últimos dias nessa correria se encerram, se eu tenho algo não resolvido, é bom resolver agora e rápido..."
+    "Assim, mais um dos meus dias nessa correria se encerra, se eu tenho algo não resolvido, é bom resolver agora e rápido..."
     jump startday5

@@ -7,7 +7,9 @@ label splashscreen:
     show text "{color=#FFFFFF}Esse jogo se trata da ODS número 16, que aborda ''Paz, Justiça e Instituições Eficazes''{/color}"
     with Pause(2.5)
     hide text
-    show splash with dissolve
+    show splash with dissolve:
+        xalign 0.5
+        yalign 0.5
     with Pause(4)
 
     scene black with dissolve
@@ -18,21 +20,20 @@ label splashscreen:
 label start:
     window hide
     show black with fade
-    #call screen botaoCasal with fade
     jump intro
 # screens (User interface)
 
-label intro: #Intro no quarto - Dia 1
-    "{i}trim, trim{/i}"
+label intro: # Intro no quarto - Dia 1
+    "{i}Trim, trim{/i}"
     show nate n at left
-    Nathan "Alô?"
+    Nate "Alô?"
     show erika n at right
-    dErika "Nathan, sou eu, Erika! Você vai voltar pra cidade essa semana, não é? Bastante coisa aconteceu desde que você saiu, acho que seria legal a gente se atualizar."
+    Erika "Nathan, sou eu, Erika! Você vai voltar pra cidade essa semana, não é? Bastante coisa aconteceu desde que você saiu, acho que seria legal a gente se atualizar."
     show nate f at left
-    Nathan "Erika! Claro! Na verdade, meus pais já tinham me convidado pra jantar um pouco antes do esperado."
-    Nathan "Então eu meio que já estou por aqui, você acha que amanhã é um bom momento para nos encontrarmos?"
+    Nate "Erika! Claro! Na verdade, meus pais já tinham me convidado pra jantar um pouco antes do esperado."
+    Nate "Então eu meio que já estou por aqui, você acha que amanhã é um bom momento para nos encontrarmos?"
     Erika "Mhm! Com certeza, pensei que a gente podia conversar com os meninos também, eles têm bastante assunto pra falar com você."
-    Nathan "Acho que isso é uma ótima ideia, bom, então te vejo amanhã, Erika!"
+    Nate "Acho que isso é uma ótima ideia, bom, então te vejo amanhã, Erika!"
     Erika "Obrigada, Nathan. Mal posso esperar para ver você novamente. Nos encontramos em breve!"
     show bg quarto dia with fade
     scene bg quarto dia
@@ -40,38 +41,37 @@ label intro: #Intro no quarto - Dia 1
     show erika n at right
     show nate n at left
     Erika "Nathan!! Tá acordado?"
-    Nathan "Só mais 5 minutinhos por favor..."
+    Nate "Só mais 5 minutinhos por favor..."
     Erika "5 minutinhos nada, a gente vai sair agora, sua mãe já até me deu uma lista de coisas que você tem que fazer hoje seu preguiçoso."
-    Nathan "Tá bom... Só deixa eu me trocar e eu te encontro lá na frente da loja ok?"
+    Nate "Tá bom... Só deixa eu me trocar e eu te encontro lá na frente da loja ok?"
     Erika "Certo! Te vejo lá então! Beijinhos!"
 
     hide erika
     show john n at right
     John "Huh, ela tá bem mais animada em te ver hoje, vem cá Nathan, quando é que você vai parar de ser um covarde e vai contar pra ela que você gosta dela hein?"
-    hide john 
+    hide john
     show camilla n at right
     Camilla "John, por favor, você sabe que ele não é covarde, ele só... ele só é..."
-    Nathan "Ele tem razão, Camilla, eu sou meio cagão pra essas coisas mesmo, mas isso não é prioridade agora, faz um tempinho que não vejo meus amigos, preciso encontrar eles agora, ok?"
-    Nathan "Não quero vocês dois falando um piu enquanto eu estou fora, beleza?"
-    hide camilla 
+    Nate "Ele tem razão, Camilla, eu sou meio cagão pra essas coisas mesmo, mas isso não é prioridade agora, faz um tempinho que não vejo meus amigos, preciso encontrar eles agora, ok?"
+    Nate "Não quero vocês dois falando um piu enquanto eu estou fora, beleza?"
+    hide camilla
     show john n at right
     John "Se você pode ver e ouvir a gente não é problema nosso, você que decidiu ser diferentão e nasceu com a capacidade de ver seus guardiões."
     John "E nós nunca atrapalhamos nenhuma conversa sua, rapaz!"
-    hide john 
+    hide john
     show camilla n at right
     Camilla "É verdade, sempre somos incrivelmente legais, divertidos e respeitosos com você, senhor Nathan!"
-    Nathan "Tá, tá, só prometam que não vão ficar aparecendo do nada."
-    hide camilla 
+    Nate "Tá, tá, só prometam que não vão ficar aparecendo do nada."
+    hide camilla
     show john n at right
     John "Hmpf, pode deixar, não vamos atrapalhar, vai lá ver seus amigos e sua namoradinha logo, vai."
-    hide john 
+    hide john
     show camilla n at right
     Camilla "Bom passeio, Nathan, divirta-se!"
-
     jump intro2
 
 label intro2: #Intro indo no mercado pela primeira vez - Dia 1
-    scene bg mercado dia
+    scene bg mercado dia with dissolve
     show halfblack
     show nate n at left
     Nathan "Pronto, cheguei, o que tem na lista da minha mãe?"
@@ -159,7 +159,7 @@ label intro2: #Intro indo no mercado pela primeira vez - Dia 1
     show black with dissolve
     jump quartodia1
 
-label quartodia1: #Quarto e final do dia 1 - Dia 1
+label quartodia1: # Quarto e final do dia 1 - Dia 1
     show bg quarto tarde with dissolve
     scene bg quarto tarde
     show halfblack

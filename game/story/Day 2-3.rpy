@@ -1,4 +1,4 @@
-label startday2: #Começo do dia 2 - Quarto - Dia 2
+label startday2: # Começo do dia 2 - Quarto - Dia 2
     show bg quarto dia with dissolve
     scene bg quarto dia
     show halfblack
@@ -24,19 +24,19 @@ label startday2: #Começo do dia 2 - Quarto - Dia 2
     John "É por isso que eu te odeio, sabia?"
     Nathan "Você odeia até sua própria sombra, John, sem mim você nem existiria. Fica quietinho aí."
     "Eu pego a torta das mãos da minha mãe, ela tem um cheiro exageradamente doce, e vou em direção ao mercadinho dos meninos mais uma vez."
-    #adicionar uma torta no inventário?
+    # Adicionar uma torta no inventário?
     $ inventory_items.append("Torta")
     $ renpy.notify("Agora você tem uma torta")
     jump lojaday2
-
-label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian - Dia 2
+    
+label lojaday2: # Fachada da loja aparece quebrada, você conhece David e Vivian - Dia 2
     scene bg mercado roubado dia
     show halfblack
     "Quando cheguei na loja, ela estava totalmente diferente do que eu lembrava ontem; A equipe policial também estava no local."
     show nate s at left
     Nathan "O que aconteceu aqui?"
     show david f at right
-    dDavid "Uma testemunha!"
+    David "Uma testemunha!"
     "Ele se aproximou muito rápido, me pergunto se ele já sabia que eu estaria aqui de alguma forma..."
     show bg mercado roubado dia with hpunch
     David "Perito David se apresentando para o serviço, senhor!"
@@ -63,7 +63,7 @@ label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian 
     Nathan "Obrigado!"
     Nathan "{i}Não adiantou nada...{/i}"
     "Enquanto David me guiava até a delegacia, uma moça de cabelos longos me parou"
-    show bg rua dia with dissolve
+    scene bg rua dia with dissolve
     scene bg rua dia
     show halfblack
     show vivian n at right
@@ -92,11 +92,11 @@ label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian 
     hide vivian
     show david t at right
     David "Bom, valeu a pena a tentativa."
-    "Esses dois são muito esquisitos..."
-    show nate ns at left
+    "Esses dois são muito esquisitos..." 
+    show nate n at left
     hide david
-    Nathan "Desculpa a pergunta, dona Vivian, mas como assim segundo assalto?"
     show vivian n at right
+    Nathan "Desculpa a pergunta, dona Vivian, mas como assim segundo assalto?"
     Vivian "É, então, parece que alguns dias atrás o mesmo ladrão assaltou a casa de uma garota de roupas estilosas azul ciano."
     show nate n
     Nathan "Calma, e como vocês sabem que foi o mesmo ladrão?"
@@ -113,14 +113,14 @@ label lojaday2: #Fachada da loja aparece quebrada, você conhece David e Vivian 
 
     jump delegaciaday2
 
-label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando Lucas e Sebastian - Dia 2
+label delegaciaday2: # Você chega na delegacia com David e Vivian, encontrando Lucas e Sebastian - Dia 2
     show bg delegacia frente dia with dissolve
     scene bg delegacia frente dia
     show halfblack
     show david b at right
     David "Senhor! Chegamos! As vítimas estão sendo interrogadas no momento, porém irão retornar em um instante. Irei checar como o processo está indo!"
     hide david
-    #David sai da sala
+    # David sai da sala
     show nate n at left
     Nathan "Não pensei que eu ia voltar pra esse lugar tão cedo. A última vez que vim foi para passar um dia com meu pai no trabalho."
     hide nate
@@ -199,7 +199,7 @@ label delegaciaday2: #Você chega na delegacia com David e Vivian, encontrando L
 
     jump quartodia2
     
-label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos do caso - Dia 2
+label quartodia2: # Você vai para seu quarto e tem a ideia de roubar os arquivos do caso - Dia 2
     scene bg quarto tarde with dissolve
     show halfblack
     show nate f at left
@@ -245,7 +245,7 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
             hide camilla 
             show john f at right
             John "É assim que a gente faz minha filha, tudo no improviso mesmo."
-            Nathan "isso ai"
+            Nathan "Isso ai"
             hide john
             show camilla b at right
             Camilla "..."
@@ -270,6 +270,9 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
             menu:
                 "É isso, vou pegar as chaves dele":
                     $ inventory_items.append("chave")
+                    Nathan "Boa ideia."
+                    scene black with dissolve
+                    "Enquanto meu pai dormia eu peguei suas chaves e voltei para meu quarto."
                     hide camilla
                     jump delegaciacomcamilla
                 "Melhor não, isso pode dar problemas depois...":
@@ -297,11 +300,12 @@ label quartodia2: #Você vai para seu quarto e tem a ideia de roubar os arquivos
             Nathan "Eu tenho que concordar com ele dessa vez, desculpa."
             Camilla "..."
             hide camilla
-            jump delegaciasemcamilla  
+            jump delegaciasemcamilla
 
-label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
+label delegaciacomcamilla: # Você invade a delegacia com a Camilla - Dia 2
     "Decidi tirar um cochilo durante a tarde para não ter a chance de desmaiar de sono durante minha invasão."
     show bg quarto noite with dissolve
+    show halfblack
     pause
     show nate ns at left
     Nathan "Vocês estão prontos?"
@@ -321,6 +325,7 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
     hide nate 
     hide camilla
     show bg delegacia frente dia noite with dissolve
+    show halfblack
     show nate n at left
     Nathan "Eu nunca fiz algo assim antes."
     Nathan "John, você tem cara de que cometeria um crime. Como eu faço pra entrar?"
@@ -353,7 +358,7 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
             hide john 
             jump saladopai
         "Quebrar o cadeado" if "chave" not in inventory_items:
-            "Eu me aproximo da porta, pego uma pedra e tento bater no cadeado"
+            "Eu me aproximo da porta, pego uma pedra e tento bater no cadeado."
             hide nate
             hide camilla 
             hide john 
@@ -361,11 +366,11 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
             Camilla "Espera, espera, e se o David esqueceu de trancar o cadeado? Ele é meio burrinho mesmo."
             show nate n at left
             Nathan "Eu acho que ele não seria tão idiota, mas eu posso tentar."
-            "No momento em que eu toco no cadeado com as mãos, o cadeado cai"
+            "No momento em que eu toco no cadeado com as mãos, o cadeado cai."
             hide camilla 
             show john b at right
-            John "Eu me recuso a acreditar que isso acabou de acontecer"
-            John "Vamos só entrar antes que eu fique maluco"
+            John "Eu me recuso a acreditar que isso acabou de acontecer."
+            John "Vamos só entrar antes que eu fique maluco."
             scene bg delegacia dentro
             show halfblack
             show john ex at left
@@ -375,16 +380,17 @@ label delegaciacomcamilla: #Você invade a delegacia com a camilla - Dia 2
             jump saladopai
         "Usar a ventilação" if "chave" not in inventory_items:
             $ foisus += 1
-            "Eu me aproximo da ventilação, estando lá, percebo que a tampa da ventilação estava meio solta, com pouca força ela se solta"
+            "Eu me aproximo da ventilação, estando lá, percebo que a tampa da ventilação estava meio solta, com pouca força ela se solta."
             show nate s
-            Nathan "Isso soltou muito mais fácil do que deveria"
+            Nathan "Isso soltou muito mais fácil do que deveria."
             show john ex
             John "Não sei do que você tá reclamando, pela ventilação a gente consegue chegar direto na sala do seu pai, vamos logo!"
             jump saladopai
 
-label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
+label delegaciasemcamilla: # Você invade a delegacia sem a Camilla - Dia 2
     "Decidi tirar um cochilo durante a tarde para não ter a chance de desmaiar de sono durante minha invasão."
     show bg quarto noite with dissolve
+    show halfblack
     show nate n at left
     Nathan "Você está pronto?"
     show john n at right
@@ -392,6 +398,7 @@ label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
     Nathan "Ótimo, vamos fazer isso."
     "Eu abri a janela e senti o vento frio da noite. Com muito nervosismo, segui correndo para a delegacia mais uma vez."
     show bg delegacia frente dia noite with dissolve
+    show halfblack
     show nate s2
     Nathan "Eu nunca fiz algo assim antes."
     Nathan "John, você tem cara de que cometeria um crime. Como eu faço pra entrar?"
@@ -422,7 +429,7 @@ label delegaciasemcamilla: #Você invade a delegacia sem a camilla - Dia 2
             John "Não sei do que você tá reclamando, pela ventilação a gente consegue chegar direto na sala do seu pai, vamos logo!"
             jump saladopai
 
-label saladopai: #Você invade a delegacia e vai para a sala do seu pai - Dia 2
+label saladopai: # Você invade a delegacia e vai para a sala do seu pai - Dia 2
     show bg sala do pai escuro with dissolve
     scene bg sala do pai escuro
     show john n at right 
@@ -457,7 +464,7 @@ label saladopaiprocura: #Voce procura os arquivos na sala do seu pai - Dia 2
             $ renpy.notify("Você pegou os arquivos!")
             jump quartodia21
 
-label quartodia21: #voce volta para casa e encerra o dia 2 - Dia 2
+label quartodia21: # Você volta para casa e encerra o dia 2 - Dia 2
     "Saímos pelo mesmo caminho que entramos, com sorte não vimos ninguém na rua."
     show bg quarto noite with dissolve
     scene bg quarto noite
@@ -497,7 +504,7 @@ label quartodia21: #voce volta para casa e encerra o dia 2 - Dia 2
     hide john
     show camilla b at right
     Camilla "Como assim nuh uh?"
-    Camilla "Você tava ai todo animado pra ajudar ele a invadir a delegacia agora."
+    Camilla "Você tava aí todo animado pra ajudar ele a invadir a delegacia agora."
     hide camilla
     show john b at right
     John "Pode até parecer que não, mas eu também me preocupo com o Nathan e você sabe o quanto as pessoas já tratam ele como maluco, não quero que a gente acabe piorando a situação."
@@ -528,39 +535,37 @@ label quartodia21: #voce volta para casa e encerra o dia 2 - Dia 2
     "O tempo passa..."
     jump actualday2
 
-#BARRACO AQUI EM BAIXO
 label actualday2:
     show bg quarto dia with dissolve
     scene bg quarto dia
     show halfblack
     "{i}Toc toc toc{/i}"
     show pai f at right
-    Pai "Nathan? Você está já está de pé?"
+    Pai "Nathan? Você já está de pé?"
     
     show nate s at left
     if brigacompai >= 1:
         menu:
-            "Continuar a discussão do outro dia ":
-                #FALTAM AS EXPRESSOES
+            "Continuar a discussão do outro dia.":
                 show nate n
                 Nathan "Tô... eu acho, não dormi muito bem."
                 show pai n
                 Pai "Desculpa por anteontem. Eu sei que tava estressado e ando sendo fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por um momento estressante e acabei descontando em você. Sinto muito."
                 show nate b
-                Nathan "O problema não é esse, é que você não me respeita nunca, sempre me diminuindo e me tratando mal sem nenhum motivo"
+                Nathan "O problema não é esse, é que você não me respeita nunca, sempre me diminuindo e me tratando mal sem nenhum motivo."
                 Nathan "Queria que você tentasse me entender um pouco mais antes de julgar em tudo que eu faço!"
                 show pai s
                 Pai "..."
-                Pai "Desculpe Nathan, acho que devíamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você as vezes"
-                Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsável com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante"
+                Pai "Desculpe Nathan, acho que devíamos conversar mais sobre esse tipo de coisa, eu não sei como me conectar com você às vezes."
+                Pai "Esse é o meu jeito de tentar fazer você ver que tem que ser mais responsável com algumas coisas e pensar um pouco no que deve fazer com a sua vida de agora em diante."
                 hide pai
                 show mae b at right
                 Mãe "Vocês dois estão discutindo de novo?"
                 show nate ns
                 Nathan "Dessa vez não mãe, acho que finalmente estamos tentando entender um ao outro na verdade."
                 show mae f
-                Mãe "Que bom! ainda bem que estão se entendendo melhor, fico muito feliz com isso"
-                "Eu e meu pai continuamos a conversar por um tempo até que ele sai para trabalhar"
+                Mãe "Que bom! Ainda bem que estão se entendendo melhor, fico muito feliz com isso."
+                "Eu e meu pai continuamos a conversar por um tempo até que ele sai para trabalhar."
             "Não continuar a discussão do outro dia":
                 Nathan "Tô... eu acho, não dormi muito bem."
                 hide black
@@ -573,11 +578,28 @@ label actualday2:
                 show bg quarto dia with hpunch
                 show halfblack with dissolve
                 Mãe "Foi sim!!!"
-                "Minha mãe grita da cozinha"
+                "Minha mãe grita da cozinha."
                 Pai "B-bom, eu vou indo pro trabalho, se você precisar de alguma coisa, pode falar comigo, beleza? É isso que eu queria dizer."
                 show nate f
                 Nathan "Tudo bem, obrigado."
                 hide pai
+    else:
+        Nathan "Tô... eu acho, não dormi muito bem."
+        hide black
+        show pai s at right
+        Pai "Bom dia, filho. Desculpa por anteontem. Eu sei que fui estressado e fechado demais. Não é desculpa para o meu comportamento, mas eu estava passando por estresse e acabei descontando em você. Sinto muito."
+        show nate ns at left
+        Nathan "Foi a mãe que fez você se desculpar, não foi?"
+        show pai s2
+        Pai "Não, claro que não."
+        show bg quarto dia with hpunch
+        show halfblack with dissolve
+        Mãe "Foi sim!!!"
+        "Minha mãe grita da cozinha."
+        Pai "B-bom, eu vou indo pro trabalho, se você precisar de alguma coisa, pode falar comigo, beleza? É isso que eu queria dizer."
+        show nate f
+        Nathan "Tudo bem, obrigado."
+        hide pai           
 
     "Assim que meu pai sai da sala, eu pego os arquivos que antes peguei na sala dele e começo a analisá-los."
     show nate n
@@ -587,7 +609,7 @@ label actualday2:
     jump biblioteca
 
 label biblioteca:
-    show bg biblioteca fora dia with dissolve
+    scene bg biblioteca fora dia with dissolve
     scene bg biblioteca fora dia
     show halfblack
     "Esta é a biblioteca da cidade. Não venho aqui desde pequeno; costumava ser um lugar bem cheio, mas hoje em dia só tem um funcionário já que é tão vazia."
@@ -659,9 +681,9 @@ label biblioteca:
             Nathan "Erika, preciso falar com você. Sei que acabou de sair, mas eu preciso da sua ajuda."
             show erika n2 at right
             Erika "Oi, Nathan. Encontrou alguma coisa?" 
-            Nathan "Oi,não na verdade, você acha que consegue me encontrar do lado de fora da biblioteca para conversarmos sobre isso? Não sei muito pra onde ir a partir daqui"
+            Nathan "Oi, não na verdade, você acha que consegue me encontrar do lado de fora da biblioteca para conversarmos sobre isso? Não sei muito pra onde ir a partir daqui."
             Erika "Está bom, já já estou chegando aí. Me dá uns 15 minutinhos, não estou muito longe."
-            "Antes de sair percebo que o bibliotecário estava observando de longe os arquivos cima da mesa, mas não dou muita atenção e vou me encontrar com Erika"
+            "Antes de sair percebo que o bibliotecário estava observando de longe os arquivos em cima da mesa, mas não dou muita atenção e vou me encontrar com Erika."
             hide nate
             hide erika 
             jump conversaerikadia2
@@ -710,7 +732,7 @@ label conversaerikadia2:
             hide erika
             "Ela se aproxima da rachadura, e logo depois volta, sem nada em mãos."
             show erika s at right
-            Erika "É, não tinha nada la mesmo"
+            Erika "É, não tinha nada lá mesmo."
             Nathan "A gente se vê amanhã, beleza? Preciso investigar mais."
             show erika n2
             Erika "Tchau tchau, Nate!"
@@ -769,9 +791,8 @@ label rachadura1:
             show black with dissolve
             jump ruadavid
 
-
 label ruadavid:
-    show bg rua tarde with dissolve
+    scene bg rua tarde with dissolve
     scene bg rua tarde
     show halfblack
     "Enquanto estava indo pra casa, me encontrei com o David."
@@ -825,12 +846,7 @@ label ruadavid:
             hide nate
             hide david 
     jump casadia2
-    # if saiucomerika >=1:
-    #     jump casadia2alt
-    # else:
-    #     jump casadia2
             
-
 label casadia2:
     show black with dissolve
     scene bg casa fora noite with dissolve
@@ -840,7 +856,7 @@ label casadia2:
     Nathan "Oi, pai, você está bem?"
     show pai n at right
     Pai "São só coisas do trabalho. Você não precisa se preocupar com isso."
-    Nathan "Ah, fala ai, que mal isso poderia causar?"
+    Nathan "Ah, fala aí, que mal isso poderia causar?"
     Pai "...Certo, acho que posso falar sobre isso."
     Pai "Parece que alguém roubou os arquivos do caso dos assaltos que tem ocorrido recentemente, sem eles eu não consigo progredir muito na investigação."
     Pai "Isso tem cara de coisa do David, ele só faz besteira, desse jeito, mais gente pode acabar se prejudicando..."
@@ -864,7 +880,7 @@ label casadia2:
                 show nate ex
                 Nathan "Foi mal... Vou para o meu quarto..."
 
-            "Não falar nada sobre os arquivos e mante-los com você":
+            "Não falar nada sobre os arquivos e mantê-los com você":
                 Nathan "Entendo... Espero que consiga pegar esse cara logo"
     "Eu subo em silêncio para o meu quarto."
     show bg quarto noite with dissolve
@@ -882,7 +898,7 @@ label casadia2:
         Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"
         hide camilla
         show john n at right 
-        John "Não reparei muito no homem em sí, estava focado em pensar nos arquivos."
+        John "Não reparei muito no homem em si, estava focado em pensar nos arquivos."
         hide john
         show camilla b at right
         Camilla "Claro que não prestou, você nunca presta atenção."
@@ -924,102 +940,3 @@ label casadia2:
         Nathan "Entendi. De qualquer forma, obrigado por estarem me ajudando com o que vocês podem."
         show black with dissolve
         jump startday3
-
-
-# label casadia2alt:
-#     hide nate
-#     hide david
-#     show bg quarto noite with dissolve
-#     scene bg quarto noite
-#     show halfblack
-#     show pai b at right
-#     Pai "Você que fez isso, né? Você roubou os meus arquivos. Eu vi nas câmeras você invadindo a minha sala e pegando os arquivos ontem."
-#     hide pai 
-#     show mae b at right
-#     Mãe "Pare com isso Fábio, não tem como ter sido o Nathan se eles estavam na delegacia."
-#     Mãe "Se os seus arquivos sumiram provavelmente foi porque você não os guardou direito. Não tente culpar o Nathan por causa disso."
-#     hide mae
-#     menu:
-#             "Admitir que pegou os arquivos":
-#                 show nate s at left
-#                 Nathan "Pai... Na verdade preciso te contar algo..."
-#                 show pai n2 at right
-#                 Pai "O que?"
-#                 show nate s2
-#                 Nathan "Fui eu quem pegou os arquivos... Me desculpe, estava tentando investigar por conta própria para ajudar meus amigos."
-#                 show pai b
-#                 Pai "VOCÊ O QUÊ??? VOCÊ FICOU MALUCO? TEM NOÇÃO DO QUANTO ISSO ATRAPALHOU NA INVESTIGAÇÃO?"
-#                 show nate ch
-#                 Nathan "..."
-#                 hide pai 
-#                 show mae b at right
-#                 Mãe "Calma Fábio, Ele não fez isso de má intenção."
-#                 Mãe "Mas isso realmente foi uma decisão muito idiota Nathan! Você não devia atrapalhar o trabalho do seu pai."
-#                 show nate ch
-#                 Nathan "Foi mal... Vou para o meu quarto..."
-#             "Mentir sobre os arquivos e mante-los com você":
-#                 show nate b at left
-#                 Nathan "Você tá doido? Como eu ia roubar os seus arquivos? Não vem tentar me culpar sem motivos!"
-#                 show pai s at right
-#                 Pai "Você tem razão... Desculpe, acho que ando muito estressado."
-#                 show nate n 
-#                 "Essa foi por pouco.."
-                
-#     "Eu subo em silêncio para o meu quarto."
-
-#     show mae n at right
-#     "Minha mãe então me puxou de canto para conversar."
-#     Mãe "Nathan, eu sei que seu pai está chateado agora, mas você precisa entender que ele está preocupado com a segurança dos arquivos."
-#     Mãe "Talvez seja melhor conversarmos sobre isso mais tarde, quando as coisas estiverem mais calmas."
-#     hide nate
-#     hide mae
-#     Nathan "Vou aproveitar que peguei uma cópia de tudo, e colocar eles ali, vai me ajudar bastante."
-#     show bg quarto com pistas noite with dissolve
-#     scene bg quarto com pistas noite
-#     if "aliança" in inventory_items:
-#         show camilla n at right
-#         Camilla "Ei, vocês não acharam estranho o Joseph ficar nervoso quando viu os arquivos?"
-#         hide camilla
-#         show john n at right 
-#         John "Não reparei muito no homem em si, estava focado em pensar nos arquivos."
-#         hide john
-#         show camilla b at right
-#         Camilla "Claro que não prestou, você nunca presta atenção."
-#         hide camilla 
-#         show john b at right
-#         John "Olha só sua-"
-#         show nate b at left
-#         Nathan "Não é hora de discutir, vamos manter o foco. Realmente, aquele homem ficou um pouco receoso com as coisas, mas pode ser apenas uma coincidência. Pode ser que o verdadeiro culpado tenha feito isso para tirar a sua suspeita."
-#         show john ex at right
-#         John "O Nathan tem razão nisso. De tudo que vimos sobre esse ladrão, ele parece ser muito inteligente. Tem uma chance alta de ter planejado isso."
-#         show nate n at left
-#         Nathan "Não tem como decretarmos nada ainda. Tem muitas pessoas por aqui, qualquer um pode ser culpado. É muita coisa pra lidar sozinho."
-#         show nate ns
-#         Nathan "O que vocês acham de eu tentar chamar a Erika pra me ajudar?"
-#         hide john 
-#         show camilla f at right
-#         Camilla "Eu acho que pode ser uma boa ideia. Ela pode ser meio estabanada, mas ela sempre te ajudou quando precisava."
-#         hide camilla 
-#         show john n2 at right
-#         John "Pode ser paranoia minha, mas ele parecia estar te rondando enquanto você estava lendo o livro. Não sei se isso é normal. Talvez valha a pena pedir pra ele um álibi do dia do crime, sabe?"
-#         Nathan "Vocês dois têm um bom ponto. Vou tentar ver isso amanhã mesmo. Muito obrigado por estarem me ajudando."
-#         show black with dissolve
-#         jump startday3alt
-#     if "aliança" not in inventory_items:
-#         show nate s at left
-#         Nathan "Acho que isso não vai levar a nada. Esses arquivos, tem muitas coisas que foram perdidas. Provavelmente, as mais importantes foram perdidas."
-#         show camilla t at right 
-#         Camilla "Sabemos que você quer ajudar, mas você precisa manter a calma. Não se joga tão de cabeça assim."
-#         show john n at right
-#         hide camilla
-#         John "Você gosta de ajudar seus amigos, mas você precisa pensar em você. Pode correr vários riscos se investigar de forma imprudente." 
-#         show nate ns
-#         Nathan "Vocês têm razão. Estou realmente correndo alguns riscos. Vou tentar pensar um pouco mais antes de sair tomando decisões."
-#         Nathan "Melhor eu ir descansar. Amanhã eu vou tentar descobrir mais sobre as coisas. Tentar falar com alguém sobre esses casos."
-#         hide john 
-#         show camilla t at right
-#         Camilla "Já pensou em falar com a Erika sobre? Ela pode te ajudar. Você pode tentar falar com ela durante a manhã."
-#         John "Queria tentar manter esse caso mais baixo, mas eu penso que a Camilla tem razão. Você pode tentar falar com ela mesmo."
-#         Nathan "Entendi. De qualquer forma, obrigado por estarem me ajudando com o que vocês podem."
-#         show black with dissolve
-#         jump startday3alt
