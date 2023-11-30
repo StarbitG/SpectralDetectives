@@ -11,8 +11,8 @@
 ## da janela e aparece na interface e nos relatórios de erros.
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
-init 9999 python:
-    config.developer = True
+#init 9999 python:
+#    config.developer = True
 
 define config.name = _("Spectral Detectives")
 
