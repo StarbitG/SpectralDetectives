@@ -178,5 +178,6 @@ label lojadia5:
             Nathan "Espera! Eu não vou ajudar?"
             David "Claro que não, isso é muito arriscado para envolver um civil, deixa isso nas mãos do Super David!" 
             "David tenta fazer uma pose de super-herói, mas fica ridículo e ele vai embora."
+            hide david 
             jump dia5finalruim
             pause
